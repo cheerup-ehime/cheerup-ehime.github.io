@@ -1,0 +1,21 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "被災地公式"
+    url: /disaster-area/
+  - title: "寄付金"
+    url: /donations/
+  - title: "支援"
+    url: /support/
+  - title: "投稿"
+    url: /year-archive/
+  - title: "カテゴリー"
+    url: /categories/
+  - title: "タグ"
+    url: /tags/
+    # - title: "義援金・支援金"
+  # - title: "避難所"
+  #   url: /collection-archive/
+  # - title: "救援物資"
+  #   url: /materials/

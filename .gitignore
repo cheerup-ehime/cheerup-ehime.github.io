@@ -1,0 +1,8 @@
+### https://raw.github.com/github/gitignore/690a433b668348c33087d34fafe2155ebe8bb4cf/Jekyll.gitignore
+
+_site/
+.sass-cache/
+.jekyll-metadata
+.DS_Store
+docs/
+
