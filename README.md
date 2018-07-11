@@ -2,7 +2,9 @@
 
 平成30年7月豪雨の支援のための情報を集約しています。
 
-ご協力いただける方は、こちらのgithubのorganizationにアカウントを追加するか、forkしてpull request送ってください。
+サイトは[こちら](https://cheerup-ehime.github.io)になります。
+
+ご協力いただける方は、こちらのgithubのorganizationにアカウントを追加希望をするか、forkしてpull request送ってください。
 
 ## 内容について
 
