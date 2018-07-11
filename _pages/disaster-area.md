@@ -6,12 +6,17 @@ date: 2018-07-09 06:23:20
 
 ## 愛媛県
 - [えひめの防災・危機管理](http://ehime.force.com/)
+## 愛南町
+- [愛南町（くらし）](http://www.town.ainan.ehime.jp/kurashi/)
 ## 今治市
 - [今治市防災情報ポータル](https://city-imabari.secure.force.com/)
+- [市民生活情報・支援情報](http://www.city.imabari.ehime.jp/saigai201807/)
 ## 宇和島市
 - [宇和島市公式ウェブサイト](https://www.city.uwajima.ehime.jp/)
 ## 大洲市
 - [大洲市公式ウェブサイト](http://www.city.ozu.ehime.jp/)
+## 上島町
+- [上島町](https://www.town.kamijima.lg.jp/)
 ## 西予市
 - [西予市公式ウェブサイト](http://www.city.seiyo.ehime.jp/)
 - [ボランティアセンター開設(7/10)](http://www.city.seiyo.ehime.jp/kinkyu/4956.html)
