@@ -248,6 +248,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "submenu"
   # _pages
   - scope:
       path: "_pages"
@@ -255,6 +257,8 @@ defaults:
     values:
       layout: single
       author_profile: false
+      sidebar:
+        nav: "submenu"
   # _categories
   - scope:
       path: ""
@@ -262,5 +266,24 @@ defaults:
     values:
       layout: single
       author_profile: false
+      sidebar:
+        nav: "submenu"
+  # _categories
+  - scope:
+      path: ""
+      type: tags
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "submenu"        
+  - scope:
+      path: ""
+      type: home
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "submenu"        
 
 remote_theme: "mmistakes/minimal-mistakes"
