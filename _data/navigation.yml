@@ -2,7 +2,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "被災地公式"
+  - title: "被災地の情報を知りたい"
     url: /disaster-area/
   - title: "寄付・義援金を送りたい"
     url: /donations/
@@ -16,6 +16,8 @@ main:
     url: /archive/
 
 submenu:
+  - title: "被災地の情報を知りたい"
+    url: /disaster-area/
   - title: "寄付・義援金を送りたい"
     url: /donations/
   - title: "ボランティア活動したい"
