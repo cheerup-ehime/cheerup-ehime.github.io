@@ -18,10 +18,15 @@
 各ファイルはマークダウン(Markdown) 形式で記述します。
 マークダウンの記法については[こちら](https://qiita.com/kamorits/items/6f342da395ad57468ae3)を参考にお願いします。
 
-## 要望について
+## 要望・改善案について
 
-Issueに登録お願いします。
+[Issue](https://github.com/cheerup-ehime/cheerup-ehime.github.io/issues)に登録お願いします。
+
+## 共有フォルダ
+
+[Google Drive](https://drive.google.com/drive/folders/19aEZBewHWVj8icLh-EzzqdFgYBTIAkcc?usp=sharing)に場所を作っています。
+アップロードなど編集したい方は[懸田](https://facebook.com/takeshi.kakeda)まで連絡ください。
 
 ## 連絡先
 
-[tkskkd](https://twitter.com/kkd)まで
+[twitter](https://twitter.com/kkd)か[facebook](https://facebook.com/takeshi.kakeda)までお願いします。
