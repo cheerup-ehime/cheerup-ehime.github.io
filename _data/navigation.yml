@@ -12,10 +12,10 @@ main:
     url: /rescuesupply/
   - title: "投稿"
     url: /year-archive/
-  # - title: "カテゴリー"
-    # url: /categories/
-  # - title: "タグ"
-    # url: /tags/
+  - title: "カテゴリー"
+    url: /categories/
+  - title: "タグ"
+    url: /tags/
     # - title: "義援金・支援金"
   # - title: "避難所"
   #   url: /collection-archive/

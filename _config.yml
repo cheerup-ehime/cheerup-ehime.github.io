@@ -10,10 +10,10 @@ locale                   : "ja"
 title                    : "Cheer Up Ehime"
 title_separator          : "-"
 name                     : "Takeshi Kakeda"
-description              : "愛媛県 平成３０年７月豪雨支援情報サイト."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "愛媛県に関する平成３０年７月豪雨支援情報サイトです。"
+url                      : "https://cheerup-ehime.github.io/""
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "https://github.com/cheerup-ehime/cheerup-ehime.github.io"
 teaser                   : "/assets/images/cheerup_ehime_logo.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -60,7 +60,7 @@ facebook:
   username               : takeshi.kakeda
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/cheerup_ehime_logo.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
