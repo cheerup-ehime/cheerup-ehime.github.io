@@ -13,13 +13,13 @@ permalink: /volunteer/
 （平成30年7月11日13時現在 50音順）
 
 ### 【愛南町：あいなんちょう】
-- http://www.ainan-shakyo.or.jp/
+- [ボランティア情報ページ](http://www.ainan-shakyo.or.jp/) ※情報掲載準備中
 - ボランティア募集中（個別対応）
   ##### 問合先 ------------
   愛南町社会福祉協議会 0895-70-1251
 
 ### 【今治市：いまばりし】
-- http://www.imabari-shakyo.jp/volunteer/saigai2.html
+- [ボランティア情報ページ](http://www.imabari-shakyo.jp/volunteer/saigai2.html)
 - 災害ボランティアセンター設置済（9日）
 - ボランティアを募集開始（10日）
   ##### 問合先 ------------
@@ -28,7 +28,7 @@ permalink: /volunteer/
   0898-22-6063
 
 ### ★【宇和島市：うわじまし】（吉田町）
-- http://www.uwajima-shakyo.or.jp/saigaiv.htm
+- [ボランティア情報ページ](http://www.uwajima-shakyo.or.jp/saigaiv.htm)
 - **当面の間、市内ボランティア限定**
 - 災害ボランティアセンター設置済（9日）
 - ボランティアを募集開始（10日）※受付時間 8:30-11:00
@@ -37,7 +37,7 @@ permalink: /volunteer/
   0895-23-3711
   
 ### ★【大洲市：おおずし】
-- http://www.ozushakyo.jp/cms/?p=1021
+- [ボランティア情報ページ](http://www.ozushakyo.jp/cms/?p=1021)
 - **県内・近県ボランティア限定**
 - 災害ボランティアセンター設置済（10日）
 - ボランティアを募集開始（10日）※受付時間 9:00-12:00
@@ -47,14 +47,14 @@ permalink: /volunteer/
   080−5076−9426
 
 ### 【上島町：かみじまちょう】（離島）
-- http://www.kamijima-shakyo.or.jp/
+- [ボランティア情報ページ](http://www.kamijima-shakyo.or.jp/)
 - **町内ボランティア限定**
   ##### 問合先 ------------
   社会福祉法人上島町社会福祉協議会<br>
   0897-76-2638
 
 ### 【鬼北町：きほくちょう】
-- http://kihoku-syakyo.lekumo.biz/news/2018/07/post-2a7c.html
+- [ボランティア情報ページ](http://kihoku-syakyo.lekumo.biz/news/2018/07/post-2a7c.html)
 - 災害ボランティアセンター設置済（9日）
 - ボランティアを募集開始（10日）※受付　当日8:00-10:00　翌日以降当日8:00-17:15
   ##### 問合先 ------------
@@ -62,8 +62,7 @@ permalink: /volunteer/
   0895-45-3709
 
 ### ★【西予市：せいよし】（野村町）
-- http://seiyo-syakyo.jp/publics/index/75/
-- http://www.city.seiyo.ehime.jp/kinkyu/4956.html
+- [ボランティア情報ページ](http://www.city.seiyo.ehime.jp/kinkyu/4956.html)
 - 災害ボランティアセンターを設置済（9日）
 - ボランティアを募集開始（11日）※受付時間 8:30-10:00
 - [駐車場]野村運動公園にお停めください。ボランティアセンターまで送迎有
@@ -72,22 +71,23 @@ permalink: /volunteer/
   0894-72-2306
 
 ### 【砥部町：とべちょう】
-- http://www.tobe-shakyo.jp/topics/?p=1827
+- [ボランティア情報ページ](http://www.tobe-shakyo.jp/topics/?p=1827)
 - ボランティア募集中（個別対応）
   ##### 問合先 ------------
   砥部町災害ボランティアセンター<br>
   089-962-7100
 
 ### 【松野町：まつのちょう】
-- http://matsuno-syakyo.or.jp/ ※情報掲載準備中
+- [ボランティア情報ページ](http://matsuno-syakyo.lekumo.biz/news/2018/07/post-7c3a.html) 
 - **町内ボランティア限定（予定）**
-- 災害ボランティアセンター等設置検討中
+- 災害ボランティアセンター等設置（11日）
+- ボランティアを募集開始（11日）※受付時間 9:00-14:00
   ##### 問合先 ------------
   松野町社会福祉協議会<br>
   0895-42-0794
 
 ### 【松山市：まつやまし】
-- http://www.matsuyama-wel.jp/
+- [ボランティア情報ページ](http://www.matsuyama-wel.jp/)
 - **市内在住ボランティア希望者限定**
 - 通常のボランティアセンターで募集中
   ##### 問合先 ------------
@@ -95,7 +95,7 @@ permalink: /volunteer/
   089-921-2141
 
 ### 【八幡浜市：やわたはまし】
-- http://www.yawatahamashi-syakyo.jp/gouusaigai1.html
+- [ボランティア情報ページ](http://www.yawatahamashi-syakyo.jp/gouusaigai1.html)
 - **市内ボランティア限定**
 - 通常のボランティアセンターで募集中
   ##### 問合先 ------------
