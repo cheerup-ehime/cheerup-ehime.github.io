@@ -1,4 +1,5 @@
 ---
-title: 救援物資について
+title: 救援物資を送りたい
+permalink: /rescuesupply/
 ---
 

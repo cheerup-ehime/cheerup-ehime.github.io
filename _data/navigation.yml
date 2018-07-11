@@ -8,6 +8,8 @@ main:
     url: /donations/
   - title: "ボランティア活動したい"
     url: /volunteer/
+  - title: "救援物資を送りたい"
+    url: /rescuesupply/
   - title: "投稿"
     url: /year-archive/
   # - title: "カテゴリー"
