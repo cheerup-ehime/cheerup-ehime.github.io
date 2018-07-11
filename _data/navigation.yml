@@ -32,8 +32,8 @@ submenu:
     url: /rescuesupply/
   - title: "現地に行きたい"
     children:
-      - title: "道路通行止め情報"
-        url: /routes/
+      - title: "交通情報"
+        url: /categories/#%E4%BA%A4%E9%80%9A%E6%83%85%E5%A0%B1
   - title: "投稿"
     url: /year-archive/
   - title: "カテゴリー"
