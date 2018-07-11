@@ -1,11 +1,12 @@
 ---
 title: "通行止めを知るにはYahoo! カーナビがおすすめ"
 date: 2018-07-09 06:21:47
-categories: 
-    - ツール
+category: 
+    - 交通情報
 tag:
     - 移動
-    - 交通情報
+    - 通行止め情報
+    - お役立ち
 ---
 [阿部さん](https://www.facebook.com/brightflavor/posts/2130330640371031)からの情報提供
 

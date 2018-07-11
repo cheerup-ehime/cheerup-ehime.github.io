@@ -5,6 +5,8 @@ categories:
     - 現場レポート
 tag:
     - 吉田町
+    - 通行止め情報
+    - ボランティアお役立ち
 ---
 
 [宮土さん](https://www.facebook.com/permalink.php?story_fbid=998604276967422&id=100004535770945)の情報です。以下内容転記します。

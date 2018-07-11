@@ -281,8 +281,12 @@ defaults:
       path: ""
       type: home
     values:
-      layout: single
-      author_profile: false
+      sidebar:
+        nav: "submenu"        
+  - scope:
+      path: ""
+      type: archive
+    values:
       sidebar:
         nav: "submenu"        
 
