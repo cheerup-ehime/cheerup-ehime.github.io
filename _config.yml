@@ -10,7 +10,7 @@ locale                   : "ja"
 title                    : "Cheer Up Ehime"
 title_separator          : "-"
 name                     : "Takeshi Kakeda"
-description              : "愛媛県 平成３０年７月豪雨情報サイト."
+description              : "愛媛県 平成３０年７月豪雨支援情報サイト."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -174,9 +174,9 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-breadcrumbs: true
-breadcrumb_home_label : "Home"
-breadcrumb_separator  : "/"
+breadcrumbs: false
+# breadcrumb_home_label : "Home"
+# breadcrumb_separator  : "/"
 
 # Plugins
 gems:
@@ -248,8 +248,6 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar:
-        nav: "main"
   # _pages
   - scope:
       path: "_pages"
@@ -264,7 +262,5 @@ defaults:
     values:
       layout: single
       author_profile: false
-      sidebar:
-        nav: "main"
 
 remote_theme: "mmistakes/minimal-mistakes"

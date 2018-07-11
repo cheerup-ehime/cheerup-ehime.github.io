@@ -6,6 +6,5 @@ tag:
     - 水害
     - マニュアル
 ---
-水害からの復旧マニュアルです。
 
-https://houseresearch.jp/note/money/1239/
+[水害からの復旧マニュアル](https://houseresearch.jp/note/money/1239/)

@@ -1,7 +1,10 @@
 ---
 title: "被災地のために動きたい人たちへ"
 date: 2018-07-09 13:37:00
-categories: support
+categories: 
+    - 支援
+tag:
+    - 心構え
 ---
 
 [菅野さん](https://www.facebook.com/takeshi.kakeda/posts/10156405613319593?comment_id=10156405842939593&comment_tracking=%7B%22tn%22%3A%22R%22%7D)からの情報

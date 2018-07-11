@@ -14,6 +14,7 @@ date: 2018-07-09 06:23:20
 - [大洲市公式ウェブサイト](http://www.city.ozu.ehime.jp/)
 ## 西予市
 - [西予市公式ウェブサイト](http://www.city.seiyo.ehime.jp/)
+- [ボランティアセンター開設(7/10)](http://www.city.seiyo.ehime.jp/kinkyu/4956.html)
 ## 松山市
 - [松山市防災情報](http://www.bousai.city.matsuyama.ehime.jp/public_info/main.php)
 ## 松野町
