@@ -11,11 +11,11 @@ title                    : "Cheer Up Ehime"
 title_separator          : "-"
 name                     : "Takeshi Kakeda"
 description              : "愛媛県に関する平成３０年７月豪雨支援情報サイトです。"
-url                      : "https://cheerup-ehime.github.io/""
+url                      : "https://cheerup-ehime.github.io" #
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/cheerup-ehime/cheerup-ehime.github.io"
+repository               : #
 teaser                   : "/assets/images/cheerup_ehime_logo.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : facebook # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -61,7 +61,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : 
-  - https://cheerup-ehime.github.io/assets/images/cheerup_ehime_logo512.png
+  - "/assets/images/cheerup_ehime_logo512.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -81,8 +81,8 @@ author:
   name             : "tkskkd"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Live in Ehime, Matsuyama"
-  location         : "Matsuyama, Ehime, Japan"
-  email            : 
+  location         : "Matsuyama"
+  email            : "kkd@zensow.jp"
   uri              :
   bitbucket        :
   codepen          :
@@ -180,7 +180,7 @@ breadcrumbs: false
 # breadcrumb_separator  : "/"
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
