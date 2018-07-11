@@ -60,7 +60,8 @@ facebook:
   username               : takeshi.kakeda
   app_id                 :
   publisher              :
-og_image                 : /assets/images/cheerup_ehime_logo.png
+og_image                 : 
+  - https://cheerup-ehime.github.io/assets/images/cheerup_ehime_logo512.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
