@@ -14,7 +14,7 @@ description              : "愛媛県に関する平成３０年７月豪雨支�
 url                      : "https://cheerup-ehime.github.io" #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #
-teaser                   : "/assets/images/cheerup_ehime_logo.png"
+teaser                   : # /assets/images/cheerup_ehime_logo.png
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -60,8 +60,7 @@ facebook:
   username               : takeshi.kakeda
   app_id                 :
   publisher              :
-og_image                 : 
-  - "/assets/images/cheerup_ehime_logo512.png"
+og_image                 : /assets/images/cheerup_ehime_logo512.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
