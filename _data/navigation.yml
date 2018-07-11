@@ -12,14 +12,10 @@ main:
     url: /rescuesupply/
   - title: "現地に行きたい"
     url: /routes/
-  - title: "投稿"
-    url: /year-archive/
+  - title: "投稿一覧"
+    url: /archive/
 
 submenu:
-  - title: "About"
-    url: /about/
-  - title: "被災地公式サイト"
-    url: /disaster-area/
   - title: "寄付・義援金を送りたい"
     url: /donations/
   - title: "ボランティア活動したい"
@@ -34,8 +30,8 @@ submenu:
     children:
       - title: "交通情報"
         url: /categories/#%E4%BA%A4%E9%80%9A%E6%83%85%E5%A0%B1
-  - title: "投稿"
-    url: /year-archive/
+  - title: "投稿一覧"
+    url: /archive/
   - title: "カテゴリー"
     url: /categories/
   - title: "タグ"
