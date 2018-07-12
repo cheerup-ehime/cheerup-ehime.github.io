@@ -9,7 +9,7 @@
 locale                   : "ja"
 title                    : "チアアップえひめ<br/>平成30年7月豪雨復興支援情報"
 title_separator          : "-"
-name                     : "Takeshi Kakeda"
+name                     : "Cheer Up Ehime"
 description              : "愛媛県に関する平成３０年７月豪雨支援情報サイトです。"
 url                      : "https://cheerup-ehime.github.io" #
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -55,9 +55,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : tkskkd
+  username               : cheerup-ehime
 facebook:
-  username               : takeshi.kakeda
+  username               : cheerup.ehime
   app_id                 :
   publisher              :
 og_image                 : /assets/images/cheerup_ehime_logo512.png
@@ -77,18 +77,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "tkskkd"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Live in Ehime, Matsuyama"
-  location         : "Matsuyama"
-  email            : "kkd@zensow.jp"
+  name             : "Cheer Up Ehime"
+  avatar           : "/assets/images/cheerup_ehime_logo512.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Site for Ehime"
+  location         : "Ehime"
+  email            : "cheerup.ehime@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
-  foursquare       :
+  facebook         : "cheerup.ehime"
+  foursquare       : 
   github           :
   gitlab           :
   google_plus      :
@@ -243,7 +243,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -256,7 +256,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       comments: true
       share: true
       sidebar:
@@ -267,6 +267,7 @@ defaults:
       type: categories
     values:
       layout: single
+      author_profile: true
       comments: true
       share: true
       sidebar:
@@ -277,6 +278,7 @@ defaults:
       type: tags
     values:
       layout: single
+      author_profile: true
       comments: true
       share: true
       sidebar:
@@ -286,6 +288,7 @@ defaults:
       type: home
     values:
       comments: true
+      author_profile: true
       share: true
       sidebar:
         nav: "submenu"        
@@ -294,6 +297,7 @@ defaults:
       type: archive
     values:
       comments: true
+      author_profile: true
       share: true
       sidebar:
         nav: "submenu"        
@@ -302,6 +306,7 @@ defaults:
       type: archive-taxonomy
     values:
       comments: true
+      author_profile: true
       share: true
       sidebar:
         nav: "submenu"        
