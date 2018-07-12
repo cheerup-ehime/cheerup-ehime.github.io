@@ -303,7 +303,7 @@ defaults:
     values:
       comments: true
       share: true
-        sidebar:
-          nav: "submenu"        
+      sidebar:
+        nav: "submenu"        
 
 remote_theme: "mmistakes/minimal-mistakes"
