@@ -289,5 +289,11 @@ defaults:
     values:
       sidebar:
         nav: "submenu"        
+  - scope:
+      path: ""
+      type: archive-taxonomy
+    values:
+      sidebar:
+        nav: "submenu"        
 
 remote_theme: "mmistakes/minimal-mistakes"
