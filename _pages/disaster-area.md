@@ -27,6 +27,8 @@ last_modified_at: 2018-07-12 00:24:28
 - [今回の大雨による浸水および土砂災害について](https://www.town.matsuno.ehime.jp/soshiki/1/3124.html)
 ### 鬼北町
 - [防災・防犯](http://www.town.kihoku.ehime.jp/life/1/1/8/)
+### 八幡浜市
+- [防災情報](http://www.city.yawatahama.ehime.jp/bunya/bosaigai/)
 
 ## 災害の対応窓口の電話番号
 [富永](https://www.facebook.com/kiyo.tominaga/posts/1854593247930211)さんからの情報です。
