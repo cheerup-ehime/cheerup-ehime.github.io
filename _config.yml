@@ -60,7 +60,7 @@ facebook:
   username               : cheerup.ehime
   app_id                 :
   publisher              :
-og_image                 : /assets/images/cheerup_ehime_logo512.png
+og_image                 : /assets/images/cheerUP!_logo.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Cheer Up Ehime"
-  avatar           : "/assets/images/cheerup_ehime_logo512.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/cheerUP!_logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Site for Ehime"
   location         : "Ehime"
   email            : "cheerup.ehime@gmail.com"
