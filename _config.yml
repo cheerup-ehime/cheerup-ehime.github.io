@@ -72,7 +72,7 @@ social:
 analytics:
   provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-122279846-1
 
 
 # Site Author
@@ -179,7 +179,7 @@ breadcrumbs: false
 # breadcrumb_separator  : "/"
 
 # Plugins
-plugins:
+gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
