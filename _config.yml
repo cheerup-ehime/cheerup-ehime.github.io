@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "ja"
-title                    : "Cheer Up Ehime"
+title                    : "チアアップえひめ<br/>平成30年7月豪雨復興支援情報"
 title_separator          : "-"
 name                     : "Takeshi Kakeda"
 description              : "愛媛県に関する平成３０年７月豪雨支援情報サイトです。"
@@ -257,6 +257,8 @@ defaults:
     values:
       layout: single
       author_profile: false
+      comments: true
+      share: true
       sidebar:
         nav: "submenu"
   # _categories
@@ -265,7 +267,8 @@ defaults:
       type: categories
     values:
       layout: single
-      author_profile: false
+      comments: true
+      share: true
       sidebar:
         nav: "submenu"
   # _categories
@@ -274,26 +277,33 @@ defaults:
       type: tags
     values:
       layout: single
-      author_profile: false
+      comments: true
+      share: true
       sidebar:
         nav: "submenu"        
   - scope:
       path: ""
       type: home
     values:
+      comments: true
+      share: true
       sidebar:
         nav: "submenu"        
   - scope:
       path: ""
       type: archive
     values:
+      comments: true
+      share: true
       sidebar:
         nav: "submenu"        
   - scope:
       path: ""
       type: archive-taxonomy
     values:
-      sidebar:
-        nav: "submenu"        
+      comments: true
+      share: true
+        sidebar:
+          nav: "submenu"        
 
 remote_theme: "mmistakes/minimal-mistakes"

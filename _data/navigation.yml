@@ -2,24 +2,20 @@
 main:
   - title: "About"
     url: /about/
-  - title: "被災地の情報"
-    url: /disaster-area/
-  - title: "寄付・義援金"
-    url: /donations/
   - title: "ボランティア活動"
     url: /volunteer/
   - title: "救援物資"
     url: /rescuesupply/
   - title: "現地への移動"
     url: /routes/
-  - title: "投稿一覧"
-    url: /archive/
-
-submenu:
   - title: "被災地の情報"
     url: /disaster-area/
   - title: "寄付・義援金"
     url: /donations/
+  - title: "投稿一覧"
+    url: /archive/
+
+submenu:
   - title: "ボランティア活動"
     children:
       - title: ボランティアセンター
@@ -36,14 +32,13 @@ submenu:
     children:
       - title: "交通情報"
         url: /categories/%E4%BA%A4%E9%80%9A%E6%83%85%E5%A0%B1
+  - title: "被災地の情報"
+    url: /disaster-area/
+  - title: "寄付・義援金"
+    url: /donations/
   - title: "投稿一覧"
     url: /archive/
   - title: "カテゴリー"
     url: /categories/
   - title: "タグ"
     url: /tags/
-    # - title: "義援金・支援金"
-  # - title: "避難所"
-  #   url: /collection-archive/
-  # - title: "救援物資"
-  #   url: /materials/
