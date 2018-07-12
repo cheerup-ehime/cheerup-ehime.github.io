@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /tags/
-title: "Posts by Tags"
+title: "タグ一覧"
 author_profile: true
 ---
 
