@@ -9,7 +9,7 @@
 locale                   : "ja"
 title                    : "チアアップえひめ<br/>平成30年7月豪雨復興支援情報"
 title_separator          : "-"
-name                     : "Cheer Up Ehime"
+name                     : "Cheer UP! Ehime"
 description              : "愛媛県に関する平成３０年７月豪雨支援情報サイトです。"
 url                      : "https://cheerup-ehime.github.io" #
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -77,7 +77,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Cheer Up Ehime"
+  name             : "Cheer UP! Ehime"
   avatar           : "/assets/images/cheerUP!_logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Site for Ehime"
   location         : "Ehime"
