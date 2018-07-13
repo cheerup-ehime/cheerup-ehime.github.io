@@ -10,7 +10,7 @@ locale                   : "ja"
 title                    : "チアアップえひめ<br/>平成30年7月豪雨復興支援情報"
 title_separator          : "-"
 name                     : "Cheer UP! Ehime"
-description              : "愛媛県に関する平成３０年７月豪雨支援情報サイトです。"
+description              : "愛媛県に関する平成30年7月豪雨ふ復興支援情報を集約し提供するサイトです。"
 url                      : "https://cheerup-ehime.github.io" #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : cheerup-ehime
+  username               : EhimeCheerup
 facebook:
   username               : cheerup.ehime
   app_id                 :
@@ -161,6 +161,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  parse_block_html: true
 
 
 # Sass/SCSS
@@ -179,7 +180,7 @@ breadcrumbs: false
 # breadcrumb_separator  : "/"
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -187,6 +188,7 @@ gems:
   - jemoji
   - jekyll-twitter-plugin
   - jekyll-archives
+
 
 
 # mimic GitHub Pages with --safe
