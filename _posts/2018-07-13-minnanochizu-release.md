@@ -11,6 +11,8 @@ tag:
 
 ## みんなの地図リリース
 
+![みんなの地図](/assets/images/minnanochizu.jpeg)
+
 西日本豪雨の被害に遭われた方、また復旧に向けて頑張ってる方へ
 
 **みんなの地図**というアプリを突貫で作成しました。
@@ -18,6 +20,7 @@ tag:
 [https://minchizu-e6818.firebaseapp.com/](https://minchizu-e6818.firebaseapp.com/)
 
 みんなで地図上に情報を登録して共有するためのアプリです。
+
 
 ## インストール
 
