@@ -4,6 +4,8 @@ permalink: /heat-attack-provision/
 ---
 ![https://cheerup-ehime.github.io/assets/images/heat_attack_provision.png](/assets/images/heat_attack_provision.png)
 
+![https://cheerup-ehime.github.io/assets/images/heat-attack-chart.png](/assets/images/heat-attack-chart.png)
+
 これから本格的夏になります。ボランティア時の熱中症に充分注意してください！
 
 [富永さん](https://www.facebook.com/photo.php?fbid=1855540061168863&set=a.406085386114345.90317.100001386627587&type=3)から頂いた熱中対策です。
