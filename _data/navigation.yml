@@ -22,6 +22,8 @@ submenu:
         url: /volunteer/
       - title: ボランティア募集
         url: /categories/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2/
+      - title: ボランティア支援
+        url: /volunteer_backup/
   - title: "救援物資"
     children:
       - title: 救援物資がほしい
