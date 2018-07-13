@@ -12,8 +12,6 @@ main:
     url: /disaster-area/
   - title: "寄付・義援金"
     url: /donations/
-  - title: "問い合わせ"
-    url: /chat/
   - title: "投稿一覧"
     url: /archive/
 
