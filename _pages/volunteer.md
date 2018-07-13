@@ -38,7 +38,7 @@ modified: 2018-07-11 23:01:29
 （全国的なボランティアの動きは[全社協のボランティア情報](https://www.saigaivc.com/)から。）
 <br><br><br><br>
 ## 愛媛県内の災害ボランティア等情報まとめ
-（平成30年7月13日16時現在 50音順）
+（平成30年7月14日08時現在 50音順）
 
 ---
 
@@ -132,7 +132,9 @@ modified: 2018-07-11 23:01:29
 #### 集合場所 ------------
 西予市社会福祉協議会本所（野村町）　[【GoogleMap】](https://goo.gl/maps/knycngVaRXL2)<br>
 [西予市内の道路通行制限情報](http://www.city.seiyo.ehime.jp/kinkyu/5002.html)<br>
-[駐車場]野村運動公園にお停めください。ボランティアセンターまで送迎有　[【GoogleMap】](https://goo.gl/maps/YJUNeA8Quh12)
+[駐車場]ボランティアセンターまで送迎有
+野村運動公園[【GoogleMap】](https://goo.gl/maps/YJUNeA8Quh12)
+セレモニーホール野村
 #### 問合先 ------------
 西予市社会福祉協議会<br>0894-72-2306
 
