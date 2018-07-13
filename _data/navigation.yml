@@ -12,6 +12,8 @@ main:
     url: /disaster-area/
   - title: "寄付・義援金"
     url: /donations/
+  - title: "問い合わせ"
+    url: /chat/
   - title: "投稿一覧"
     url: /archive/
 
@@ -40,11 +42,7 @@ submenu:
         url: /disaster-area/
       - title: "家電製品特別修理対応"
         url: /repair/
+      - title: "温泉・銭湯マップ"
+        url: /hotspringmap/
   - title: "寄付・義援金"
     url: /donations/
-  - title: "投稿一覧"
-    url: /archive/
-  - title: "カテゴリー"
-    url: /categories/
-  - title: "タグ"
-    url: /tags/
