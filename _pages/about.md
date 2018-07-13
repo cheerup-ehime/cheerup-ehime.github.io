@@ -12,13 +12,24 @@ SNSでは多数情報が流れていますが、流れが激しく情報の波�
 
 ### Facebookページ
 
-本サイトの更新情報を流していますので、こちらもフォローください。
+本サイトの更新情報を流しています。
 
--  [CheerUP!Ehime FBページ](https://www.facebook.com/cheerup.ehime/?modal=admin_todo_tour)
+[CheerUP!Ehime FBページ](https://www.facebook.com/cheerup.ehime/?modal=admin_todo_tour)
 
 ### Twitterアカウント
 
 [CheerUP!Ehime公式Twitter](https://twitter.com/EhimeCheerup)では、サイトの更新情報だけでなく、各自治体が発信している災害に関しての情報も随時ツイートしています。愛媛の災害復興についての情報を集約していきますのでフォローお願いします。
+
+現時点で対応しているのは下記自治体です。
+
+- 宇和島市
+- 大洲市
+- 上島町
+- 鬼北町
+- 松野町
+- 松山市
+
+西予市は、変換作業が必要なので、しばらく時間がかかりそうです。今治市は更新情報の取得が簡単にできないため対応していません。
 
 ## 協力者募集
 
@@ -31,3 +42,4 @@ SNSでは多数情報が流れていますが、流れが激しく情報の波�
 ご協力いただける方がいらっしゃったら、下記までご連絡ださい。
 
 cheerup.ehime@gmail.com
+
