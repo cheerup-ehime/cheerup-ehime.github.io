@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "ボランティア活動"
     url: /volunteer/
+  - title: "熱中症対策"
+    url: /heat-attack-provision/
   - title: "救援物資"
     url: /rescuesupply/
   - title: "現地への移動"
@@ -20,6 +22,8 @@ submenu:
     children:
       - title: ボランティアセンター
         url: /volunteer/
+      - title: 熱中症対策
+        url: /heat-attack-provision/
       - title: ボランティア募集
         url: /categories/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2/
       - title: ボランティア支援
