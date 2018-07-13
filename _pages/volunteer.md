@@ -132,8 +132,8 @@ modified: 2018-07-11 23:01:29
 #### 集合場所 ------------
 西予市社会福祉協議会本所（野村町）　[【GoogleMap】](https://goo.gl/maps/knycngVaRXL2)<br>
 [西予市内の道路通行制限情報](http://www.city.seiyo.ehime.jp/kinkyu/5002.html)<br>
-[駐車場]ボランティアセンターまで送迎有
-野村運動公園[【GoogleMap】](https://goo.gl/maps/YJUNeA8Quh12)
+[駐車場]ボランティアセンターまで送迎有<br>
+野村運動公園[【GoogleMap】](https://goo.gl/maps/YJUNeA8Quh12)<br>
 セレモニーホール野村
 #### 問合先 ------------
 西予市社会福祉協議会<br>0894-72-2306
