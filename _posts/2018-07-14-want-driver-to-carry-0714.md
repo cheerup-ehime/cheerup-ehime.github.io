@@ -5,6 +5,9 @@ category:
 tag:
     - ドライバー募集
 ---
+
+[松波さん](https://www.facebook.com/yudai.matsunami/posts/1753590154716591)からのお願いです。
+
 ![https://i.gyazo.com/4af518d23741ac68d07384988a812676.png](https://i.gyazo.com/4af518d23741ac68d07384988a812676.png)
 
 □愛媛　2018/7/14　10:00
