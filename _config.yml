@@ -59,8 +59,8 @@ twitter:
 facebook:
   username               : cheerup.ehime
   app_id                 :
-  publisher              :
-og_image                 : /assets/images/cheerUP!_logo.png
+  publisher              : https://www.facebook.com/cheerup.ehime/
+og_image                 : # /assets/images/cheerUP!_logo.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -188,6 +188,7 @@ plugins:
   - jemoji
   - jekyll-twitter-plugin
   - jekyll-archives
+  - jekyll-seo-tag
 
 
 
@@ -269,7 +270,7 @@ defaults:
       path: ""
       type: categories
     values:
-      layout: single
+      layout: archive
       author_profile: true
       comments: true
       share: true
@@ -280,7 +281,7 @@ defaults:
       path: ""
       type: tags
     values:
-      layout: single
+      layout: archive
       author_profile: true
       comments: true
       share: true
@@ -293,6 +294,7 @@ defaults:
       comments: true
       author_profile: true
       share: true
+      image: /assets/images/cheerUP!_logo.png
       sidebar:
         nav: "submenu"        
   - scope:
@@ -311,6 +313,7 @@ defaults:
       comments: true
       author_profile: true
       share: true
+      image: /assets/images/cheerUP!_logo.png
       sidebar:
         nav: "submenu"        
 
