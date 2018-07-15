@@ -64,9 +64,9 @@ modified: 2018-07-11 23:01:29
 
 ### ★【宇和島市：うわじまし】（吉田町）
 - **個人は四国在住者限定（四国以外からの団体ボラバス等別途対応）**
-- **※宇和島市でボランティアを希望される方は事前に登録カードをご記入ください.**
-    【個人ボランティアの皆さま：PDF】](http://www.uwajima-shakyo.or.jp/saigaiv-toroku.pdf)
-    【団体ボランティアの皆さま：PDF】](http://www.uwajima-shakyo.or.jp/saigaiv-toroku-dantai.pdf)
+- **※宇和島市でボランティアを希望される方は事前に登録カードをご記入ください.**<br>
+    [【個人ボランティアの皆さま：PDF】](http://www.uwajima-shakyo.or.jp/saigaiv-toroku.pdf)<br>
+    [【団体ボランティアの皆さま：PDF】](http://www.uwajima-shakyo.or.jp/saigaiv-toroku-dantai.pdf)
 - [ボランティア情報ページ](http://www.uwajima-shakyo.or.jp/saigaiv.htm)
 - ボランティアを募集開始（10日）
 #### 時間 ----------
@@ -75,10 +75,10 @@ modified: 2018-07-11 23:01:29
 #### 集合場所 ------------
 宇和島市社会福祉協議会　[【GoogleMap】](https://goo.gl/maps/Pmsyt21XtqM2)
 #### 駐車場 ------------
-- 【一般車両（一般ボランティア）】 
+- 【一般車両（一般ボランティア）】 <br>
   宇和島市総合体育館[【GoogleMap】](https://goo.gl/maps/eP19PX7Qsno) <br>
   新内港地区緑地[【GoogleMap】](https://goo.gl/maps/C9hXAebjevM2) 
-- 【ボランティアバス（団体ボランティア）】
+- 【ボランティアバス（団体ボランティア）】<br>
   宇和島市浄化センター[【GoogleMap】](https://goo.gl/maps/CSxcPyFwibr) 
 #### 備考 ------------
 - 軽トラック所有者は軽トラックでお越しください。
