@@ -10,11 +10,11 @@ locale                   : "ja"
 title                    : "チアアップえひめ<br/>平成30年7月豪雨復興支援情報"
 title_separator          : "-"
 name                     : "Cheer UP! Ehime"
-description              : "愛媛県に関する平成30年7月豪雨ふ復興支援情報を集約し提供するサイトです。"
+description              : "愛媛県に関する平成30年7月豪雨ふ復興支援情報を集約・整理・提供することで復興に貢献するためのサイトです。"
 url                      : "https://cheerup-ehime.github.io" #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #
-teaser                   : # /assets/images/cheerup_ehime_logo.png
+teaser                   : "/assets/images/cheerUP!_カバー写真.png"
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -60,7 +60,7 @@ facebook:
   username               : cheerup.ehime
   app_id                 :
   publisher              : https://www.facebook.com/cheerup.ehime/
-og_image                 : # /assets/images/cheerUP!_logo.png
+og_image                 : /assets/images/cheerUP!_logo.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -74,6 +74,8 @@ analytics:
   google:
     tracking_id          : UA-122279846-1
 
+google:
+  search_engine_id: "010836227563913331873:nipitudhl24"
 
 # Site Author
 author:
@@ -110,7 +112,12 @@ author:
 
 # Reading Files
 include: ["_pages"]
+# include:
+
 exclude:
+  - "volunteer"
+  - "supporter"
+  - "disaster-area"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -188,7 +195,7 @@ plugins:
   - jemoji
   - jekyll-twitter-plugin
   - jekyll-archives
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
 
 
 
@@ -252,8 +259,8 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar:
-        nav: "submenu"
+      header:
+        image: "/assets/images/cheerUP!_カバー写真.png"
   # _pages
   - scope:
       path: "_pages"
@@ -263,8 +270,8 @@ defaults:
       author_profile: true
       comments: true
       share: true
-      sidebar:
-        nav: "submenu"
+      header:
+        image: "/assets/images/cheerUP!_カバー写真.png"
   # _categories
   - scope:
       path: ""
@@ -294,7 +301,8 @@ defaults:
       comments: true
       author_profile: true
       share: true
-      image: /assets/images/cheerUP!_logo.png
+      header:
+        image: "/assets/images/cheerUP!_カバー写真.png"
       sidebar:
         nav: "submenu"        
   - scope:
@@ -303,9 +311,9 @@ defaults:
     values:
       comments: true
       author_profile: true
+      header:
+        image: "/assets/images/cheerUP!_カバー写真.png"
       share: true
-      sidebar:
-        nav: "submenu"        
   - scope:
       path: ""
       type: archive-taxonomy
@@ -313,8 +321,31 @@ defaults:
       comments: true
       author_profile: true
       share: true
-      image: /assets/images/cheerUP!_logo.png
-      sidebar:
-        nav: "submenu"        
+      header:
+        image: /assets/images/cheerUP!_logo.png
+  # - scope:
+  #     path: "/volunteer/"
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     comments: true
+  #     share: true
+  #     image: /assets/images/cheerUP!_logo.png
+  #     sidebar:
+  #       nav: "volunteer_menu"
+  # - scope:
+  #     path: "/rescuesupply/"
+  #   values:
+  #     sidebar:
+  #       nav: "supporter_menu"
+  # - scope:
+  #     path: "/disaster-area/"
+  #   values:
+  #     sidebar:
+  #       nav: "disaster_area"
+  # - score:
+  #     path: "/local-supporter/"
+
 
 remote_theme: "mmistakes/minimal-mistakes"
