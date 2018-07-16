@@ -1,0 +1,19 @@
+{% comment %} 日付を取得（最終更新日があればそっち） {% endcomment %}
+{% if page.last_modified_at %}
+    {% assign updated = page.last_modified_at | date: "%Y-%m-%d %H:%M" %}
+{% else %}    
+    {% assign updated = page.date | date: "%Y-%m-%d %H:%M" %}
+{% endif %}
+{% comment %} 比較用の日付をセット {% endcomment %}
+{% if page.last_modified_at %}
+    {% assign compare_date = page.last_modified_at | date: "%Y%m%d" %}
+{% else %}    
+    {% assign compare_date = page.date | date: "%Y%m%d" %}
+{% endif %}
+{% assign today_date = "today" | date: "%Y%m%d"  %}
+{% comment %} 今日の日付と最終更新日が同じなら最新扱い。違う（＝古い）なら古い情報扱い {% endcomment %}
+{% if compare_date == today_date %}
+<h2 class="notice--info">更新日：{{ updated }}</h2>
+{% else %}    
+<h2 class="notice--warning">最新更新日：{{ updated }}</h2>
+{% endif %}
