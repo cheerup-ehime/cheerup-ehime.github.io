@@ -42,6 +42,10 @@ tag:
 ....
 ```
 
+## Slackグループ
+
+こちらから参加できます。[https://cheerup-ehime.herokuapp.com/](https://cheerup-ehime.herokuapp.com/)
+
 ## 要望・改善案について
 
 [Issue](https://github.com/cheerup-ehime/cheerup-ehime.github.io/issues)に登録お願いします。
