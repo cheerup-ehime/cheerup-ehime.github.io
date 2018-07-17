@@ -143,6 +143,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - .ipynb_chechkpoints
+  - .vscode
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
@@ -167,7 +169,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..3
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   parse_block_html: true
@@ -270,6 +272,7 @@ defaults:
       author_profile: true
       comments: true
       share: true
+      toc: true
   # _categories
   - scope:
       path: ""
