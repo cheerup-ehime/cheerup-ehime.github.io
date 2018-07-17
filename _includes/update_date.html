@@ -13,7 +13,7 @@
 {% assign today_date = "today" | date: "%Y%m%d"  %}
 {% comment %} 今日の日付と最終更新日が同じなら最新扱い。違う（＝古い）なら古い情報扱い {% endcomment %}
 {% if compare_date == today_date %}
-<h2 class="notice--info">更新日：{{ updated }}</h2>
+<h2 class="notice--info">更新日：{{ updated }} 【この情報は最新です】</h2>
 {% else %}    
-<h2 class="notice--warning">最新更新日：{{ updated }}</h2>
+<h2 class="notice--warning">更新日：{{ updated }} 【この情報は賞味期限が切れている可能性があります！】</h2>
 {% endif %}
