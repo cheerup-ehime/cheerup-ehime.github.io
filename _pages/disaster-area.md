@@ -1,9 +1,12 @@
 ---
 title: "愛媛県内の被災地へのリンク集"
 permalink: /disaster-area/
-date: 2018-07-09 06:23:20
-last_modified_at: 2018-07-12 00:24:28
+date: 2018-07-09 06:23:20 +0900
+last_modified_at: 2018-07-12 00:24:28 +0900
 ---
+
+{% include toc %}
+
 ## 各自治体のサイト
 ### 愛媛県
 - [えひめの防災・危機管理](http://ehime.force.com/)
