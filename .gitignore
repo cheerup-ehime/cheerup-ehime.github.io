@@ -5,4 +5,8 @@ _site/
 .jekyll-metadata
 .DS_Store
 docs/
+.ipynb_checkpoints/
+.vscode/
+.test/
+*.log
 
