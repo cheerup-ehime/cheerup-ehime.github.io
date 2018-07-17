@@ -2,13 +2,13 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-18 03:09:41
+last_modified_at: 2018-07-18 05:44:13
 ---
 {% include toc %}
 
 ## ボランティア状況
 
-愛媛県内の[ボランティア参加状況](/volunteer/chart/)を掲載しています。
+愛媛県内の[ボランティア参加状況](/volunteer/aggregation/)を掲載しています。
 
 ## ボランティア希望者の方へ
 ### 【緊急告知】※7/14.15.16の連休期間
