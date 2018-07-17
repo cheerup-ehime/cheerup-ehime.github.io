@@ -81,7 +81,7 @@ google:
 author:
   name             : "Cheer UP! Ehime"
   avatar           : "/assets/images/cheerUP!_logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Site for Ehime"
+  bio              : "Suppoting for Ehime"
   location         : "Ehime"
   email            : "cheerup.ehime@gmail.com"
   uri              :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         : "cheerup.ehime"
   foursquare       : 
-  github           :
+  github           : "cheerup-ehime"
   gitlab           :
   google_plus      :
   keybase          :
@@ -103,7 +103,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "EhimeCheerup"
   vine             :
   weibo            :
   xing             :
@@ -113,6 +113,8 @@ author:
 # Reading Files
 include: ["_pages"]
 # include:
+  # - '_pages'
+  # - '_posts'
 
 exclude:
   - "volunteer"
@@ -181,7 +183,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Tokyo" # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 breadcrumbs: false
 # breadcrumb_home_label : "Home"
 # breadcrumb_separator  : "/"
@@ -259,8 +261,6 @@ defaults:
       comments: true
       share: true
       related: true
-      header:
-        image: "/assets/images/cheerUP!_カバー写真.png"
   # _pages
   - scope:
       path: "_pages"
@@ -270,8 +270,6 @@ defaults:
       author_profile: true
       comments: true
       share: true
-      header:
-        image: "/assets/images/cheerUP!_カバー写真.png"
   # _categories
   - scope:
       path: ""
@@ -301,8 +299,6 @@ defaults:
       comments: true
       author_profile: true
       share: true
-      header:
-        image: "/assets/images/cheerUP!_カバー写真.png"
       sidebar:
         nav: "submenu"        
   - scope:
@@ -311,8 +307,6 @@ defaults:
     values:
       comments: true
       author_profile: true
-      header:
-        image: "/assets/images/cheerUP!_カバー写真.png"
       share: true
   - scope:
       path: ""
@@ -321,8 +315,6 @@ defaults:
       comments: true
       author_profile: true
       share: true
-      header:
-        image: /assets/images/cheerUP!_logo.png
   # - scope:
   #     path: "/volunteer/"
   #     type: pages
