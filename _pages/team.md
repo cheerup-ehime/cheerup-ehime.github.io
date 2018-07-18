@@ -60,7 +60,7 @@ date: 2018-07-17 09:49:16 +0900
 
 詳しいプロフィールは[こちら](https://daichancorgi.github.io/minchizu-lp/minchizu/2018/07/15/profile-minchizu.html)
 
-## 山田　敬宏（やまだ　たかひろ）
+## 山田 敬宏（やまだ　たかひろ）
 
 ### プロフィール
 
