@@ -64,7 +64,7 @@ date: 2018-07-17 09:49:16 +0900
 
 ### プロフィール
 
-![yamada](/assets/images/profile/yamada1.jpg)
+![yamada](/assets/images/profile/yamada.jpg)
 
 - [Facebook](https://www.facebook.com/ripple.yamada)
 
