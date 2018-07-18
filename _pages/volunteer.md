@@ -2,7 +2,7 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-18 09:44:13
+last_modified_at: 2018-07-19 08:46:23
 ---
 {% include toc %}
 
@@ -140,7 +140,7 @@ last_modified_at: 2018-07-18 09:44:13
 ---
 
 ### ★【大洲市】 ※県外受入中
-- **四国４県と九州等近県のボランティア限定**
+- **全国から受け入れ**
 - [ボランティア情報ページ](http://www.ozushakyo.jp/index.php)
 - [Facebook](https://www.facebook.com/ozusvc/)
 - ボランティアを募集開始（10日）
