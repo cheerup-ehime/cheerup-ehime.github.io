@@ -2,13 +2,13 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-19 08:46:23
+last_modified_at: 2018-07-19 11:05:54 +0900
 ---
 {% include toc %}
 
 ## ボランティア状況
 
-愛媛県内の[ボランティア参加状況](/volunteer/aggregation/)を掲載しています。
+[こちら](/volunteer/aggregation/)に、愛媛県内の[災害VC・社協のボランティア参加者数の集計とグラフ](/volunteer/aggregation/)を掲載しています。
 
 #### 【災害ボランティア参加の流れ】
 **※原則、「お住まいの地域にある社会福祉協議会」で[「ボランティア保険」](https://www.saigaivc.com/volunteers/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E4%BF%9D%E9%99%BA/)に加入を済ませてから、現地、災害ボランティアセンタ
