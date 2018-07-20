@@ -2,7 +2,7 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-19 11:05:54 +0900
+last_modified_at: 2018-07-20 09:12:14 +0900
 ---
 {% include toc %}
 
@@ -98,8 +98,8 @@ last_modified_at: 2018-07-19 11:05:54 +0900
 
 ---
 
-### 【今治市】
-- **市内在住ボランティア希望者限定**　
+### 【今治市】 ※県外受入中
+- **７月２３日（月）まで全国から募集予定**
 - [ボランティア情報ページ](http://www.imabari-shakyo.jp/volunteer/saigai2.html)
 - [Facebook](https://www.facebook.com/imabarisvc/)
 - ボランティアを募集開始（10日）
@@ -200,7 +200,11 @@ last_modified_at: 2018-07-19 11:05:54 +0900
 ---
 
 ### 【新居浜市】
-- **ボランティアバスの受付は停止中**
+- **ボランティアバスを運行（宇和島市で活動予定）**
+[バス運行PDF](https://www.n-syakyo.jp/contents/pdf/voluntterbus.pdf)
+#### 運行日 ------------
+７月２１日、２２日、２８日、２９日
+- １日につき４０人（予約制・２１日は予約締切）
 #### 問合先 ------------
 新居浜市社会福祉協議会<br>0897-32-8129
 
