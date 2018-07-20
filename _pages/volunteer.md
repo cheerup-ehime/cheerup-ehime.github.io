@@ -59,12 +59,12 @@ last_modified_at: 2018-07-19 11:05:54 +0900
 | 宇和島市 | 災害VC           | [宇和島市社会福祉協議会](http://www.uwajima-shakyo.or.jp/)<br/>[宇和島市災害ボランティアセンターfacebook](https://www.facebook.com/uwajimasvc/)           | ◎      | 全国からボランティアのみなさんを募集します         |
 | 大洲市   | 災害VC           | [大洲市社会福祉協議会](http://www.ozushakyo.jp/index.php)<br/> [大洲市社会福祉協議会災害ボランティアセンターfacebook](https://www.facebook.com/ozusvc/) | ◎      | 愛媛県及び近隣県（徳島・香川・大分・宮崎）在住の方 |
 | 西予市   | 災害VC           | [西予市社会福祉協議会](http://seiyo-syakyo.jp/)<br/> [西予市災害救援ボランティアセンター（facebook）](https://www.facebook.com/seiyosvc/)       | ◎      | 市外からのボランティアのみなさんも募集しています   |
-| 鬼北町   | 災害VC           | [鬼北町社会福祉協議会](http://kihoku-syakyo.or.jp/)                                                      | ○      | 鬼北町に在住の方                                   |
+| 鬼北町   | 災害VC           | [鬼北町社会福祉協議会](http://kihoku-syakyo.or.jp/)                                                      |       | 鬼北町に在住の方,あらたな支援ニーズが出た場合に、登録いただいたボランティアにお声掛けをします 。                                 |
 | 松山市   | （社協VCで支援） | [松山市社会福祉協議会](http://www.matsuyama-wel.jp/)<br/> [松山市社会福祉協議会（facebook）](https://www.facebook.com/matsuyama.wel/)                     | ○      | 松山市に在住の方                                   |
 | 上島町   | （社協VCで支援） | [上島町社会福祉協議会](http://www.kamijima-shakyo.or.jp/)                                                      |       | 7/17 17:30閉鎖                                   |
 | 八幡浜市 | （社協VCで支援） | [八幡浜市社会福祉協議会](http://www.yawatahamashi-syakyo.jp/)<br/>[八幡浜社会福祉協議会（facebook）](https://www.facebook.com/ywthm.syakyo/)                                                    | ○      | 八幡浜市に在住の方                                 |
 | 松野町   | 災害VC           | [松野町社会福祉協議会](http://matsuno-syakyo.or.jp/)                                                      | ○      | 松野町に在住の方                                   |
-| 砥部町   | （社協VCで支援） | [砥部町社会福祉協議会](http://www.tobe-shakyo.jp/)                                                      |        |                                                    |
+| 砥部町   | （社協VCで支援） | [砥部町社会福祉協議会](http://www.tobe-shakyo.jp/)                                                      | ○       |                                                    |
 | 愛南町   | （社協VCで支援） | [愛南町社会福祉協議会](http://www.ainan-shakyo.or.jp/)                                                      |        |                                                    |
 
 ## 愛媛県内の災害ボランティア状況詳細
