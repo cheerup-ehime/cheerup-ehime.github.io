@@ -2,7 +2,7 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-20 09:12:14 +0900
+last_modified_at: 2018-07-20 15:00:14 +0900
 ---
 {% include toc %}
 
@@ -239,10 +239,4 @@ last_modified_at: 2018-07-20 09:12:14 +0900
 
 ---
 
-### 【八幡浜市】
-- **市内在住ボランティア希望者限定**
-- [ボランティア情報ページ](http://www.yawatahamashi-syakyo.jp/gouusaigai1.html)
-- [Facebook](https://www.facebook.com/ywthm.syakyo/)
-- 通常のボランティアセンターで募集中
-#### 問合先 ------------
-八幡浜市社会福祉協議会<br>0894-23-2940
+### 【八幡浜市】 ※21日終了
