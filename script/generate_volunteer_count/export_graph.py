@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[33]:
+# In[32]:
 
 
 import pandas as pd
@@ -22,7 +22,7 @@ import gspread as gs
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-# In[34]:
+# In[33]:
 
 
 def create_google_client(path):
@@ -33,7 +33,7 @@ def create_google_client(path):
     return client
 
 
-# In[35]:
+# In[34]:
 
 
 
@@ -86,18 +86,40 @@ fig = ax.get_figure()
 for tick in ax.get_xticklabels():
     tick.set_rotation(45)
 plt.show() 
-fig.savefig('assets/images/volunteer_count.png')
+fig.savefig('../../assets/images/volunteer_count.png')
 
 
 
 
-# In[43]:
+# In[37]:
 
 
 get_ipython().system('pip install tabulate')
 from tabulate import tabulate
 
-df.Date.strftime('%m/%d')
+df_table = df.set_index('Date')
+df_table.index = df_table.index.strftime('%m/%d')
+df_table.index.name = '日付'
 
-print(tabulate(df, tablefmt="markdown", headers="keys", showindex=False))
+table = tabulate(df_table, tablefmt="pipe", headers="keys", showindex=True)
+
+
+# In[38]:
+
+
+from datetime import datetime as dt
+with open('template.md') as f:
+    template = f.read()
+    
+    month_day = dt.now().strftime('%m/%d')
+    timestamp = dt.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    report = template.format(month_day=month_day, timestamp=timestamp, table=table)
+    
+    
+with open('../../_pages/volunteer_aggregation.md', 'w') as f:
+    f.write(report)
+    
+
+        
 
