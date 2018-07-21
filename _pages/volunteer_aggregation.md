@@ -4,11 +4,20 @@ description: 松山市社協、八幡浜市社協、愛媛災害支援センタ�
 permalink: /volunteer/aggregation/
 date: 2018-07-18 05:59:06 +0900
 last_modified_at: 2018-07-20 18:45:39 +0900
+sidebar:
+  nav: volunteer_menu
+
 ---
-【7/20分のデータを更新】
+## 【7/20分のデータを更新】
 
 各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。
 Google SpreadSheetによるデータは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)です。 [^1]
+
+## 傾向
+
+宇和島と西予は大幅に人数が減りました（50名以上）宇和島は先日県外へと対象を広げる発表をして、前日の7/19には80名以上の増がありましたがまた徐々に人数が減ってきています。
+
+逆に松山市がボランティア数が増えています。松山市は特別災害は道路が開通された結果として、新しい支援ニーズが生まれているため、
 
 ![愛媛県内ボランティア数（日次）](/assets/images/volunteer_count.png)
 

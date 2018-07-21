@@ -2,6 +2,8 @@
 title: サイトについて
 permalink: /about/
 date: 2018-07-17 11:44:02
+sidebar:
+    nav: about_menu
 ---
 ## 本サイトについて
 

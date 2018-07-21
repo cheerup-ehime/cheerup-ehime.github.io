@@ -3,6 +3,9 @@ title: 家電製品の特別修理対応
 permalink: /repair/
 date: 2018-07-13 08:44:00 +0900
 modified: 2018-07-13 09:00:00 +0900
+sidebar:
+  nav: disaster-area
+
 ---
 
 {% include toc %}

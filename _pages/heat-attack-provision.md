@@ -3,7 +3,12 @@ title: ボランティア時の熱中症対策
 description: 猛暑の中でのボランティア前・現場・後の熱中症対策と対応チャートを紹介しています。ぜひご覧ください！
 image: /assets/images/heat_attack_provision.png
 permalink: /heat-attack-provision/
+sidebar:
+  nav: volunteer_menu
 ---
+
+
+
 ![https://cheerup-ehime.github.io/assets/images/heat_attack_provision.png](/assets/images/heat_attack_provision.png)
 
 ![https://cheerup-ehime.github.io/assets/images/heat-attack-chart.png](/assets/images/heat-attack-chart.png)

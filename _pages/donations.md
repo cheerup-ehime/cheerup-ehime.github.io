@@ -3,6 +3,8 @@ title: 寄付金・義援金へのリンク集
 permalink: /donations/
 date: 2018-07-10 00:00:00 +0900
 last_modified_at: 2018-07-17 15:00:07 +0900
+sidebar:
+  nav: supporter_menu
 ---
 {% include toc %}
 

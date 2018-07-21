@@ -2,49 +2,89 @@
 main:
   - title: "About"
     url: /about/
-  - title: "ボランティア活動"
+  - title: "ボランティアに行く"
     url: /volunteer/
-  - title: "熱中症対策"
-    url: /heat-attack-provision/
-  - title: "救援物資"
+  - title: "後方支援する"
     url: /rescuesupply/
-  - title: "現地への移動"
-    url: /routes/
-  - title: "被災地の情報"
+  - title: "被災地を知る"
     url: /disaster-area/
-  - title: "寄付・義援金"
-    url: /donations/
   - title: "投稿一覧"
     url: /archive/
 
-submenu:
-  - title: "ボランティア活動"
+about_menu:
+  - title: 本サイトについて
+    url: /about/
+  - title: チームについて
+    url: /about/team/
+
+disaster-area:
+  - title: "被災地情報"
     children:
-      - title: ボランティアセンター
-        url: /volunteer/
-      - title: 熱中症対策
-        url: /heat-attack-provision/
-      - title: ボランティア募集
-        url: /categories/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2/
-      - title: ボランティア支援
-        url: /volunteer_backup/
-  - title: "救援物資"
+    - title: "自治体情報"
+      url: /disaster-area/
+    - title: "家電製品特別修理対応"
+      url: /repair/
+    - title: "温泉・銭湯マップ"
+      url: /hotspringmap/
+
+local_supporter:
+  - title: "復旧を手伝って欲しい"
     children:
-      - title: 救援物資がほしい
-        url: /categories/%E6%95%91%E6%8F%B4%E7%89%A9%E8%B3%87%E8%A6%81%E6%9C%9B
-      - title: 救援物資を集めたい
-        url: /categories/%E6%95%91%E6%8F%B4%E7%89%A9%E8%B3%87/
-  - title: "現地への移動"
+      - title: "現地ニーズの登録"
+        url:
+      - title: "現地の最新情報"
+        url: 
+
+volunteer_menu:
+  - title: "ボランティア情報"
     children:
-      - title: "交通情報"
-        url: /categories/%E4%BA%A4%E9%80%9A%E6%83%85%E5%A0%B1
-  - title: "被災地者情報"
+    - title: "最新ボランティア募集情報"
+      url: /volunteer/
+    - title: "ボランティア数の推移動向"
+      url: /volunteer/aggregation/
+    - title: "ボランティアのための支援情報"
+      url: /volunteer_backup/
+    - title: "熱中症対策"
+      url: /heat-attack-provision/
+    - title: "熱中症対策（イラスト版）"
+      url: /volunteer/heatstroke-illustrated/
+
+supporter_menu:
+  - title: "後方支援情報"
     children:
-      - title: "被災地情報"
-        url: /disaster-area/
-      - title: "家電製品特別修理対応"
-        url: /repair/
-      - title: "温泉・銭湯マップ"
-        url: /hotspringmap/
-  - title: "寄付・義援金"
-    url: /donations/
+    - title: "救援物資"
+      url: /rescuesupply/
+    - title: "寄付・義援金"
+      url: /donations/
+
+# submenu:
+#   - title: "ボランティア活動"
+#     children:
+#       - title: ボランティアセンター
+#         url: /volunteer/
+#       - title: 熱中症対策
+#         url: /heat-attack-provision/
+#       - title: ボランティア募集
+#         url: /categories/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2/
+#       - title: ボランティア支援
+#         url: /voluntee
+#           - title: "救援物資"
+#     children:
+#       - title: 救援物資がほしい
+#         url: /categories/%E6%95%91%E6%8F%B4%E7%89%A9%E8%B3%87%E8%A6%81%E6%9C%9B
+#       - title: 救援物資を集めたい
+#         url: /categories/%E6%95%91%E6%8F%B4%E7%89%A9%E8%B3%87/
+#   - title: "現地への移動"
+#     children:
+#       - title: "交通情報"
+#         url: /categories/%E4%BA%A4%E9%80%9A%E6%83%85%E5%A0%B1
+#   - title: "被災地者情報"
+#     children:
+#       - title: "被災地情報"
+#         url: /disaster-area/
+#       - title: "家電製品特別修理対応"
+#         url: /repair/
+#       - title: "温泉・銭湯マップ"
+#         url: /hotspringmap/
+#   - title: "寄付・義援金"
+#     url: /donations/

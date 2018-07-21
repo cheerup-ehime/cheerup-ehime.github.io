@@ -2,6 +2,8 @@
 title: メンバー紹介
 permalink: /about/team/
 date: 2018-07-17 09:49:16 +0900
+sidebar:
+    nav: about_menu
 ---
 {% include toc %}
 

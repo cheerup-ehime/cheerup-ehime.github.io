@@ -1,6 +1,9 @@
 ---
 title: 愛媛県の温泉・銭湯マップ
 permalink: /hotspringmap/
+sidebar:
+  nav: disaster-area
+
 ---
 
 [銭湯・奥の細道　（東北の銭湯巡り）](http://1010meguri.blog.fc2.com/blog-entry-198.html)さんが公開している。愛媛県内の温泉・銭湯マップです。入浴の際にお使いください。

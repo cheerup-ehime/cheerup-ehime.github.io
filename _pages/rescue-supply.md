@@ -2,6 +2,9 @@
 title: 救援物資を送りたい
 permalink: /rescuesupply/
 last_modified_at: 2018-07-15 17:04 +0900
+sidebar:
+    nav: supporter_menu
+
 ---
 {% include toc %}
 
