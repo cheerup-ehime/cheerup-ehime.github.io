@@ -2,40 +2,25 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-20 15:00:14 +0900
+last_modified_at: 2018-07-22 11:50:14 +0900
 sidebar:
   nav: volunteer_menu
 ---
 {% include toc %}
 
-## ボランティア状況
-
-[こちら](/volunteer/aggregation/)に、愛媛県内の[災害VC・社協のボランティア参加者数の集計とグラフ](/volunteer/aggregation/)を掲載しています。
+## 愛媛県内災害ボランティア状況
+### 【ボランティア参加者数の集計】
+愛媛県内の[災害VC・社協のボランティア参加者数の集計とグラフ](/volunteer/aggregation/)を掲載しています。<br>
+ボランティア先の決定にご利用ください。<br>
+**宇和島市吉田町・三間町へのボランティアが不足しております。** <br>是非とも少しだけ足を伸ばして、ご参加頂けたらと思います。
+<br><br>
 
 #### 【災害ボランティア参加の流れ】
-**※原則、「お住まいの地域にある社会福祉協議会」で[「ボランティア保険」](https://www.saigaivc.com/volunteers/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E4%BF%9D%E9%99%BA/)に加入を済ませてから、現地、災害ボランティアセンタ
-ーの受入範囲、注意事項など確認し、ボランティアにご参加ください。**
 - [写真で見る災害ボランティアの流れ](http://www.ehime-shakyo.or.jp/chiiki/saigai/index.htm)
 <br><br>
 #### 【心構え】
 - 現地に向かう道が渋滞しております。可能な限り乗り合わせの上、現地に向かってください。
 - 食費・交通費・宿泊費は自己負担
-<br><br>
-#### 【準備物・実際現地で有用だったもの】　※スタッフ経験から
-- 長靴（できるだけ長めの物）
-- ナイロン生地の長ズボン（ジャージとかだと土汚れが落ちません）
-- 冷感コンプレッションインナー（長袖の身体にぴったりくっつくインナー）
-- 厚手で長めのゴム手袋（軍手不可、熱くてもメッシュ不可）
-- 防じんマスク（立体型の方が呼吸が楽です）
-- 防じんめがね（コンタクトの人が必須です）
-- 熱中症対策グッズ（現地は気温が35℃近くまで上がります。塩飴など）
-- デオドラントボディシート（休憩の度に拭いてもいいくらい）
-- お弁当入れる汚れてもいい保冷バック
-- 飲食物（スポーツドリンクなら2倍に薄める・後半甘いのが苦痛になってきます）
-- タオル（作業中用と、帰りに拭く用など複数枚）
-- 保険証のコピー
-- ヘルメット（もしくは帽子・タオル）
-- 角型スコップ
 <br><br>
 #### 【作業着・作業内容・道具について】
 - [水害ボランティア作業マニュアルPDF](https://www.saigaivc.com/app/download/3819477115/suigai-manual.pdf)
@@ -44,35 +29,31 @@ sidebar:
 - [ボランティア保険について](https://www.saigaivc.com/volunteers/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E4%BF%9D%E9%99%BA/)
 <br><br>
 #### 【「災害派遣車両証明書」発行について】
-平成30年7月豪雨に対する、「あらかじめ被災市町村の災害ボランティアセンター等による確認を受けた災害ボランティア活動」に使用する車両に対して、事前にお近くの行政窓口に申請することにより、「災害派遣等従事車両証明書」が発行され、高速道路等有料道路の往復の通行料金について無料措置が講じられます。<br>
-詳しい手続きについては下リンク先ページをご覧ください。
+平成30年7月豪雨に対する災害ボランティア活動に使用する車両に対して、高速道路等有料道路の往復の通行料金について無料措置が講じられます。<br>
+手続き方法を下リンク先ページで図解しております。
 - [「災害派遣車両証明書」発行について](/volunteer_backup.md)
 <br><br>
 #### 【破傷風などの予防接種について】
 任意接種は希望者各自が医療機関で受けます。接種費用は、全額自己負担となりますが、医療機関ごとに金額が異なりますので、直接医療機関へお問い合わせください。
-<br><br><br><br>
-## 愛媛県内災害ボランティア状況
-[愛媛社会福祉協議会](http://www.ehime-shakyo.or.jp/chiiki/saigai/saigai_volunteer180708.html)でボランティア受け入れの準備をしています（全国的なボランティアの動きは[全社協のボランティア情報](https://www.saigaivc.com/)から。）
+
 
 <br><br><br><br>
 ### 愛媛県災害ボランティア 状況一覧（7/17版）
 
-（[全社協の情報](https://www.saigaivc.com/)を元に独自に作成）
-
-| 自治体   | 対象             | 情報サイトURL                                                             | VC状態 | 備考                                               |
-|----------|------------------|---------------------------------------------------------------------------|--------|----------------------------------------------------|
-| 愛媛県   |                  | [愛媛県社会福祉協議会](http://www.ehime-shakyo.or.jp/chiiki/saigai/saigai_volunteer180708.html) <br/>[愛媛県災害ボランティアセンター特設サイト](https://ehimesvc.jp/)                                  |        | 災害VC（社協除く）の情報を集約発信中                                                   |
-| 今治市   | 災害VC| [今治市社会福祉協議会](http://www.imabari-shakyo.jp/)<br/> [今治市災害ボランティアセンターfacebook](https://www.facebook.com/imabarisvc/)               | ○      |                                                    |
-| 宇和島市 | 災害VC           | [宇和島市社会福祉協議会](http://www.uwajima-shakyo.or.jp/)<br/>[宇和島市災害ボランティアセンターfacebook](https://www.facebook.com/uwajimasvc/)           | ◎      | 全国からボランティアのみなさんを募集します         |
-| 大洲市   | 災害VC           | [大洲市社会福祉協議会](http://www.ozushakyo.jp/index.php)<br/> [大洲市社会福祉協議会災害ボランティアセンターfacebook](https://www.facebook.com/ozusvc/) | ◎      | 愛媛県及び近隣県（徳島・香川・大分・宮崎）在住の方 |
-| 西予市   | 災害VC           | [西予市社会福祉協議会](http://seiyo-syakyo.jp/)<br/> [西予市災害救援ボランティアセンター（facebook）](https://www.facebook.com/seiyosvc/)       | ◎      | 市外からのボランティアのみなさんも募集しています   |
-| 鬼北町   | 災害VC           | [鬼北町社会福祉協議会](http://kihoku-syakyo.or.jp/)                                                      |       | 鬼北町に在住の方,あらたな支援ニーズが出た場合に、登録いただいたボランティアにお声掛けをします 。                                 |
-| 松山市   | （社協VCで支援） | [松山市社会福祉協議会](http://www.matsuyama-wel.jp/)<br/> [松山市社会福祉協議会（facebook）](https://www.facebook.com/matsuyama.wel/)                     | ○      | 松山市に在住の方                                   |
-| 上島町   | （社協VCで支援） | [上島町社会福祉協議会](http://www.kamijima-shakyo.or.jp/)                                                      |       | 7/17 17:30閉鎖                                   |
-| 八幡浜市 | （社協VCで支援） | [八幡浜市社会福祉協議会](http://www.yawatahamashi-syakyo.jp/)<br/>[八幡浜社会福祉協議会（facebook）](https://www.facebook.com/ywthm.syakyo/)                                                    | ○      | 八幡浜市に在住の方                                 |
-| 松野町   | 災害VC           | [松野町社会福祉協議会](http://matsuno-syakyo.or.jp/)                                                      | ○      | 松野町に在住の方                                   |
-| 砥部町   | （社協VCで支援） | [砥部町社会福祉協議会](http://www.tobe-shakyo.jp/)                                                      | ○       |                                                    |
-| 愛南町   | （社協VCで支援） | [愛南町社会福祉協議会](http://www.ainan-shakyo.or.jp/)                                                      |        |                                                    |
+| 自治体   |情報サイトURL                                                             |
+|----------|--------------------------------------------------------------------------|
+| 愛媛県   |[愛媛県社会福祉協議会](http://www.ehime-shakyo.or.jp/chiiki/saigai/saigai_volunteer180708.html) <br/>[愛媛県災害ボランティアセンター特設サイト](https://ehimesvc.jp/)|
+| 今治市   |[今治市社会福祉協議会](http://www.imabari-shakyo.jp/)<br/> [Facebook](https://www.facebook.com/imabarisvc/)|
+| 宇和島市 |[宇和島市社会福祉協議会](http://www.uwajima-shakyo.or.jp/)<br/>[Facebook](https://www.facebook.com/uwajimasvc/)|
+| 大洲市   |[大洲市社会福祉協議会](http://www.ozushakyo.jp/index.php)<br/> [Facebookk](https://www.facebook.com/ozusvc/)|
+| 西予市   |[西予市社会福祉協議会](http://seiyo-syakyo.jp/)<br/> [Facebook](https://www.facebook.com/seiyosvc/)|
+| 鬼北町   |[鬼北町社会福祉協議会](http://kihoku-syakyo.or.jp/)|
+| 松山市   |[松山市社会福祉協議会](http://www.matsuyama-wel.jp/)<br/> [Facebook](https://www.facebook.com/matsuyama.wel/)|
+| 上島町   |[上島町社会福祉協議会](http://www.kamijima-shakyo.or.jp/)|
+| 八幡浜市 |[八幡浜市社会福祉協議会](http://www.yawatahamashi-syakyo.jp/)<br/>[Facebook](https://www.facebook.com/ywthm.syakyo/)|
+| 松野町   |[松野町社会福祉協議会](http://matsuno-syakyo.or.jp/)|
+| 砥部町   |[砥部町社会福祉協議会](http://www.tobe-shakyo.jp/)|
+| 愛南町   |[愛南町社会福祉協議会](http://www.ainan-shakyo.or.jp/)|
 
 ## 愛媛県内の災害ボランティア状況詳細
 
@@ -89,9 +70,6 @@ sidebar:
 - [災害ボランティアバス実施要綱.pdf](http://www.shakyo.or.jp/hp/news/download.php?s=1487&a=18167)
 #### 日程 ------------
 7/21（土）22（日）
-#### 募集期間 ------------
-7/18もしくは先着順で定員に達するまで<br>
-※申込数が10名以下の場合は運行を中止します。
 #### 募集方法 ------------
 参加を希望される方は、別紙参加申込書に必要事項を記入の上、最寄りの社会福祉協議会に提出してください。<br>
 ※申込用紙などは[ボランティア情報ページ](http://www.shakyo.or.jp/hp/index.php?s=1487)でダウンロードできます。<br>
@@ -106,7 +84,7 @@ sidebar:
 ---
 
 ### 【今治市】 ※県外受入中
-- **７月２３日（月）まで全国から募集予定**
+- **7月23日（月）まで全国から募集予定**
 - [ボランティア情報ページ](http://www.imabari-shakyo.jp/volunteer/saigai2.html)
 - [Facebook](https://www.facebook.com/imabarisvc/)
 - ボランティアを募集開始（10日）
@@ -170,16 +148,22 @@ sidebar:
 ---
 
 ### 【鬼北町】
-- **町内在住ボランティア希望者限定**
+- **現段階で必要な作業がない状況　町内在住ボランティア希望者受け付けは継続**
 - [ボランティア情報ページ](http://kihoku-syakyo.lekumo.biz/news/2018/07/post-2a7c.html)
 - ボランティアを募集開始（10日）
-#### 時間 ----------
-受付時間　08:30 - 17:15　※当日受付は10:00まで<br>
-活動時間　09:00 - 16:00
-#### 集合場所 ------------
-鬼北町社会福祉協議会　[【GoogleMap】](https://goo.gl/maps/f1eYJqcsbP12)
 #### 問合先 ------------
 鬼北町災害ボランティアセンター<br>0895-45-3709
+
+---
+
+### 【四国中央市】
+- **ボランティアバスを運行（大洲市で活動予定）**
+[ボランティアバス運行について](http://www.volun.jp/news/notice/entry-498.html)
+#### 運行日 ------------
+7月22日、29日
+- 1日につき40人（予約制・22日は予約締切）
+#### 問合先 ------------
+四国中央市ボランティア市民活動センター<br>0896-28-6039
 
 ---
 
@@ -210,8 +194,8 @@ sidebar:
 - **ボランティアバスを運行（宇和島市で活動予定）**
 [バス運行PDF](https://www.n-syakyo.jp/contents/pdf/voluntterbus.pdf)
 #### 運行日 ------------
-７月２１日、２２日、２８日、２９日
-- １日につき４０人（予約制・２１日は予約締切）
+7月21日、22日、28日、29日
+- 1日につき40人（予約制・21日は予約締切）
 #### 問合先 ------------
 新居浜市社会福祉協議会<br>0897-32-8129
 
