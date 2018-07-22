@@ -8,12 +8,18 @@ sidebar:
   nav: volunteer_menu
 
 ---
-## 【7/20分のデータを更新】
+## 【{month_day}分のデータを更新】
 
 各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。
 Google SpreadSheetによるデータは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)です。 [^1]
 
 ## 傾向
+
+
+暑い日が続きますが、ボランティア時に気をつける[熱中症対策のイラストリーフレット](https://cheerup-ehime.github.io/volunteer/heatstroke-illustrated/)を作成しましたので、是非ご活用ください。（https://cheerup-ehime.github.io/volunteer/heatstroke-illustrated/）
+
+**熱射病対応チャートは要チェックです！！**
+
 
 ![愛媛県内ボランティア数（日次）](/assets/images/volunteer_count.png)
 
