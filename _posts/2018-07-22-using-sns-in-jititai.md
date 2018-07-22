@@ -7,7 +7,7 @@ tag:
     - 自治体
     - Twitter
     - 中国新聞
-date: 2018-07-22 13:39:05 +0900
+date: 2018-07-22 19:14:59 +0900
 ---
 
 ![CheerUP Ehime Twitter](https://i.gyazo.com/145e8ad01d1b99347efdb2be780ee765.png)
