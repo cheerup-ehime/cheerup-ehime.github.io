@@ -2,7 +2,7 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-22 11:50:14 +0900
+last_modified_at: 2018-07-23 11:53:14 +0900
 sidebar:
   nav: volunteer_menu
 ---
