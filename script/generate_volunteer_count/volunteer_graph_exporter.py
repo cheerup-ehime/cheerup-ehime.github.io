@@ -66,7 +66,7 @@ def generate_graph(df):
                             kind='bar', 
                             figsize=(16,10), 
                             alpha=0.5,
-                            title="愛媛県ボランティア数（7月）", 
+                            title="愛媛県ボランティア数動向（7月）", 
                             subplots=False, 
                             stacked=True,
                             fontsize=20)
@@ -79,9 +79,36 @@ def generate_graph(df):
         tick.set_rotation(45)
     # plt.show() 
     fig.savefig('./assets/images/volunteer_count.png')
+    return df2
 
+def generage_week_graph(df):
+    df.replace('', 0, inplace=True)
+    df.fillna(0, inplace=True)
 
+    df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
+    df2 = df.set_index('Date')
+    df2.index.names = ['Date']
 
+    # df2.index = df2.index.strftime("%m/%d")
+    df2 = df2.applymap(int)
+    df2
+    df_w = df2.resample('W').sum()
+    ax = df_w.T.plot(kind='bar',
+                        figsize=(16,10), 
+                        alpha=0.5,
+                        title="愛媛県ボランティア数動向（7月週別）", 
+                        subplots=False, 
+                        stacked=False,
+                        fontsize=20)          
+    plt.xlabel("自治体", fontsize="18")
+    plt.ylabel("人数", fontsize="18")
+    plt.legend(fontsize="18")
+    fig = ax.get_figure()
+    for tick in ax.get_xticklabels():
+        tick.set_rotation(45)
+    plt.legend(df_w.index.strftime("%m/%d週"),
+                    fontsize=18)
+    fig.savefig('./assets/images/volunteer_count_week.png')
 
 # In[37]:
 
@@ -115,6 +142,7 @@ def write_article(table):
 if __name__ == '__main__':
     df = load_data_from_gspread()
     generate_graph(df)
+    generage_week_graph(df)
     table = generate_table(df)
     write_article(table)
 
