@@ -63,25 +63,25 @@ posts-menu:
     - title: "カテゴリー"
       children:
         - title: "お知らせ"
-          url: /categories/お知らせ/
+          url: /categories/#お知らせ
         - title: "ボランティア"
-          url: /categories/ボランティア/
+          url: /categories/#ボランティア
         - title: "救援物資"
-          url: /categories/救援物資/
+          url: /categories/#救援物資
         - title: "被災地情報"
-          url: /categories/被災地情報/
+          url: /categories/#被災地情報
         - title: "被災地者向け情報"
-          url: /categories/被災地情報/
+          url: /categories/#被災者向け情報
         - title: "交通情報"
-          url: /categories/交通情報/
+          url: /categories/#交通情報
         - title: "ツール"
-          url: /categories/ツール/
+          url: /categories/#ツール
         - title: "現場レポート"
-          url: /categories/現場レポート/
+          url: /categories/#現場レポート
         - title: "お役立ち"
-          url: /categories/お役立ち/
+          url: /categories/#お役立ち
         - title: "その他"
-          url: /categories/その他/
+          url: /categories/#その他
         
 
       
