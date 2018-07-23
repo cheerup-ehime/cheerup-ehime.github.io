@@ -223,10 +223,10 @@ whitelist:
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 
 # https://github.com/jekyll/jekyll-archives
@@ -263,6 +263,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: posts-menu
   # _pages
   - scope:
       path: "_pages"
@@ -283,7 +285,7 @@ defaults:
       comments: true
       share: true
       sidebar:
-        nav: "submenu"
+        nav: posts-menu
   # _categories
   - scope:
       path: ""
@@ -294,7 +296,7 @@ defaults:
       comments: true
       share: true
       sidebar:
-        nav: "submenu"        
+        nav: posts-menu
   - scope:
       path: ""
       type: home
@@ -311,6 +313,8 @@ defaults:
       comments: true
       author_profile: false
       share: true
+      sidebar:
+        nav: posts-menu        
   - scope:
       path: ""
       type: archive-taxonomy
@@ -318,7 +322,10 @@ defaults:
       comments: true
       author_profile: false
       share: true
-  # - scope:
+      sidebar:
+        nav: posts-menu
+
+      # - scope:
   #     path: "/volunteer/"
   #     type: pages
   #   values:
