@@ -124,6 +124,20 @@ sidebar:
 
 ---
 
+### ★【宇和島市吉田町】※活動中
+- **NPO法人 ユナイテッド・アース**
+- [ボランティア情報ページ](https://uwajima.united-earth.jp/volunteer)
+- [Facebook](https://www.facebook.com/united.earth.official/)
+#### 参加方法 ------------
+  [ボランティアまでの流れ](https://uwajima.united-earth.jp/news/718)<br>
+  [登録フォーム](https://pro.form-mailer.jp/fms/34a9d3e816874)<br>
+  [同意書](https://uwajima.united-earth.jp/wp-content/uploads/2018/07/uwajima-shien-douisho.pdf)
+#### 問合先 ------------
+メール ：uwajimashien.ue@gmail.com<br>
+内容にもよりますが、やむを得ずお返事が遅れることがございます。
+
+---
+
 ### ★【大洲市】 ※県外受入中
 - **全国から受け入れ**
 - [ボランティア情報ページ](http://www.ozushakyo.jp/index.php)
