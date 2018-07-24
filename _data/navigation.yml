@@ -42,6 +42,8 @@ volunteer_menu:
       url: /volunteer/
     - title: "ボランティア数の推移動向"
       url: /volunteer/aggregation/
+    - title: "ボランティア活動費支援(New)"
+      url: /volunteer/activitysupport/
     - title: "ボランティアのための支援情報"
       url: /volunteer_backup/
     - title: "熱中症対策"
