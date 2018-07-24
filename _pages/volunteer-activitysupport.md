@@ -2,7 +2,7 @@
 title: 【ボランティア活動費支援（県内限定）】
 permalink: /volunteer/activitysupport/
 date: 2018-07-24 16:00:00 +0900
-last_modified_at: 2018-07-24 16:00:00 +0900
+last_modified_at: 2018-07-24 19:55:46 +0900
 sidebar:
   nav: volunteer_menu
 ---
