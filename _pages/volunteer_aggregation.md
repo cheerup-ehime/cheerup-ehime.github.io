@@ -3,7 +3,7 @@ title: 【愛媛県ボランティア数集計（デイリー・地域別）07/2
 description: 松山市社協、八幡浜市社協、愛媛災害支援センターが公開しているデータを元に、ボランティア数のグラフを作成・公開しています。
 permalink: /volunteer/aggregation/
 date: 2018-07-18 05:59:06 +0900
-last_modified_at: 2018-07-24 20:13:34 +0900
+last_modified_at: 2018-07-25 07:32:45 +0900
 sidebar:
   nav: volunteer_menu
 
@@ -24,9 +24,8 @@ sidebar:
 
 ## 傾向
 
-今治は収束しつつあり今週は10名/日程度のボランティアで実施予定。
-宇和島、大洲、西予はいずれも昨日より増加、松山は休み明けで少数のボランティアでしたが、引き続き募集とのことです。
-
+今治は収束しつつあり、今週は10名/日程度のボランティアで実施予定。
+宇和島、大洲、西予はいずれも前日より増加、松山は休み明けで少数のボランティアでしたが、引き続き募集とのことです。
 
 暑い日が続きますが、ボランティア時に気をつける[熱中症対策のイラストリーフレット](https://cheerup-ehime.github.io/volunteer/heatstroke-illustrated/)を作成しましたので、是非ご活用ください。（https://cheerup-ehime.github.io/volunteer/heatstroke-illustrated/）
 
