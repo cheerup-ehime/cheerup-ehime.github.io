@@ -8,10 +8,15 @@ sidebar:
   nav: volunteer_menu
 
 ---
-## 【{month_day}分のデータを更新】
+## 【週毎のボランティア数動向】
 
-各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。
-Google SpreadSheetによるデータは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)です。 [^1]
+![愛媛県内ボランティア数（週次）](/assets/images/volunteer_count_week.png)
+
+{table_w}
+
+## 【{month_day}含め過去一週間分のデータを更新】
+
+各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。データ数が増えてきたので過去８日以内の表示にしています。全データは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)にあります。 [^1]
 
 ## 傾向
 
@@ -26,7 +31,7 @@ Google SpreadSheetによるデータは[こちら](https://docs.google.com/spre
 [^1]: 八幡浜市の7/10,17の情報は公開されていません。
 
 
-{table}
+{table_d}
 
 ### 元データ
 
