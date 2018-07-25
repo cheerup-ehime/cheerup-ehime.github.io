@@ -7,7 +7,7 @@ tag:
     - 重機派遣支援
     - 志脈
 date: 2018-07-25 09:40:31 +0900
-last_modified_at: 2018-07-25 09:40:31 +0900 
+last_modified_at: 2018-07-26 08:16:50 +0900 
 sidemenu:
     nav: posts-menu
 ---
@@ -25,6 +25,7 @@ sidemenu:
 派遣を希望される方がございましたら**下記の(FB)グループへお問い合わせください。**
 
 [愛媛災害ボランティア。重機派遣MTGグループ](https://www.facebook.com/groups/673867046300545/)
+（https://www.facebook.com/groups/673867046300545/）
 
 ## 注意点
 
