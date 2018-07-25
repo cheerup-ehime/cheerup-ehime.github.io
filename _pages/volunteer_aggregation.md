@@ -25,7 +25,7 @@ sidebar:
 :------- | ---------------------: | ---------------------:
 宇和島市 | :arrow_lower_right:-40 |  :arrow_lower_right:-8
 大洲市   | :arrow_lower_right:-48 | :arrow_lower_right:-36
-西予市   | :arrow_upper_right:+63 | :arrow_upper_right:+90
+西予市   | :arrow_upper_right:+63 | :arrow_upper_right:+88
 
 
 暑い日が続きますが、ボランティア時に気をつける[熱中症対策のイラストリーフレット](https://cheerup-ehime.github.io/volunteer/heatstroke-illustrated/)を作成しましたので、是非ご活用ください。（https://cheerup-ehime.github.io/volunteer/heatstroke-illustrated/）
