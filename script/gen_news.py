@@ -5,7 +5,7 @@ from datetime import datetime as dt
 
 template = '''---
 title: 【{title}】
-description: {desc}
+excerpt: {excerpt}
 category:
     - {category}
 date: {date}
