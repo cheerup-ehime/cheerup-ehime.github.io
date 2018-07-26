@@ -9,7 +9,7 @@ last_modified_at: 2018-07-27 00:08:01 +0900
 sidemenu:
     nav: posts-menu
 ---
-【7/27】この情報は古い情報です。現在、申し込みは終了しました。
+【7/26】この情報は古い情報です。現在、申し込みは終了しました。
 
 ![https://i.gyazo.com/924989d24dbd7e195ced530f0535894b.png](https://i.gyazo.com/924989d24dbd7e195ced530f0535894b.png)
 
