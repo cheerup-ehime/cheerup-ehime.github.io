@@ -2,7 +2,7 @@
 title: 【ボランティア活動費支援（7/26更新)】
 permalink: /volunteer/activitysupport/
 date: 2018-07-24 16:00:00 +0900
-last_modified_at: 2018-07-26 08:52:43 +0900
+last_modified_at: 2018-07-26 09:03:46 +0900
 sidebar:
   nav: volunteer_menu
 ---
@@ -29,7 +29,7 @@ sidebar:
 
 ### 支給対象経費
 - ガソリン代
-- 高速代
+- 高速代（愛媛県による[高速代無料](https://cheerup-ehime.github.io/volunteer_backup/)もございます。）
 - 昼食・飲料代
 - その他準備物(長靴・スコップなど）
 - 乗り合わせレンタカー代（土日祝限定・参加人数2人以上の場合）
