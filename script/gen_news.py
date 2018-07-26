@@ -18,11 +18,12 @@ sidemenu:
 '''
 
 @click.command()
-@click.option('--title',  help='article title')
-@click.option('--category', default='その他', help='article category(ボランティア、被災地、被災者向け、お役立ち、その他')
-@click.option('--url', default=None, help='original url for source')
+@click.option('--title',  help='記事のタイトル（日本語）')
+@click.option('--category', default='その他', help='記事のカテゴリー(ボランティア、被災地、被災者向け、お役立ち、その他')
+@click.option('--url', default='', help='情報元のURL')
+@click.option('--excerpt', default='', help='記事の説明短文（一覧用）')
 @click.argument('file')
-def gen_news(title, category, url, file):
+def gen_news(title, category, excerpt, url, file):
     
     date = dt.now().strftime('%Y-%m-%d')
     updated = dt.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -34,7 +35,7 @@ def gen_news(title, category, url, file):
         contents = template.format(
             title=title,
             category=category,
-            desc='',
+            excerpt=excerpt,
             date=updated + ' +0900',
             url=url)
         f.write(contents)
