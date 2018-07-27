@@ -55,10 +55,25 @@ def load_data_from_gspread():
 
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
-    today = (dt.datetime.now() - dt.timedelta(1)).strftime('%Y/%m/%d')
+    # today = (dt.datetime.now() - dt.timedelta(1)).strftime('%Y/%m/%d')
+    today = dt.datetime.now().strftime('%Y/%m/%d')
     d_range =  pd.date_range(end=today, periods=8)
     print(d_range)
     return df.loc[d_range]
+
+# 前日比、前週比を出す。
+def diff_another_day(df, before_day):
+    df_top3 = df[['Date','宇和島市','大洲市','西予市']]
+    df_top3 = df_top3.set_index('Date')
+    df_top3.fillna(0, inplace=True)
+    df_top3.replace('', 0, inplace=True)
+    df_top3 = df_top3.applymap(int)
+
+    before_day = dt.datetime.now() - dt.timedelta(before_day)
+     
+    df_today = df_top3.iloc[-1]
+    df_before = df_top3.loc[before_day.strftime('%Y-%m-%d')]
+    return df_today - df_before
 
 # ## Excelデータを元にグラフを出力
 # df = pd.read_excel('assets/data/ehime_volunteer.xlsx')
@@ -78,18 +93,17 @@ def generate_graph_within_week(df):
     df2.index = df2.index.strftime("%m/%d")
     df2 = df2.applymap(int)
     ax = df2.plot(
-                            kind='bar', 
-                            figsize=(10,10), 
-                            # figsize=(16,10), 
-                            alpha=0.5,
-                            title="愛媛県ボランティア数動向（一週間）", 
-                            subplots=False, 
-                            stacked=True,
-                            fontsize=20)
+                    kind='bar',
+                    figsize=(8,8), 
+                    alpha=0.5,
+                    title="愛媛県ボランティア数動向（一週間）", 
+                    subplots=False, 
+                    stacked=True,
+                    fontsize=16)
 
-    plt.xlabel("日付", fontsize="20")
-    plt.ylabel("人数", fontsize="20")
-    plt.legend(fontsize="20")
+    plt.xlabel("日付", fontsize="16")
+    plt.ylabel("人数", fontsize="16")
+    plt.legend(fontsize="16")
     fig = ax.get_figure()
     for tick in ax.get_xticklabels():
         tick.set_rotation(45)
@@ -112,15 +126,15 @@ def generage_week_graph(df):
     df_w = df2.resample('W').sum()
     ax = df_w.T.plot(kind='bar',
                         # figsize=(16,10), 
-                        figsize=(10,10), 
+                        figsize=(8,8), 
                         alpha=0.5,
                         title="愛媛県ボランティア数動向（7月週別）", 
                         subplots=False, 
                         stacked=False,
-                        fontsize=20)          
-    plt.xlabel("自治体", fontsize="18")
-    plt.ylabel("人数", fontsize="18")
-    plt.legend(fontsize="18")
+                        fontsize=16)          
+    plt.xlabel("自治体", fontsize="16")
+    plt.ylabel("人数", fontsize="16")
+    plt.legend(fontsize="16")
     fig = ax.get_figure()
     for tick in ax.get_xticklabels():
         tick.set_rotation(45)
@@ -142,9 +156,41 @@ def generate_table(df):
     table = tabulate(df, tablefmt="pipe", headers="keys", showindex=True)
     return table
 
+def choose_icon(num):
+    if num == 0:
+        return ':arrow_right:'
+    elif num > 0:
+        return ':arrow_upper_right:'
+    else:
+        return ':arrow_lower_right:'
+
+def generate_diff_table(df):
+    diff_table = '''エリア | 前日比 | 前週同日比
+---------|----------|---------
+ 宇和島市 | {uwa_diff_yesterday_icon}{uwa_diff_yesterday_num} | {uwa_diff_lastweek_icon}{uwa_diff_lastweek_num}
+ 大洲市  | {ozu_diff_yesterday_icon}{ozu_diff_yesterday_num} | {ozu_diff_lastweek_icon}{ozu_diff_lastweek_num}
+ 西予市  | {seiyo_diff_yesterday_icon}{seiyo_diff_yesterday_num} | {seiyo_diff_lastweek_icon}{seiyo_diff_lastweek_num}
+'''
+    df_yesterday = diff_another_day(df, 1)
+    df_lastweek = diff_another_day(df, 7)
+
+    return diff_table.format(
+        uwa_diff_yesterday_icon=choose_icon(df_yesterday['宇和島市']),
+        uwa_diff_yesterday_num=df_yesterday['宇和島市'],
+        ozu_diff_yesterday_icon=choose_icon(df_yesterday['大洲市']),
+        ozu_diff_yesterday_num=df_yesterday['大洲市'],
+        seiyo_diff_yesterday_icon=choose_icon(df_yesterday['西予市']),
+        seiyo_diff_yesterday_num=df_yesterday['西予市'],
+        uwa_diff_lastweek_icon=choose_icon(df_lastweek['宇和島市']),
+        uwa_diff_lastweek_num=df_lastweek['宇和島市'],
+        ozu_diff_lastweek_icon=choose_icon(df_lastweek['大洲市']),
+        ozu_diff_lastweek_num=df_lastweek['大洲市'],
+        seiyo_diff_lastweek_icon=choose_icon(df_lastweek['西予市']),
+        seiyo_diff_lastweek_num=df_lastweek['西予市'])
+
 # In[38]:
 
-def write_article(table_d, table_w):
+def write_article(table_diff, table_d, table_w):
     from datetime import datetime as dt
     with open('./script/generate_volunteer_count/template.md') as f:
         template = f.read()
@@ -154,6 +200,7 @@ def write_article(table_d, table_w):
         
         report = template.format(month_day=month_day, 
                         timestamp=timestamp, 
+                        table_diff=table_diff,
                         table_d=table_d, 
                         table_w=table_w)
         
@@ -166,7 +213,8 @@ if __name__ == '__main__':
     df = load_data_from_gspread()
     df_d = generate_graph_within_week(df)
     df_w = generage_week_graph(df)
+    table_diff = generate_diff_table(df)
     table_d = generate_table(df_d)
     table_w = generate_table(df_w)
-    write_article(table_d, table_w)
+    write_article(table_diff, table_d, table_w)
 
