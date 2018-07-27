@@ -1,6 +1,6 @@
 ---
 title: 重機派遣ボランティア支援
-permalink: /volunteer/detach/
+permalink: /volunteer/dispatch/
 date: 2018-07-27 10:00:00 +0900
 last_modified_at: 2018-07-27 10:00:46 +0900
 sidebar:
