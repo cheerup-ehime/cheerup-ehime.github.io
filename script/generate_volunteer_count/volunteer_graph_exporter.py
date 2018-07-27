@@ -16,9 +16,12 @@ font = {'family': 'IPAexGothic'}
 matplotlib.rc('font', **font)
 import os
 import gspread as gs
+from PIL import Image
 
 from oauth2client.service_account import ServiceAccountCredentials
 
+WEEKLY_GRAPH='./assets/images/volunteer_count_week.png'
+DAILY_GRAPH='./assets/images/volunteer_count.png'
 
 # In[33]:
 
@@ -30,6 +33,9 @@ def create_google_client(path):
     client = gs.authorize(credentials)
     return client
 
+def save_as_jpeg(path):
+    path_jpg = path.replace('png', 'jpg')
+    Image.open(path).convert('RGB').save(path_jpg,'JPEG')
 
 # In[34]:
 
@@ -49,8 +55,9 @@ def load_data_from_gspread():
 
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
-    today = dt.datetime.now().strftime('%Y/%m/%d')
+    today = (dt.datetime.now() - dt.timedelta(1)).strftime('%Y/%m/%d')
     d_range =  pd.date_range(end=today, periods=8)
+    print(d_range)
     return df.loc[d_range]
 
 # ## Excelデータを元にグラフを出力
@@ -67,11 +74,13 @@ def generate_graph_within_week(df):
 
     
     df2 = filter_within_week(df2)
+    print(df2)
     df2.index = df2.index.strftime("%m/%d")
     df2 = df2.applymap(int)
     ax = df2.plot(
                             kind='bar', 
-                            figsize=(16,10), 
+                            figsize=(10,10), 
+                            # figsize=(16,10), 
                             alpha=0.5,
                             title="愛媛県ボランティア数動向（一週間）", 
                             subplots=False, 
@@ -85,7 +94,8 @@ def generate_graph_within_week(df):
     for tick in ax.get_xticklabels():
         tick.set_rotation(45)
     # plt.show() 
-    fig.savefig('./assets/images/volunteer_count.png')
+    fig.savefig(DAILY_GRAPH)
+    save_as_jpeg(DAILY_GRAPH)
     return df2
 
 def generage_week_graph(df):
@@ -101,7 +111,8 @@ def generage_week_graph(df):
     df2
     df_w = df2.resample('W').sum()
     ax = df_w.T.plot(kind='bar',
-                        figsize=(16,10), 
+                        # figsize=(16,10), 
+                        figsize=(10,10), 
                         alpha=0.5,
                         title="愛媛県ボランティア数動向（7月週別）", 
                         subplots=False, 
@@ -115,7 +126,8 @@ def generage_week_graph(df):
         tick.set_rotation(45)
     plt.legend(df_w.index.strftime("%m/%d週"),
                     fontsize=18)
-    fig.savefig('./assets/images/volunteer_count_week.png')
+    fig.savefig(WEEKLY_GRAPH)
+    save_as_jpeg(WEEKLY_GRAPH)
     return df_w
 
 # In[37]:
