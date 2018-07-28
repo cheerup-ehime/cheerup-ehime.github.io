@@ -51,7 +51,7 @@ def load_data_from_gspread():
     cols_name = records[0]
     data = records[1:]
     df = pd.DataFrame(data=data, columns=cols_name)
-    return df
+    return df[['Date','宇和島市','大洲市','西予市','今治市','松山市']]
 
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
