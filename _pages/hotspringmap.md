@@ -1,6 +1,7 @@
 ---
 title: 愛媛県の温泉・銭湯マップ
 permalink: /hotspringmap/
+date: 2018-07-14 08:00:29 +0900
 sidebar:
   nav: disaster-area
 

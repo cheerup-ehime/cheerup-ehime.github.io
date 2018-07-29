@@ -10,10 +10,10 @@
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
-          animation: $intro-transition;
+  animation: $intro-transition;
   max-width: 100%;
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -21,12 +21,15 @@
 }
 
 .page {
-
   @include breakpoint($large) {
     float: right;
-    width: span(10 of 12);
-    padding-left: gutter(0.5 of 12);
-    padding-right: gutter(2 of 12);
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -39,6 +42,7 @@
     .page__content,
     .page__meta,
     .page__share {
+      position: relative;
       float: left;
       margin-left: 0;
       margin-right: 0;
@@ -63,13 +67,14 @@
 }
 
 .page__content {
-
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
-  p, li, dl {
+  p,
+  li,
+  dl {
     font-size: 1em;
   }
 
@@ -86,9 +91,7 @@
     }
   }
 
-  a {
-    text-decoration: none;
-
+  a:not(.btn) {
     &:hover {
       text-decoration: underline;
 
@@ -126,9 +129,9 @@
   margin-bottom: 2em;
   @include clearfix;
   -webkit-animation: $intro-transition;
-          animation: $intro-transition;
+  animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation-delay: 0.25s;
 
   &--overlay {
     position: relative;
@@ -139,9 +142,9 @@
     background-repeat: no-repeat;
     background-position: center;
     -webkit-animation: $intro-transition;
-            animation: $intro-transition;
+    animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
-            animation-delay: 0.25s;
+    animation-delay: 0.25s;
 
     a {
       color: #fff;
@@ -238,14 +241,13 @@
   text-transform: uppercase;
 }
 
-
 /*
    Page meta
    ========================================================================== */
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#fff, $gray, 25%);
+  color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
 
@@ -263,7 +265,6 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
-
 
 /*
    Page taxonomy
@@ -285,7 +286,7 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid $light-gray;
+  border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
 
   &:hover {
@@ -294,6 +295,73 @@
   }
 }
 
+.taxonomy__section {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+
+  &:not(:last-child) {
+    border-bottom: solid 1px $border-color;
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  .archive__subtitle {
+    clear: both;
+    border: 0;
+  }
+
+  + .taxonomy__section {
+    margin-top: 2em;
+  }
+}
+
+.taxonomy__title {
+  margin-bottom: 0.5em;
+  color: lighten($text-color, 60%);
+}
+
+.taxonomy__count {
+  color: lighten($text-color, 50%);
+}
+
+.taxonomy__index {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.414em 0;
+  padding: 0;
+  font-size: 0.75em;
+  list-style: none;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.25em 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.back-to-top {
+  display: block;
+  clear: both;
+  color: lighten($text-color, 50%);
+  font-size: 0.6em;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration: none;
+}
 
 /*
    Comments
@@ -317,8 +385,6 @@
 }
 
 .page__comments-form {
-  padding: 1em;
-  background: $lighter-gray;
   -webkit-transition: $global-transition;
   transition: $global-transition;
 
@@ -395,7 +461,6 @@
   }
 }
 
-
 /*
    Related
    ========================================================================== */
@@ -409,9 +474,11 @@
 
   @include breakpoint($large) {
     float: right;
-    width: span(10 of 12);
-    padding-left: gutter(0.5 of 12);
-    padding-right: gutter(2 of 12);
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
@@ -424,4 +491,30 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/*
+   Wide Pages
+   ========================================================================== */
+
+.wide {
+  .page {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
 }

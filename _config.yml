@@ -5,6 +5,15 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # Site Settings
 locale                   : "ja"
 title                    : "チアアップえひめ<br/>平成30年7月豪雨復興支援情報"
@@ -44,14 +53,27 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+reCaptcha:
+  siteKey                :
+  secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-
+search                   : true #, false (default)
+search_full_content      : true # , false (default)
+search_provider          : google # lunr (default), algolia, google
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : '010836227563913331873:nipitudhl24' # YOUR_SEARCH_ENGINE_ID
+  instant_search         : true # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
 yandex_site_verification :
+naver_site_verification  :
 
 # Social Sharing
 twitter:
@@ -73,9 +95,11 @@ analytics:
   provider               : google # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : UA-122279846-1
+    anonymize_ip         : # true, false (default)
 
 google:
   search_engine_id: "010836227563913331873:nipitudhl24"
+
 
 # Site Author
 author:
@@ -85,6 +109,7 @@ author:
   location         : "Ehime"
   email            : "cheerup.ehime@gmail.com"
   uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -97,11 +122,11 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          : "EhimeCheerup"
   vine             :
@@ -111,15 +136,10 @@ author:
 
 
 # Reading Files
-include: ["_pages"]
-# include:
-  # - '_pages'
-  # - '_posts'
-
+include:
+  - .htaccess
+  - _pages
 exclude:
-  - "volunteer"
-  - "supporter"
-  - "disaster-area"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -186,11 +206,9 @@ permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Asia/Tokyo" # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-breadcrumbs: false
-# breadcrumb_home_label : "Home"
-# breadcrumb_separator  : "/"
 
-# Plugins
+
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -198,10 +216,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-twitter-plugin
-  - jekyll-archives
-  # - jekyll-seo-tag
 
-
+  
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -228,18 +244,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled: 
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 
 # HTML Compression
@@ -258,9 +273,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
       sidebar:
@@ -286,7 +301,7 @@ defaults:
       share: true
       sidebar:
         nav: posts-menu
-  # _categories
+  # _tags
   - scope:
       path: ""
       type: tags
@@ -325,29 +340,4 @@ defaults:
       sidebar:
         nav: posts-menu
 
-      # - scope:
-  #     path: "/volunteer/"
-  #     type: pages
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     comments: true
-  #     share: true
-  #     image: /assets/images/cheerUP!_logo.png
-  #     sidebar:
-  #       nav: "volunteer_menu"
-  # - scope:
-  #     path: "/rescuesupply/"
-  #   values:
-  #     sidebar:
-  #       nav: "supporter_menu"
-  # - scope:
-  #     path: "/disaster-area/"
-  #   values:
-  #     sidebar:
-  #       nav: "disaster_area"
-  # - score:
-  #     path: "/local-supporter/"
 
-
-remote_theme: "mmistakes/minimal-mistakes"

@@ -6,7 +6,6 @@ last_modified_at: 2018-07-27 10:00:46 +0900
 sidebar:
   nav: volunteer_menu
 ---
-{% include toc %}
 
 # 企業有志による重機派遣ボランティア支援（志脈様）
 

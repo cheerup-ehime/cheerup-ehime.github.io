@@ -5,8 +5,6 @@ date: 2018-07-17 09:49:16 +0900
 sidebar:
     nav: about_menu
 ---
-{% include toc %}
-
 
 運営メンバーを紹介します。
 
