@@ -6,7 +6,6 @@ sidebar:
     nav: supporter_menu
 
 ---
-{% include toc %}
 
 ## 救援物資の受入体制について
 

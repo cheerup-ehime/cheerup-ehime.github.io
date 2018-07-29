@@ -6,7 +6,6 @@ last_modified_at: 2018-07-27 09:35:14 +0900
 sidebar:
   nav: volunteer_menu
 ---
-{% include toc %}
 
 ## 愛媛県内災害ボランティア状況
 ### 【ボランティア参加者数の集計】

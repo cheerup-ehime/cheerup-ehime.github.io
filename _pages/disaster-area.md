@@ -7,8 +7,6 @@ sidebar:
     nav: disaster-area
 ---
 
-{% include toc %}
-
 ## 各自治体のサイト
 ### 愛媛県
 - [えひめの防災・危機管理](http://ehime.force.com/)

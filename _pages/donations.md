@@ -6,7 +6,6 @@ last_modified_at: 2018-07-17 15:00:07 +0900
 sidebar:
   nav: supporter_menu
 ---
-{% include toc %}
 
 主に愛媛県への義援金についてまとめました（一部被災地全体への義援金も含みます）。
 
