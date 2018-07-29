@@ -2,7 +2,7 @@
 title: ボランティアに行きたい
 permalink: /volunteer/
 date: 2018-07-11 16:00:00 +0900
-last_modified_at: 2018-07-27 09:35:14 +0900
+last_modified_at: 2018-07-29 13:00:14 +0900
 sidebar:
   nav: volunteer_menu
 ---
@@ -78,6 +78,7 @@ sidebar:
 
 ### 【今治市】 ※県外受入中
 - **台風の影響が心配されるため、7/28.29は募集を取りやめ**
+- **7月30日現地状況確認のため休止**
 - 　30日以降に募集を行うかは検討中
 - [ボランティア情報ページ](http://www.imabari-shakyo.jp/volunteer/saigai2.html)
 - [Facebook](https://www.facebook.com/imabarisvc/)
@@ -97,6 +98,8 @@ sidebar:
 
 ### ★【宇和島市】 ※県外受入中
 - **全国から受け入れ**
+- **7月29、30日は台台風の影響を考慮し休止**
+- **8月13日～15日はお盆の地域行事のため休止**
 - [ボランティア情報ページ](http://www.uwajima-shakyo.or.jp/saigaiv.htm)
 - [Facebook](https://www.facebook.com/uwajimasvc/)
 - ボランティアを募集開始（10日）
@@ -136,6 +139,8 @@ sidebar:
 
 ### ★【大洲市】 ※県内限定受入中
 - **基本、県内限定受け入れ**（7/25～）
+- **7月29日は台風の影響を考慮し休止**
+- **7月30日現地状況確認のため休止**
 - [ボランティア情報ページ](http://www.ozushakyo.jp/index.php)
 - [Facebook](https://www.facebook.com/ozusvc/)
 - ボランティアを募集開始（10日）
@@ -178,6 +183,8 @@ sidebar:
 
 ### ★【西予市】 ※県外受入中
 - **全国から受け入れ**
+- **7月29、30日は台風の影響を考慮し休止**
+- **8月1日野村地区新盆行事のため休止**
 - [ボランティア情報ページ](http://www.city.seiyo.ehime.jp/kinkyu/4956.html)
 - [Facebook](https://www.facebook.com/seiyosvc/)
 - ボランティアを募集開始（11日）
@@ -221,6 +228,7 @@ sidebar:
 
 ### 【松山市】
 - **ボランティアバスを運行（宇和島市で活動予定）**
+- **7月29、30日は台風の影響を考慮し運行中止**
 [バス運行PDF](http://www.matsuyama-wel.jp/osettai/%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E3%83%90%E3%82%B9%E3%83%81%E3%83%A9%E3%82%B7.pdf)
 - [ボランティア情報ページ](http://www.matsuyama-wel.jp/)
 - [Facebook](https://www.facebook.com/matsuyama.wel/)
