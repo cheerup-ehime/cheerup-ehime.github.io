@@ -4,6 +4,7 @@
 # pip install pdfminer.six が必要です。
 
 import urllib.request
+from urllib.error import HTTPError
 import datetime
 
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -12,6 +13,7 @@ from pdfminer.layout import LAParams, LTRect, LTTextBoxHorizontal
 from pdfminer.pdfpage import PDFPage
 from pdfminer.converter import PDFPageAggregator
 from io import StringIO
+
 
 def generate_url():
     today = datetime.date.today()
@@ -27,7 +29,12 @@ def get_higaijokyo_content():
     rsrcmgr = PDFResourceManager()
 
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    content = urllib.request.urlopen(req)
+    try:
+        content = urllib.request.urlopen(req)
+    except HTTPError:
+        print('PDFがありません')
+        return
+
     with open('data','wb') as output:
         output.write(content.read())
     fp = open('data', 'rb')
