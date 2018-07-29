@@ -42,7 +42,7 @@ volunteer_menu:
       url: /volunteer/
     - title: "ボランティア数の推移動向"
       url: /volunteer/aggregation/
-    - title: "ボランティア活動費支援(New)"
+    - title: "ボランティア活動費支援"
       url: /volunteer/activitysupport/
     - title: "ボランティアのための支援情報"
       url: /volunteer_backup/
@@ -50,6 +50,35 @@ volunteer_menu:
       url: /heat-attack-provision/
     - title: "熱中症対策（イラスト版）"
       url: /volunteer/heatstroke-illustrated/
+
+volunteer-new:
+  - title: "状況を把握する"
+    children:
+    - title: "ボランティア数動向"
+      url: /volunteer/aggregation/
+  - title: "行先を決める"
+    children:
+    - title: "大洲市を調べる"
+      url: /volunteer-new/ozu/
+    - title: "西予市（野村）を調べる"
+      url: /volunteer-new/seiyo/
+    - title: "宇和島市（吉田）を調べる"
+      url: /volunteer-new/uwajima/
+  - title: "準備する"
+    children:
+    - title: "ボランティア活動の準備をする"
+      url: /volunteer-new/preparation/
+    - title: "ボランティア活動費支援への登録"
+      url: /volunteer/activitysupport/
+    - title: "高速道路無料化手続き"
+      url: /volunteer_backup/
+  - title: "熱中症対策を行う"
+    children:
+    - title: "熱中症対策（説明）"
+      url: /heat-attack-provision/
+    - title: "熱中症対策（イラスト版）"
+      url: /volunteer/heatstroke-illustrated/
+
 
 supporter_menu:
   - title: "後方支援情報"
