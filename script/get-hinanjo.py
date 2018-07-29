@@ -3,6 +3,7 @@
 
 import urllib.request
 from bs4 import BeautifulSoup
+import sys
 
 def get_hinanjo_page(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -17,15 +18,20 @@ def get_hinanjo_page(url):
     print(content)
 
 
-def hinanjo():
+def hinanjo(page_num = 1):
     url = 'http://ehime.force.com/PUB_VF_HinanjyoList'
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     html = urllib.request.urlopen(req).read()
     soup = BeautifulSoup(html, "html.parser")
-    volunteer = soup.find_all("div", {"class": "volunteer"})[0]
-    dls = volunteer.find_all("dl")
-    dl = dls[0]
-    get_hinanjo_page('http://ehime.force.com/' + dl.a.get('href'))
+    for i in range(page_num):
+        volunteer = soup.find_all("div", {"class": "volunteer"})[0]
+        dls = volunteer.find_all("dl")
+        dl = dls[i]
+        get_hinanjo_page('http://ehime.force.com/' + dl.a.get('href'))
 
 if __name__ == '__main__':
-    hinanjo()
+    args = sys.argv
+    if len(args) == 2:
+        hinanjo(int(args[1]))
+    else:
+        hinanjo()
