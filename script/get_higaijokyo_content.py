@@ -17,8 +17,8 @@ from io import StringIO
 
 def generate_url():
     today = datetime.date.today()
-    begin = datetime.date(2018, 6, 1)
-    days = (today - begin).days
+    begin = datetime.date(2018, 7, 30)
+    days = (today - begin).days + 63
     if (datetime.datetime.now().hour < 12):
         days -= 1
 
