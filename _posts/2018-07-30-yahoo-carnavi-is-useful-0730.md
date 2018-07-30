@@ -22,7 +22,6 @@ sidemenu:
 ## 現地の地理に不案内の方は「Yahoo!カーナビ」
 
 [Yahoo!カーナビ](https://carnavi.yahoo.co.jp/promo/)は、毎日通行止情報を更新しており、地図でぱっと通行止め箇所がみれるので、地元の地理に不案内の方にはおすすめです。
-Apple Watchをお持ちの方は、Yahoo!
 
 ![Yahoo!カーナビ](https://cheerup-ehime.github.io/assets/images/yahoocarnavi.jpg)
 
