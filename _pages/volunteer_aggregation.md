@@ -24,19 +24,19 @@ sidebar:
 
 平日の募集は200人、休日の募集が400人となっていますが、ここ一週間は募集人数にほぼ近い実績値になっています。
 
- ![宇和島ボラ数（募集と実績）](/assets/images/宇和島市_volunteer_expected_and_actual.png)
+ ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_20180801.png)
 
 ### 大洲市
 
 平日の募集は120〜150人であり、平日・休日ともに概ね募集人数に近い実績数となっています。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/大洲市_volunteer_expected_and_actual.png)
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_20180801.png)
 
 ### 西予市
 
 募集は平日・休日問わず300人となっていますが、平日・休日含め**募集人数が集まっていない**ようです。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/西予市_volunteer_expected_and_actual.png)
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_20180801.png)
 
 ### まとめ
 
