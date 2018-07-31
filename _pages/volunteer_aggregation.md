@@ -36,7 +36,7 @@ sidebar:
 
 募集は平日・休日問わず300人となっていますが、平日・休日含め**募集人数が集まっていない**ようです。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/大洲市_volunteer_expected_and_actual.png)
+ ![大洲市ボラ数（募集と実績）](/assets/images/西予市_volunteer_expected_and_actual.png)
 
 ### まとめ
 
