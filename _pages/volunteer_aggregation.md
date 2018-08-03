@@ -21,22 +21,19 @@ sidebar:
 
 安定してボランティアが確保できていますが、個人の募集範囲が**四国圏内に縮小された**(団体は県外からの募集は引き続きあり）ので、今後の動向に注目が集まります。
 
- ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_20180804.png)
+ ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_20180803.png)
 
 ### 大洲市
 
 概ね募集人数に近い実績数となっています。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_20180804.png)
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_20180803.png)
 
 ### 西予市
 
 ここ数日は募集人員に達していません。8/4から募集人員は無制限になりました。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_20180804.png)
-
-### まとめ
-
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_20180803.png)
 
 ## 傾向
 
