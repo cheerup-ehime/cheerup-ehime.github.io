@@ -23,7 +23,7 @@ sidebar:
 - [上島町](https://www.town.kamijima.lg.jp/)
 ### 西予市
 - [西予市公式ウェブサイト](http://www.city.seiyo.ehime.jp/)
-- [ボランティアセンター開設(7/10)](http://www.city.seiyo.ehime.jp/kinkyu/4956.html)
+- [ボランティアセンターについて](http://www.city.seiyo.ehime.jp/kinkyu/goshienitadaku/5092.html)
 ### 松山市
 - [松山市防災情報](http://www.bousai.city.matsuyama.ehime.jp/public_info/main.php)
 ### 松野町
