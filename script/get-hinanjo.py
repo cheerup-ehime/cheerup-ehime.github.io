@@ -4,6 +4,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import sys
+import re
 
 def get_hinanjo_page(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -15,8 +16,30 @@ def get_hinanjo_page(url):
     print('title:' + title)
     print('---')
     content = body.p.get_text()
-    print(content)
+    array = content.split('\r\n')
+    hinanjo = []
+    jokyo = []
+    hinansetai = []
+    hinanninzu = []
+    kousin = []
+    for item in array:
+        if re.search(r":(臨時)*避難所", item):
+            s = item.split(' ')
+            hinanjo.append(s[0].split(':')[0])
+            jokyo.append(s[1])
+        elif re.search(r"避難世帯数:", item):
+            hinansetai.append(item.split(':')[1])
+        elif re.search(r"避難人数:", item):
+            hinanninzu.append(item.split(':')[1])
+        elif re.search(r"\([0-9]+/[0-9]+/[0-9]+ [0-9]+:[0-9]+\)",item):
+            kousin.append(item)
+        else:
+            pass
 
+    print("|避難所名|状況|避難世帯数|避難人数|更新日|")
+    print("|--|--|--|--|--|")
+    for i in range(len(hinanjo)):
+        print('|' + hinanjo[i] + '|' + jokyo[i] + '|' + hinansetai[i] + '|' + hinanninzu[i] + '|' + kousin[i] + '|')
 
 def hinanjo(page_num = 1):
     url = 'http://ehime.force.com/PUB_VF_HinanjyoList'
