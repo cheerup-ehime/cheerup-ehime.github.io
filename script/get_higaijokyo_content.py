@@ -1,17 +1,12 @@
 #! /usr/bin/env python
 # coding: utf-8
 
-# pip install pdfminer.six が必要です。
 
 import urllib.request
 from urllib.error import HTTPError
 import datetime
-
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams, LTRect, LTTextBoxHorizontal
-from pdfminer.pdfpage import PDFPage
-from pdfminer.converter import PDFPageAggregator
+import subprocess
+import shlex
 from io import StringIO
 
 
@@ -26,7 +21,6 @@ def generate_url():
 
 def get_higaijokyo_content():
     url = generate_url()
-    rsrcmgr = PDFResourceManager()
 
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
@@ -37,28 +31,13 @@ def get_higaijokyo_content():
 
     with open('data','wb') as output:
         output.write(content.read())
-    fp = open('data', 'rb')
-    laparams = LAParams()
-    device =  PDFPageAggregator(rsrcmgr, laparams=laparams)
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
+    
+    cmd = "java -jar ./tabula-1.0.2-jar-with-dependencies.jar -o data.csv -p all -r ./data"
 
-    for page in PDFPage.get_pages(fp, pagenos=None, maxpages=0, password=None,caching=True, check_extractable=True):
-        interpreter.process_page(page)
-        layout = device.get_result()
-        prev_node = None
-        str_line = ''
-        for node in layout:
-            if isinstance(node, LTTextBoxHorizontal):
-                if (prev_node and prev_node.y1 == node.y1):
-                    str_line += ','
-                    str_line += node.get_text().strip()
-                else:
-                    print(str_line)
-                    str_line = node.get_text().strip()
-                prev_node = node
+    args = shlex.split(cmd)
+    p = subprocess.Popen(args)
 
-    fp.close()
-    device.close()
+    p.wait()
 
 if __name__ == '__main__':
     get_higaijokyo_content()
