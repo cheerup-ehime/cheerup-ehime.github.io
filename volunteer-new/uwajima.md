@@ -92,8 +92,9 @@ NPOユナイテッドアースさんが、宇和島復興支援現地活動メ�
 
 - [宇和島市災害ボランティアセンター](http://www.uwajima-shakyo.or.jp/)
 - [ユナイテッドアース](https://uwajima.united-earth.jp/volunteer/)
-- [チーム佐久保]
-- (etc...)
+- (ここに個人のボラグループも紹介したい...)
+
+
 
 ## 連絡先
 
