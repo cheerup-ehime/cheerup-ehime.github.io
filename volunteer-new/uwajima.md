@@ -62,10 +62,8 @@ header:
 
 - セブンイレブン
     - 予約番号：YCQM4PF9
-    - ファイル名：volunteer-uwajima-personal-application	
 - 上記以外
-    - ユーザー番号：4NBPPWPQ65
-    - ファイル名：volunteer-uwajima-personal
+    - ユーザー番号：4NBPPWPQ65、ファイル名：宇和島ボランティア登録（個人）
 
 
 #### 2. 申し込み（団体）
@@ -97,8 +95,7 @@ header:
 - コンビニプリント
     - セブンイレブン：プリント予約番号：88D4X6AR
     - セブン以外：
-        - ユーザー番号：4NBPPWPQ65
-        - ファイル名：ボラバス申し込み
+        - ユーザー番号：4NBPPWPQ65、ファイル名：ボラバス申し込み
 
 運行予定、募集状況は[こちら](https://ehimesvc.jp/?p=270)まで。
 
