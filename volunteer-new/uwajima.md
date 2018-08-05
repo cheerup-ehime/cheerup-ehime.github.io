@@ -135,7 +135,7 @@ NPOユナイテッド・アースさんが、宇和島復興支援現地活動�
 
 ### **チームサクボ**
 
-チームサクボは**吉田町立間中組**を中心にボランティア活動を続けている団体です。災害VC公認のグループなので、ボランティア保険も加入できます。
+チームサクボは**吉田町立間中組**を中心にボランティア活動を続けている有志のボランティアグループです。災害VC公認のグループなので、ボランティア保険も加入できます。
 
 - [登録フォーム](https://docs.google.com/forms/d/e/1FAIpQLSessL05TB2wWRmuwl1KoPBcqLHD5xInquQ9iebv2PbiyZEWEA/viewform?c=0&w=1)
 - Facebookグループ [team SAKUBO](https://www.facebook.com/groups/1858494494446011/)
