@@ -42,8 +42,6 @@ header:
 
 ![吉田町ルート](/assets/images/maps/yoshida-map-and-routes.png)
 
-
-
 ### 宇和島市災害ボランティアセンター
 
 宇和島市災害VCは、吉田町よりも更に南下した**宇和島朝日IC**を降ります。
@@ -133,24 +131,22 @@ NPOユナイテッド・アースさんが、宇和島復興支援現地活動�
 
 ## 現地ボランティアグループで活動する
 
-#### **チームサクボ**
+### **チームサクボ**
 
 チームサクボは**吉田町立間中組**を中心にボランティア活動を続けている団体です。災害VC公認のグループなので、ボランティア保険も加入できます。
 
-- 連絡先
-    - [登録フォーム](https://docs.google.com/forms/d/e/1FAIpQLSessL05TB2wWRmuwl1KoPBcqLHD5xInquQ9iebv2PbiyZEWEA/viewform?c=0&w=1)
-    - Facebookグループ [team SAKUBO](https://www.facebook.com/groups/1858494494446011/)
+- [登録フォーム](https://docs.google.com/forms/d/e/1FAIpQLSessL05TB2wWRmuwl1KoPBcqLHD5xInquQ9iebv2PbiyZEWEA/viewform?c=0&w=1)
+- Facebookグループ [team SAKUBO](https://www.facebook.com/groups/1858494494446011/)
     
-#### 大河内救援隊
+### 大河内救援隊
 
-大河内（前：荒巻）救援隊は、**吉田町立間荒巻、大河内**を中心にボランティア活動を続けています。現在グループメンバーは30名、遠くは大阪、新居浜、西条、松山、宇和島、鬼北といろんなとこから参加されています。
+大河内（前:荒巻）救援隊は、**吉田町立間荒巻、大河内**を中心にボランティア活動を続けています。現在グループメンバーは30名、遠くは大阪、新居浜、西条、松山、宇和島、鬼北といろんなとこから参加されています。
 
-- 連絡先
-    - Facebook: [槇野さん](https://www.facebook.com/youko.makino)
+- Facebook: [槇野さん](https://www.facebook.com/youko.makino)
 
-#### 奥南エリア
+### 奥南エリア
 
-(現在作成中)
+(現在情報収集中)
 
 ## 現地情報
 
@@ -183,4 +179,3 @@ NPOユナイテッド・アースさんが、宇和島復興支援現地活動�
 
 - [宇和島市災害ボランティアセンター](http://www.uwajima-shakyo.or.jp/)
 - [ユナイテッドアース](https://uwajima.united-earth.jp/volunteer/)
-
