@@ -5,9 +5,9 @@ category:
 tag:
     - 宇和島市
 date: 2018-07-29 12:15:14 +0900
-last_modified_at: 2018-08-05 22:35:06 +0900
+last_modified_at: 2018-08-06 08:32:08 +0900
 header:
-    overlay_image: /assets/images/maps/yoshida-map-only.png
+    overlay_image: /assets/images/yoshida-disaster-area.jpg
     overlay_filter: 0.5
 ---
 

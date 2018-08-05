@@ -6,6 +6,9 @@ category:
     - ボランティア
 date: 2018-07-29 11:53:22 +0900
 last_modified_at: 2018-08-06 07:48:52 +0900
+header:
+  overlay_image: /assets/images/yoshida-disaster-area.jpg
+  overlay_filter: 0.5
 sidebar:
   nav: volunteer-menu
 
