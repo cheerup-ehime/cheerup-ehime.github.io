@@ -11,6 +11,8 @@ header:
     overlay_filter: 0.5    
 ---
 
+# 西予市にボランティアに行きたい！
+
 ## 場所と移動
 
 （移動経路を明記したい。西予宇和まで高速がいい？）
@@ -20,6 +22,7 @@ header:
 ### 愛媛県内から移動する場合
 
 ### 四国他県から移動する
+
 ### 県外
 
 ## 募集状況
@@ -58,7 +61,6 @@ header:
 
 ## 駐車場
 
-### 野村運動公園
 愛媛県西予市野村町野村
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12266.139524436712!2d132.63591222624638!3d33.37413621097551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354f7950efc3435b%3A0x207aa061e9986431!2z6YeO5p2R6YGL5YuV5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1532868616887" width="370" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -75,5 +77,3 @@ header:
 - [西予市社会福祉協議会](http://seiyo-syakyo.jp/)
 - [西予市災害ボランティアセンター](https://www.facebook.com/seiyosvc)
 - [NPO オープンジャパン 中長期ボランティア募集](http://openjapan.net/sanka/volunteer_2018nishinihon)
-
-
