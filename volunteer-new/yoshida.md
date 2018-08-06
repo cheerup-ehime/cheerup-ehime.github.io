@@ -2,7 +2,7 @@
 title: 【8/6 吉田町の地域解説と現状】
 excerpt: 愛媛県でも最も復旧が遅れている吉田町について解説します。
 header:
-  overlay_image: /assets/images/map/yoshida-area.png
+  overlay_image: /assets/images/maps/yoshida-area.png
   overlay_filter: 0.4
 category: 被災地情報
 tag:
