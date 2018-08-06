@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "ボランティアに行く"
-    url: /volunteer/
+    url: /volunteer-new/
   - title: "後方支援する"
     url: /rescuesupply/
   - title: "被災地を知る"
@@ -20,6 +20,8 @@ about_menu:
 disaster-area:
   - title: "被災地情報"
     children:
+    - title: "吉田町の概要と現状"
+      url: /volunteer-new/yoshida/
     - title: "自治体情報"
       url: /disaster-area/
     - title: "家電製品特別修理対応"
@@ -58,14 +60,18 @@ volunteer-new:
       url: /volunteer/aggregation/
   - title: "行先を決める"
     children:
-    - title: "大洲市を調べる"
-      url: /volunteer-new/ozu/
-    - title: "西予市（野村）を調べる"
-      url: /volunteer-new/seiyo/
-    - title: "宇和島市（吉田）を調べる"
+    - title: "宇和島市（吉田）に行く"
       url: /volunteer-new/uwajima/
+    - title: "吉田町の解説と現状"
+      url: /volunteer-new/yoshida/
+    - title: "大洲市に行く"
+      url: /volunteer-new/ozu/
+    - title: "西予市に行く"
+      url: /volunteer-new/seiyo/
   - title: "準備する"
     children:
+    - title: "ボランティア情報を集める"
+      url: /volunteer/
     - title: "ボランティア活動の準備をする"
       url: /volunteer-new/preparation/
     - title: "ボランティア活動費支援への登録"
