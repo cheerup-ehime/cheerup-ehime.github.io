@@ -18,7 +18,7 @@ header:
 
 - 熱中症対策
 
-![装備](/assets/volunteer-equipments.png)
+![装備](/assets/images/volunteer-equipments.png)
 
 ## 手続き
 
