@@ -1,17 +1,17 @@
 ---
-title: ボランティアに行きたい！
+title: 愛媛にボランティアに行きたい！
 excerpt: 愛媛県の豪雨災害のボランティアに行きたくなったら（行きたくなる前に）見るページです。ボランティアの準備、被災地情報などをまとめています。
-permalink: /volunteer-new/
 category:
-    - ボランティア
+  - ボランティア
+tag:
+  - 宇和島市
+  - 大洲市
+  - 西予市
 date: 2018-07-29 11:53:22 +0900
 last_modified_at: 2018-08-06 07:48:52 +0900
 header:
   overlay_image: /assets/images/yoshida-disaster-area.jpg
   overlay_filter: 0.5
-sidebar:
-  nav: volunteer-menu
-
 ---
 # 愛媛県の豪雨災害のボランティアに行きたくなったら（行きたくなる前に）見るページ
 
@@ -24,6 +24,7 @@ sidebar:
 各エリア毎のボランティア申し込みの仕方をまとめています。申請書の**コンビニプリント**にも対応していますので、是非ご活用ください！！
 
 - [宇和島市](/volunteer-new/uwajima/)に行く
+  - [吉田町の説明と現状(8/6)](/volunteer-new/yoshida/)
 - [大洲市](/volunteer-new/ozu/)に行く
 - [西予市](/volunteer-new/seiyo/)に行く
 
