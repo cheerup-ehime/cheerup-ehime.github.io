@@ -1,13 +1,14 @@
 ---
-title: 寄付金・義援金へのリンク集
+title: 【8/7更新】寄付金・義援金へのリンク集
 permalink: /donations/
 date: 2018-07-10 00:00:00 +0900
-last_modified_at: 2018-07-17 15:00:07 +0900
+last_modified_at: 2018-08-07 17:09:09 +0900
 sidebar:
   nav: supporter_menu
 ---
 
 主に愛媛県への義援金についてまとめました（一部被災地全体への義援金も含みます）。
+**ふるさと納税の義援金の集計を追加しました！**
 
 # 自治体に直接募金する
 
@@ -18,6 +19,12 @@ sidebar:
     - **銀行振込、書留、直接持ち込みなど、送金が簡潔に行えない**{: .notice--warning}
     - **被災自治体の状況によっては寄付金受領証明書の発行が遅れることがあります。**{: .notice--warning}
    
+## 愛媛県ふるさとチョイスの義援金の現状集計
+
+現時点のふるさとチョイスによる義援金を集計しています。義援金の寄付の際に、参考にしてください。
+（表示に数秒時間がかかりますので、しばらくお待ち下さい。スマホではグラフが横がはみだします。）
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_CFMptnG-5lgZQ7P0UepPod3OerN3VWFAeXb0YgZGg73PijhLkWDxAIWRwOBM8kmWxP7ubxnedkj1/pubchart?oid=825022101&format=interactive"></iframe> 
 
 ## 愛媛県の義援金募集
 
