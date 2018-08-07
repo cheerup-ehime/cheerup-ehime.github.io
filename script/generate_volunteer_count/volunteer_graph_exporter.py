@@ -15,23 +15,31 @@ import datetime as dt
 font = {'family': 'IPAexGothic'}
 matplotlib.rc('font', **font)
 import os
-import gspread as gs
+# import gspread as gs
 from PIL import Image
 
-from oauth2client.service_account import ServiceAccountCredentials
+#from oauth2client.service_account import ServiceAccountCredentials
 
 WEEKLY_GRAPH='./assets/images/volunteer_count_week.png'
 DAILY_GRAPH='./assets/images/volunteer_count.png'
 
 # In[33]:
 
+def load_data_from_site():
+    url = 'https://ehimesvc.jp/?p=70'
+    dfs = pd.read_html(url, index_col=0, na_values=['活動中止', '終了', '休止'])
+    df = dfs[0]
+    df.dropna(how='all', inplace=True)
+    df.drop('合計', inplace=True)
+    return df.rename(columns={'日付': 'Date'})
 
-def create_google_client(path):
-    scope = ['https://spreadsheets.google.com/feeds']
-    path = os.path.expanduser(path)
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(path, scope)
-    client = gs.authorize(credentials)
-    return client
+
+# def create_google_client(path):
+#     scope = ['https://spreadsheets.google.com/feeds']
+#     path = os.path.expanduser(path)
+#     credentials = ServiceAccountCredentials.from_json_keyfile_name(path, scope)
+#     client = gs.authorize(credentials)
+#     return client
 
 def save_as_jpeg(path):
     path_jpg = path.replace('png', 'jpg')
@@ -39,19 +47,19 @@ def save_as_jpeg(path):
 
 # In[34]:
 
-def load_data_from_gspread():
+# def load_data_from_gspread():
 
-    path = '/Users/kkd/.credential/Dataprep-770b3144dc97.json'
-    doc_url = 'https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit?usp=sharing'
+#     path = '/Users/kkd/.credential/Dataprep-770b3144dc97.json'
+#     doc_url = 'https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit?usp=sharing'
 
-    client = create_google_client(path)
-    gfile = client.open_by_url(doc_url)
-    worksheet = gfile.worksheet('volunteer')
-    records = worksheet.get_all_values()
-    cols_name = records[0]
-    data = records[1:]
-    df = pd.DataFrame(data=data, columns=cols_name)
-    return df[['Date','宇和島市','大洲市','西予市','今治市','松山市']]
+#     client = create_google_client(path)
+#     gfile = client.open_by_url(doc_url)
+#     worksheet = gfile.worksheet('volunteer')
+#     records = worksheet.get_all_values()
+#     cols_name = records[0]
+#     data = records[1:]
+#     df = pd.DataFrame(data=data, columns=cols_name)
+#     return df[['Date','宇和島市','大洲市','西予市','今治市','松山市']]
 
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
@@ -63,11 +71,10 @@ def filter_within_week(df):
 
 # 前日比、前週比を出す。
 def diff_another_day(df, before_day):
-    df_top3 = df[['Date','宇和島市','大洲市','西予市']]
-    df_top3 = df_top3.set_index('Date')
+    df_top3 = df[['宇和島市','大洲市','西予市']]
     df_top3.fillna(0, inplace=True)
     df_top3.replace('', 0, inplace=True)
-    df_top3 = df_top3.applymap(int)
+    df_top3 = df_top3.applymap(float)
 
     before_day = dt.datetime.now() - dt.timedelta(before_day)
      
@@ -83,15 +90,14 @@ def generate_graph_within_week(df):
     df.replace('', 0, inplace=True)
     df.fillna(0, inplace=True)
 
-    df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
-    df2 = df.set_index('Date')
+    df2 = df
     df2.index.names = ['Date']
+    print(df2.head())
 
-    
     df2 = filter_within_week(df2)
     print(df2)
     df2.index = df2.index.strftime("%m/%d")
-    df2 = df2.applymap(int)
+    df2 = df2.applymap(float)
     ax = df2.plot(
                     kind='bar',
                     figsize=(8,8), 
@@ -116,13 +122,11 @@ def generage_week_graph(df):
     df.replace('', 0, inplace=True)
     df.fillna(0, inplace=True)
 
-    df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
-    df2 = df.set_index('Date')
+    df2 = df
     df2.index.names = ['Date']
 
     # df2.index = df2.index.strftime("%m/%d")
-    df2 = df2.applymap(int)
-    df2
+    df2 = df2.applymap(float)
     df_w = df2.resample('W').sum()
     ax = df_w.T.plot(kind='bar',
                         # figsize=(16,10), 
@@ -210,7 +214,9 @@ def write_article(table_diff, table_d, table_w):
     
 
 if __name__ == '__main__':
-    df = load_data_from_gspread()
+    # df = load_data_from_gspread()
+    df = load_data_from_site()
+    df = df.rename(index=lambda s: dt.datetime.strptime(s, '%m月%d日').replace(year=2018))
     df_d = generate_graph_within_week(df)
     df_w = generage_week_graph(df)
     table_diff = generate_diff_table(df)
