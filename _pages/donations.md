@@ -85,7 +85,7 @@ sidebar:
 現時点のふるさとチョイスによる義援金を集計しています。義援金の寄付の際に、参考にしてください。
 （表示に数秒時間がかかりますので、しばらくお待ち下さい。スマホではグラフが横がはみだします。）
 
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_CFMptnG-5lgZQ7P0UepPod3OerN3VWFAeXb0YgZGg73PijhLkWDxAIWRwOBM8kmWxP7ubxnedkj1/pubchart?oid=825022101&format=interactive"></iframe> 
+<iframe width="374.5" height="399.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_CFMptnG-5lgZQ7P0UepPod3OerN3VWFAeXb0YgZGg73PijhLkWDxAIWRwOBM8kmWxP7ubxnedkj1/pubchart?oid=825022101&amp;format=interactive"></iframe> 
 
 **7/17更新 代理寄付を含む、全愛媛県自治を追加しました。**{: .notice--primary}
 
