@@ -11,7 +11,32 @@ sidebar:
 
 ## 【{month_day}から過去一週間分データ更新】
 
-各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。データ数が増えてきたので過去８日以内の表示にしています。全データは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)にあります。 [^1]
+各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。データ数が増えてきたので過去８日以内の表示にしています。8/5までデータは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)にあります。 現在は[愛媛県災害ボランティア特設サイト](https://ehimesvc.jp/)から直接取得しています。 [^1]
+
+## 【ボランティア募集数と実績数比較】
+
+これまでの宇和島市、大洲市、西予市のボランティアの募集数と実績数をグラフにしています。
+
+### 宇和島市
+
+平日の募集は300人、個人は四国圏内からの募集となっています。
+
+ ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_{dateYMD}.png)
+
+### 大洲市
+
+平日の募集は100〜150人で、県内限定の募集となっています。
+
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_{dateYMD}.png)
+
+### 西予市
+
+ニーズの数に合わせてボランティア募集数も変動するようになりました。全国から募集しています。
+
+ ![西予市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_{dateYMD}.png)
+
+### まとめ
+
 
 ## 傾向
 
