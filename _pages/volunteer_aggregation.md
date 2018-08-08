@@ -1,17 +1,17 @@
 ---
-title: 【8/7版 愛媛県ボランティア数動向】
+title: 【8/8版 愛媛県ボランティア数動向】
 description: 松山市社協、八幡浜市社協、愛媛災害支援センターが公開しているデータを元に、ボランティア数のグラフを作成・公開しています。
 permalink: /volunteer/aggregation/
 date: 2018-07-18 05:59:06 +0900
-last_modified_at: 2018-08-08 10:28:18 +0900
+last_modified_at: 2018-08-08 23:03:14 +0900
 sidebar:
   nav: volunteer_menu
 
 ---
 
-## 【8/7から過去一週間分データ更新】
+## 【8/8から過去一週間分データ更新】
 
-各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。データ数が増えてきたので過去８日以内の表示にしています。8/3までの全データは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)にあります。現在は災害VCのデータから直接グラフを作成しています。 [^1]
+各社協、ボランティアセンターが公開している情報を元に、愛媛県内のボランティア数の一覧とグラフを公開しています。データ数が増えてきたので過去８日以内の表示にしています。8/5までデータは[こちら](https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit#gid=0)にあります。 現在は[愛媛県災害ボランティア特設サイト](https://ehimesvc.jp/)から直接取得しています。 [^1]
 
 ## 【ボランティア募集数と実績数比較】
 
@@ -19,21 +19,21 @@ sidebar:
 
 ### 宇和島市
 
-平日の募集は200人、休日の募集が400人となっていますが、ここ一週間は募集人数にほぼ近い実績値になっています。
+平日の募集は300人、個人は四国圏内からの募集となっています。
 
- ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_20180807.png)
+ ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_20180808.png)
 
 ### 大洲市
 
-平日の募集は120〜150人であり、平日・休日ともに概ね募集人数に近い実績数となっています。
+平日の募集は100〜150人で、県内限定の募集となっています。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_20180807.png)
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_20180808.png)
 
 ### 西予市
 
-募集は平日・休日問わず300人となっていますが、平日・休日含め**募集人数が集まっていない**ようです。
+ニーズの数に合わせてボランティア募集数も変動するようになりました。全国から募集しています。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_20180807.png)
+ ![西予市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_20180808.png)
 
 ### まとめ
 
@@ -42,9 +42,9 @@ sidebar:
 
 エリア | 前日比 | 前週同日比
 ---------|----------|---------
- 宇和島市 | :arrow_lower_right:-147.0 | :arrow_upper_right:74.0
- 大洲市  | :arrow_upper_right:21.0 | :arrow_lower_right:-9.0
- 西予市  | :arrow_lower_right:-68.0 | :arrow_lower_right:-7.0
+ 宇和島市 | :arrow_upper_right:27.0 | :arrow_lower_right:-145.0
+ 大洲市  | :arrow_upper_right:6.0 | :arrow_lower_right:-78.0
+ 西予市  | :arrow_lower_right:-68.0 | :arrow_right:0.0
 
 
 
@@ -64,8 +64,9 @@ sidebar:
 | 08/03  |        2 |        252 |       96 |       78 |        0 |        0 |
 | 08/04  |       16 |        300 |       95 |      231 |        0 |        0 |
 | 08/05  |       20 |        251 |      134 |      180 |        0 |        0 |
-| 08/06  |        0 |        293 |       74 |      136 |        0 |        0 |
-| 08/07  |        0 |        146 |       95 |       68 |        0 |        0 |
+| 08/06  |        3 |        293 |       74 |      136 |        0 |        0 |
+| 08/07  |        3 |        146 |       95 |       68 |        0 |        0 |
+| 08/08  |        3 |        173 |      101 |        0 |        0 |        0 |
 
 ## 【週毎のボランティア数動向】
 
@@ -77,7 +78,7 @@ sidebar:
 | 07/22週 |      484 |       1902 |     2044 |     2011 |      164 |       53 |
 | 07/29週 |       87 |       1546 |      976 |     1036 |       26 |        0 |
 | 08/05週 |       43 |       1446 |      689 |      700 |        0 |        0 |
-| 08/12週 |        0 |        439 |      169 |      204 |        0 |        0 |
+| 08/12週 |        9 |        612 |      270 |      204 |        0 |        0 |
 
 ### 元データ
 
