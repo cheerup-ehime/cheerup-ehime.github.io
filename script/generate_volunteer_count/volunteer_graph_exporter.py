@@ -15,17 +15,17 @@ import datetime as dt
 font = {'family': 'IPAexGothic'}
 matplotlib.rc('font', **font)
 import os
-import gspread as gs
 from PIL import Image
-
-from oauth2client.service_account import ServiceAccountCredentials
 
 WEEKLY_GRAPH='./assets/images/volunteer_count_week.png'
 DAILY_GRAPH='./assets/images/volunteer_count.png'
 IMAGE_BASE_PATH = './assets/images/volunteer_headcount/'
 IMAGE_NAME='{}_volunteer_headcount_diff_{}.png'
+VOLUNTEER_NEEDED='./_data/volunteer_needed.tsv'
 
-# In[33]:
+def save_as_jpeg(path):
+    path_jpg = path.replace('png', 'jpg')
+    Image.open(path).convert('RGB').save(path_jpg,'JPEG')
 
 def load_data_from_site():
     url = 'https://ehimesvc.jp/?p=70'
@@ -35,35 +35,14 @@ def load_data_from_site():
     df.drop('合計', inplace=True)
     return df.rename(columns={'日付': 'Date'})
 
+def load_volunteer_needed():
+    df = pd.read_table(VOLUNTEER_NEEDED)
+    print(df)
+    return df[['Date', '宇和島市','大洲市','西予市']]
 
-def create_google_client(path):
-    scope = ['https://spreadsheets.google.com/feeds']
-    path = os.path.expanduser(path)
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(path, scope)
-    client = gs.authorize(credentials)
-    return client
-
-def save_as_jpeg(path):
-    path_jpg = path.replace('png', 'jpg')
-    Image.open(path).convert('RGB').save(path_jpg,'JPEG')
-
-# In[34]:
-
-def load_data_from_gspread(sheet_name, columns=None):
-    if columns == None:
-        columns = ['Date','宇和島市','大洲市','西予市','今治市','松山市']
-
-    path = '/Users/kkd/.credential/Dataprep-770b3144dc97.json'
-    doc_url = 'https://docs.google.com/spreadsheets/d/1h-GFHoNa55P96wu_HNbPk899eN4HZcnu1T9q4eag8Uc/edit?usp=sharing'
-
-    client = create_google_client(path)
-    gfile = client.open_by_url(doc_url)
-    worksheet = gfile.worksheet(sheet_name)
-    records = worksheet.get_all_values()
-    cols_name = records[0]
-    data = records[1:]
-    df = pd.DataFrame(data=data, columns=cols_name)
-    return df[columns]
+def get_today(format):
+    return dt.datetime.now().strftime(format)
+    # return (dt.datetime.now() - dt.timedelta(1)).strftime(format) #一日前で設定したい場合
 
 def df_with_date_index(df):
     df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
@@ -85,8 +64,7 @@ def generate_voluneer_needs_actual_graph(location, df1, df2):
     for tick in ax.get_xticklabels():
         tick.set_rotation(45)
 
-    from datetime import datetime as dt
-    today = dt.now().strftime("%Y%m%d")        
+    today = get_today("%Y%m%d")
 
     fig.savefig(IMAGE_BASE_PATH + IMAGE_NAME.format(location, today))
     save_as_jpeg(IMAGE_BASE_PATH +  IMAGE_NAME.format(location, today))
@@ -103,9 +81,7 @@ def generate_ratio_of_volunteer_needs(df, df_needed):
 
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
-    # today = (dt.datetime.now() - dt.timedelta(1)).strftime('%Y/%m/%d')
-    today = dt.datetime.now().strftime('%Y/%m/%d')
-    d_range =  pd.date_range(end=today, periods=8)
+    d_range = pd.date_range(end=get_today('%Y/%m/%d'), periods=8)
     print(d_range)
     return df.loc[d_range]
 
@@ -122,20 +98,15 @@ def diff_another_day(df, before_day):
     df_before = df_top3.loc[before_day.strftime('%Y-%m-%d')]
     return df_today - df_before
 
-# ## Excelデータを元にグラフを出力
-# df = pd.read_excel('assets/data/ehime_volunteer.xlsx')
-
-
+# 日次グラフ生成
 def generate_graph_within_week(df):
     df.replace('', 0, inplace=True)
     df.fillna(0, inplace=True)
 
     df2 = df
     df2.index.names = ['Date']
-    print(df2.head())
-
     df2 = filter_within_week(df2)
-    print(df2)
+
     df2.index = df2.index.strftime("%m/%d")
     df2 = df2.applymap(float)
     ax = df2.plot(
@@ -158,6 +129,7 @@ def generate_graph_within_week(df):
     save_as_jpeg(DAILY_GRAPH)
     return df2
 
+# 週次グラフ生成
 def generage_week_graph(df):
     df.replace('', 0, inplace=True)
     df.fillna(0, inplace=True)
@@ -188,15 +160,10 @@ def generage_week_graph(df):
     save_as_jpeg(WEEKLY_GRAPH)
     return df_w
 
-# In[37]:
-
+# Markdown Table生成
 def generate_table(df):
     from tabulate import tabulate
-
-    # df_table = df.set_index('Date')
-    # df_table.index = df_table.index.strftime('%m/%d')
     df.index.name = '日付'
-
     table = tabulate(df, tablefmt="pipe", headers="keys", showindex=True)
     return table
 
@@ -215,8 +182,8 @@ def generate_diff_table(df):
  大洲市  | {ozu_diff_yesterday_icon}{ozu_diff_yesterday_num} | {ozu_diff_lastweek_icon}{ozu_diff_lastweek_num}
  西予市  | {seiyo_diff_yesterday_icon}{seiyo_diff_yesterday_num} | {seiyo_diff_lastweek_icon}{seiyo_diff_lastweek_num}
 '''
-    df_yesterday = diff_another_day(df, 2)
-    df_lastweek = diff_another_day(df, 8)
+    df_yesterday = diff_another_day(df, 1)
+    df_lastweek = diff_another_day(df, 7)
 
     return diff_table.format(
         uwa_diff_yesterday_icon=choose_icon(df_yesterday['宇和島市']),
@@ -232,15 +199,13 @@ def generate_diff_table(df):
         seiyo_diff_lastweek_icon=choose_icon(df_lastweek['西予市']),
         seiyo_diff_lastweek_num=df_lastweek['西予市'])
 
-# In[38]:
-
 def write_article(table_diff, table_d, table_w):
     from datetime import datetime as dt
     with open('./script/generate_volunteer_count/template.md') as f:
         template = f.read()
         
         ymd = dt.now().strftime('%Y%m%d')
-        month_day = dt.now().strftime('%m/%d')
+        month_day = dt.now().strftime('%-m/%-d')
         timestamp = dt.now().strftime("%Y-%m-%d %H:%M:%S")
         
         report = template.format(
@@ -254,14 +219,12 @@ def write_article(table_diff, table_d, table_w):
         
     with open('./_pages/volunteer_aggregation.md', 'w') as f:
         f.write(report)
-    
 
 if __name__ == '__main__':
-    # df = load_data_from_gspread()
-    df_want = load_data_from_gspread('want', ['Date','宇和島市','大洲市','西予市'])
+    df_needed = load_volunteer_needed()
     df = load_data_from_site()
     df = df.rename(index=lambda s: dt.datetime.strptime(s, '%m月%d日').replace(year=2018))
-    generate_ratio_of_volunteer_needs(df, df_want)
+    generate_ratio_of_volunteer_needs(df, df_needed)
     df_d = generate_graph_within_week(df)
     df_w = generage_week_graph(df)
     table_diff = generate_diff_table(df)
