@@ -9,24 +9,37 @@ import subprocess
 import shlex
 from io import StringIO
 
-
-def generate_url():
+def get_days():
     today = datetime.date.today()
     begin = datetime.date(2018, 7, 30)
     days = (today - begin).days + 63
     if (datetime.datetime.now().hour < 12):
         days -= 1
-
-    return 'http://www.pref.ehime.jp/h12200/documents/higaijokyo' + str(days) + '.pdf'
-
-def get_higaijokyo_content():
-    url = generate_url()
-
+    return days
+    
+def fetch_content(days):
+    url = 'http://www.pref.ehime.jp/h12200/documents/higaijokyo' + str(days) + '.pdf'
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
-        content = urllib.request.urlopen(req)
+        return urllib.request.urlopen(req)
     except HTTPError:
-        print('PDFがありません')
+        print('第{}報のPDFがありません'.format(days))
+
+    return None
+
+
+def get_higaijokyo_content():
+    
+    days = get_days()
+
+    for ver in range(days+1)[::-1]:
+        content = fetch_content(ver)
+        if content != None:
+            print('第{}報のPDFを取得！'.format(days))
+            break
+
+    if content == None:
+        print('レポートが入手できませんでした')
         return
 
     with open('data','wb') as output:
