@@ -5,7 +5,7 @@ category:
 tag:
     - 宇和島市
 date: 2018-07-29 12:15:14 +0900
-last_modified_at: 2018-08-06 08:32:08 +0900
+last_modified_at: 2018-08-09 20:03:20 +0900
 header:
     overlay_image: /assets/images/yoshida-disaster-area.jpg
     overlay_filter: 0.5
@@ -30,7 +30,7 @@ header:
 
 ![吉田町被害(8/6現在)](/assets/images/maps/yoshida-disaster-ratio.png)
 
-[吉田町の現状（8/6時点）を解説するページ](/volunteer-new/yoshida/)を作成していますので、そちらをご覧ください。
+[吉田町の現状を解説するページ](/volunteer-new/yoshida/)を作成していますので、そちらをご覧ください。
 
 
 ## 場所・ルート
@@ -142,6 +142,20 @@ NPOユナイテッド・アースさんが、宇和島復興支援現地活動�
 
 - [登録フォーム](https://docs.google.com/forms/d/e/1FAIpQLSessL05TB2wWRmuwl1KoPBcqLHD5xInquQ9iebv2PbiyZEWEA/viewform?c=0&w=1)
 - Facebookグループ [team SAKUBO](https://www.facebook.com/groups/1858494494446011/)
+- [関東愛媛県人会災害ボランティア部のチームサクボの紹介ページ](http://ehime-support.net/news/2018/08/volunteer/)
+
+【8/9更新】災害VCはお盆はお休みですが、**チームサクボは、8/13〜16にも活動します。(8/13はPMのみ）**
+上限人数は**30名**だそうです。
+
+
+日程 | 開始時間 |    場所
+---- | -------- | ----------
+8/13 | 13:00    | 荒巻集会所
+8/14 | 9:30     | 前日決定
+8/15 | 9:30     | 前日決定
+8/16 | 9:30     | 前日決定
+
+
     
 ### 大河内救援隊
 
