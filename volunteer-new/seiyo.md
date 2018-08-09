@@ -50,7 +50,7 @@ header:
 
 ### 西予市災害VC経由で活動する(個人)
 
-- 受付時間：8:30-10:00、12:00-13:00
+- 受付時間：8:30-10:00、~~12:00-13:00~~(8/7より)
 
 [こちら](http://seiyo-syakyo.jp/publics/index/75/)から事前に[申込書](http://seiyo-syakyo.jp/publics/download/?file=/files/content_type/type019/181/201807140014032741.pdf)をダウンロードの後記入して持参し、直接、西予市災害救援ボランティアセンターまでお越しください。
 
