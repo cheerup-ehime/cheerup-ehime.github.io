@@ -13,6 +13,10 @@ header:
 
 # 西予市にボランティアに行きたい！
 
+## 状況
+
+![最新の募集状況](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_recent.png)
+
 ## 場所と移動
 
 最新の道路情報は[こちら](https://www.pref.ehime.jp/h40900/kisei.html)をご確認ください。
