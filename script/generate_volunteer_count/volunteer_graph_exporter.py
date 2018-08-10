@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[32]:
-
-
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -21,6 +18,7 @@ WEEKLY_GRAPH='./assets/images/volunteer_count_week.png'
 DAILY_GRAPH='./assets/images/volunteer_count.png'
 IMAGE_BASE_PATH = './assets/images/volunteer_headcount/'
 IMAGE_NAME='{}_volunteer_headcount_diff_{}.png'
+RECENT_HEADCOUNT_NAME='{}_volunteer_headcount_diff_recent.png'
 VOLUNTEER_NEEDED='./_data/volunteer_needed.tsv'
 
 def save_as_jpeg(path):
@@ -40,17 +38,23 @@ def load_volunteer_needed():
     print(df)
     return df[['Date', '宇和島市','大洲市','西予市']]
 
+def now():
+    # return dt.datetime.now()
+    return (dt.datetime.now() - dt.timedelta(1)) #一日前で設定したい場合
+    
 def get_today(format):
-    return dt.datetime.now().strftime(format)
-    # return (dt.datetime.now() - dt.timedelta(1)).strftime(format) #一日前で設定したい場合
+    # return dt.datetime.now().strftime(format)
+    return (dt.datetime.now() - dt.timedelta(1)).strftime(format) #一日前で設定したい場合
 
 def df_with_date_index(df):
     df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
     return df.set_index('Date').fillna(0).replace('',0).applymap(int)
 
-def generate_voluneer_needs_actual_graph(location, df1, df2):
+# ボランティア数の必要数と実績グラフ出力
+def gen_volunteer_needs_actual_graph(location, df1, df2):
     df = pd.DataFrame([df1[location], df2[location]]).T
     df.columns=['実績数','募集数']
+    print(df.index)
     df.index.name='日付'
     df = df.sort_index()
     df.fillna(0, inplace=True)
@@ -67,16 +71,17 @@ def generate_voluneer_needs_actual_graph(location, df1, df2):
     today = get_today("%Y%m%d")
 
     fig.savefig(IMAGE_BASE_PATH + IMAGE_NAME.format(location, today))
+    fig.savefig(IMAGE_BASE_PATH + RECENT_HEADCOUNT_NAME.format(location))
     save_as_jpeg(IMAGE_BASE_PATH +  IMAGE_NAME.format(location, today))
     return df
 
-def generate_ratio_of_volunteer_needs(df, df_needed):
+def gen_headcount_graph(df, df_needed):
     df_actual = df.iloc[:, [0,1,2,3]]
     df_needed = df_with_date_index(df_needed.iloc[:, [0,1,2,3]])
 
-    generate_voluneer_needs_actual_graph('宇和島市', df_actual, df_needed)
-    generate_voluneer_needs_actual_graph('大洲市', df_actual, df_needed)
-    generate_voluneer_needs_actual_graph('西予市', df_actual, df_needed)
+    gen_volunteer_needs_actual_graph('宇和島市', df_actual, df_needed)
+    gen_volunteer_needs_actual_graph('大洲市', df_actual, df_needed)
+    gen_volunteer_needs_actual_graph('西予市', df_actual, df_needed)
 
 
 # ## ８日以内のデータのみフィルタする
@@ -92,14 +97,14 @@ def diff_another_day(df, before_day):
     df_top3.replace('', 0, inplace=True)
     df_top3 = df_top3.applymap(float)
 
-    before_day = dt.datetime.now() - dt.timedelta(before_day)
+    before_day = now() - dt.timedelta(before_day)
      
     df_today = df_top3.iloc[-1]
     df_before = df_top3.loc[before_day.strftime('%Y-%m-%d')]
     return df_today - df_before
 
 # 日次グラフ生成
-def generate_graph_within_week(df):
+def gen_day_graph(df):
     df.replace('', 0, inplace=True)
     df.fillna(0, inplace=True)
 
@@ -130,7 +135,7 @@ def generate_graph_within_week(df):
     return df2
 
 # 週次グラフ生成
-def generage_week_graph(df):
+def gen_week_graph(df):
     df.replace('', 0, inplace=True)
     df.fillna(0, inplace=True)
 
@@ -142,7 +147,6 @@ def generage_week_graph(df):
     df_w = df2.resample('W').sum()
     df_w.index = df_w.index.strftime("%m/%d週")
     ax = df_w.T.plot(kind='bar',
-                        # figsize=(16,10), 
                         figsize=(8,8), 
                         alpha=0.5,
                         title="愛媛県ボランティア数動向（7月週別）", 
@@ -161,7 +165,7 @@ def generage_week_graph(df):
     return df_w
 
 # Markdown Table生成
-def generate_table(df):
+def gen_md_table(df):
     from tabulate import tabulate
     df.index.name = '日付'
     table = tabulate(df, tablefmt="pipe", headers="keys", showindex=True)
@@ -175,38 +179,36 @@ def choose_icon(num):
     else:
         return ':arrow_lower_right:'
 
-def generate_diff_table(df):
-    diff_table = '''エリア | 前日比 | 前週同日比
----------|----------|---------
- 宇和島市 | {uwa_diff_yesterday_icon}{uwa_diff_yesterday_num} | {uwa_diff_lastweek_icon}{uwa_diff_lastweek_num}
- 大洲市  | {ozu_diff_yesterday_icon}{ozu_diff_yesterday_num} | {ozu_diff_lastweek_icon}{ozu_diff_lastweek_num}
- 西予市  | {seiyo_diff_yesterday_icon}{seiyo_diff_yesterday_num} | {seiyo_diff_lastweek_icon}{seiyo_diff_lastweek_num}
-'''
+def gen_row(df, area):
+    row_tmpl = "{area} | {day_icon}{day_num} | {week_icon}{week_num}"
     df_yesterday = diff_another_day(df, 1)
     df_lastweek = diff_another_day(df, 7)
+    return row_tmpl.format(
+                area = area,
+                day_icon = choose_icon(df_yesterday[area]),
+                day_num = df_yesterday[area],
+                week_icon = choose_icon(df_lastweek[area]),
+                week_num = df_lastweek[area]
+                )
 
-    return diff_table.format(
-        uwa_diff_yesterday_icon=choose_icon(df_yesterday['宇和島市']),
-        uwa_diff_yesterday_num=df_yesterday['宇和島市'],
-        ozu_diff_yesterday_icon=choose_icon(df_yesterday['大洲市']),
-        ozu_diff_yesterday_num=df_yesterday['大洲市'],
-        seiyo_diff_yesterday_icon=choose_icon(df_yesterday['西予市']),
-        seiyo_diff_yesterday_num=df_yesterday['西予市'],
-        uwa_diff_lastweek_icon=choose_icon(df_lastweek['宇和島市']),
-        uwa_diff_lastweek_num=df_lastweek['宇和島市'],
-        ozu_diff_lastweek_icon=choose_icon(df_lastweek['大洲市']),
-        ozu_diff_lastweek_num=df_lastweek['大洲市'],
-        seiyo_diff_lastweek_icon=choose_icon(df_lastweek['西予市']),
-        seiyo_diff_lastweek_num=df_lastweek['西予市'])
+
+def gen_diff_table(df):
+    header = '''エリア | 前日比 | 前週同日比
+---------|----------|---------'''
+    table = [header]
+
+    for area in ['宇和島市','大洲市','西予市']:
+        table.append(gen_row(df, area))
+
+    return "\n".join(table)
 
 def write_article(table_diff, table_d, table_w):
-    from datetime import datetime as dt
     with open('./script/generate_volunteer_count/template.md') as f:
         template = f.read()
         
-        ymd = dt.now().strftime('%Y%m%d')
-        month_day = dt.now().strftime('%-m/%-d')
-        timestamp = dt.now().strftime("%Y-%m-%d %H:%M:%S")
+        ymd = now().strftime('%Y%m%d')
+        month_day = now().strftime('%-m/%-d')
+        timestamp = now().strftime("%Y-%m-%d %H:%M:%S")
         
         report = template.format(
                         dateYMD=ymd,
@@ -220,15 +222,34 @@ def write_article(table_diff, table_d, table_w):
     with open('./_pages/volunteer_aggregation.md', 'w') as f:
         f.write(report)
 
+def write_post():
+    with open('./script/generate_volunteer_count/post_template.md') as f:
+        template = f.read()
+
+        day = now().strftime('%m%d')
+        month_day = now().strftime('%-m/%-d')
+        ymd = now().strftime("%Y-%m-%d")
+        timestamp = now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        report = template.format(
+                        month_day=month_day, 
+                        timestamp=timestamp)
+
+    with open('./_posts/{}-volunteer-aggregation-{}.md'.format(ymd, day), 'w') as f:
+        f.write(report)
+    
+
+
 if __name__ == '__main__':
     df_needed = load_volunteer_needed()
     df = load_data_from_site()
     df = df.rename(index=lambda s: dt.datetime.strptime(s, '%m月%d日').replace(year=2018))
-    generate_ratio_of_volunteer_needs(df, df_needed)
-    df_d = generate_graph_within_week(df)
-    df_w = generage_week_graph(df)
-    table_diff = generate_diff_table(df)
-    table_d = generate_table(df_d)
-    table_w = generate_table(df_w)
+    gen_headcount_graph(df, df_needed)
+    df_d = gen_day_graph(df)
+    df_w = gen_week_graph(df)
+    table_diff = gen_diff_table(df)
+    table_d = gen_md_table(df_d)
+    table_w = gen_md_table(df_w)
     write_article(table_diff, table_d, table_w)
+    write_post()
 

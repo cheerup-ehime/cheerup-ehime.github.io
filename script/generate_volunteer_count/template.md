@@ -4,8 +4,11 @@ description: 松山市社協、八幡浜市社協、愛媛災害支援センタ�
 permalink: /volunteer/aggregation/
 date: 2018-07-18 05:59:06 +0900
 last_modified_at: {timestamp} +0900
+header:
+  overlay_image: /assets/images/volunteer_count.png
+  overlay_filter: 0.5
 sidebar:
-  nav: volunteer_menu
+  nav: volunteer-new
 
 ---
 
@@ -35,10 +38,7 @@ sidebar:
 
  ![西予市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_{dateYMD}.png)
 
-### まとめ
-
-
-## 傾向
+## 前日・前週からの変化
 
 {table_diff}
 
