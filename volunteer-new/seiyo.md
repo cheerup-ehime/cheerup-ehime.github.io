@@ -82,7 +82,13 @@ header:
 
 ### オープンジャパン経由で活動する
 
+[オープンジャパン](http://openjapan.net/sanka/volunteer_2018nishinihon)さんでもボランティアを募集しています。
+
+**中長期滞在して活動**できる方を募集しています。
+
 [フォーム](https://docs.google.com/forms/d/e/1FAIpQLSfp20k_Ryy08NnCZDQ-hRnMw9vVonMUABOcKWnOsF6lnOe9LA/viewform)から申し込みます。
+
+連絡は電話はなく[メール](info@openjapan.net)のみとなっています。
 
 ## ボランティアセンター
 
