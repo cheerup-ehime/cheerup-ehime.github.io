@@ -199,6 +199,10 @@ NPOユナイテッド・アースさんが、宇和島復興支援現地活動�
 
 ## 現地情報
 
+## VC周辺地図
+
+![VC周辺地図](/assets/images/maps/uwajima-vc-map.png)
+
 ### ボランティアセンター
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.5488307476335!2d132.55589951544638!3d33.225922368267014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354f61d3d3bf8f43%3A0x4ce27c3d7d62badb!2z44CSNzk4LTAwMDMg5oSb5aqb55yM5a6H5ZKM5bO25biC5L2P5ZCJ55S677yR5LiB55uu77yW4oiS77yR77yW!5e0!3m2!1sja!2sjp!4v1532866420223" width="350" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
