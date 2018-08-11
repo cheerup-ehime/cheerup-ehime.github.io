@@ -13,7 +13,7 @@ sidemenu:
 
 その他の団体・グループで「お盆も活動しているよ！」という情報があればお寄せください！！
 
-- [NPO ユナイテッド・アース](/volunteer-new/uwajima/#ユナイテッド・アース)
+- [NPO ユナイテッド・アース](/volunteer-new/uwajima/#ユナイテッドアース)
 - [災害NGO結](/volunteer-new/uwajima/#災害NGO結)
 - [チームサクボ](/volunteer-new/uwajima/#チームサクボ)
 - [大河内救援隊](/volunteer-new/uwajima/#大河内救援隊)
