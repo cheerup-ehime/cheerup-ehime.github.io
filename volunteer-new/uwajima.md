@@ -141,13 +141,13 @@ header:
 
 運行予定、募集状況は[こちら](https://ehimesvc.jp/?p=270)まで。
 
-## ユナイテッド・アースで活動する
+## ユナイテッド・アース
 
 NPOユナイテッド・アースさんが、宇和島復興支援現地活動メンバーを[募集](https://uwajima.united-earth.jp/volunteer/)しています。
 
 [こちらのフォーム](https://pro.form-mailer.jp/fms/34a9d3e816874)から登録できますが、Webフォームの登録だけでなく、同意書記入、参加協力費などの説明もありますので、[西日本豪雨災害　宇和島市復興支援　現地活動メンバー募集](https://uwajima.united-earth.jp/volunteer/)ページを御覧ください。
 
-## 災害NG結で活動する
+## 災害NG結
 
 災害NG結（ゆい）さんが、宇和島市での活動メンバーを[募集](http://ngoyui.com/archives/1838)しています。
 
