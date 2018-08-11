@@ -11,9 +11,11 @@ sidemenu:
 
 お盆期間中は、災害ボランティアセンターは活動を休止します。「**お盆休み中にボランティア活動したい！！**」という方には、お盆期間中も活動を続けているNPO・NGO・地元ボランティアグループにお問い合わせください。チアアップえひめの[各地域のボランティア情報](/volunteer-new/)からご覧頂けます。
 
+[宇和島エリアのお盆期間中の駐車場情報](/volunteer-new/uwajima/#お盆期間中の活動)も更新しています。
+
 その他の団体・グループで「お盆も活動しているよ！」という情報があればお寄せください！！
 
 - [NPO ユナイテッド・アース](/volunteer-new/uwajima/#ユナイテッドアース)
-- [災害NGO結](/volunteer-new/uwajima/#災害NGO結)
+- [災害NGO結](/volunteer-new/uwajima/#災害ngo結)
 - [チームサクボ](/volunteer-new/uwajima/#チームサクボ)
 - [大河内救援隊](/volunteer-new/uwajima/#大河内救援隊)
