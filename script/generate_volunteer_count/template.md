@@ -28,7 +28,7 @@ sidebar:
 
 ### 大洲市
 
-平日の募集は100〜150人で、県内限定の募集となっています。
+8/11より事前予約制となり当日受け付けがなくなりました。県内限定の募集となっています。
 
  ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_{dateYMD}.png)
 
