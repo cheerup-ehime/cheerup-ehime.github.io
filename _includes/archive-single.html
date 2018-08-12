@@ -1,5 +1,7 @@
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% elsif post.header.overlay_image %}
+  {% capture teaser %}{{ post.header.overlay_image}}{% endcapture %}
 {% else %}
   {% assign teaser = site.teaser %}
 {% endif %}
