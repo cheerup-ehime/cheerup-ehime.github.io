@@ -118,8 +118,8 @@ header:
 **コンビニプリントもできます。**
 
 - セブンイレブン
-    - 団体受付票：予約番号：KHTNK7KX
-    - 団体受付名簿：予約番号：55G438YJ
+    - 団体受付票：予約番号：3T8EKJYZ
+    - 団体受付名簿：予約番号：ESLKL8Y9
 - 上記以外のコンビニ
     - ユーザー番号：4NBPPWPQ65
     - ファイル名：
@@ -135,7 +135,7 @@ header:
 申込書に必要事項を記入し、**参加希望日の前日17時まで**に、[松山市社会福祉協議会](http://www.matsuyama-wel.jp/)までFAX(089-921-8360)または持参して申し込みします。（[PDF](https://ehimesvc.jp/wp-content/uploads/2018/07/volbus_moshikomi.pdf)、[Wordファイル](https://ehimesvc.jp/wp-content/uploads/2018/07/volbus_moshikomi.docx)）
 
 **コンビニプリントもできます**
-- セブンイレブン：プリント予約番号：88D4X6AR
+- セブンイレブン：プリント予約番号：RGEGQ74B
 - セブン以外：
   - ユーザー番号：4NBPPWPQ65、ファイル名：ボラバス申し込み
 

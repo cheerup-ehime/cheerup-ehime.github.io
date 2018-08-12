@@ -32,17 +32,17 @@ sidebar:
 - 申請先情報記入済の申請書
   - 大洲市社協宛申請書
     - [ファイル](/assets/application/highway-free-application-to-ozu.docx)
-    - コンビニプリント（セブンイレブン）：予約番号：9TJSTE42
+    - コンビニプリント（セブンイレブン）：予約番号：8KZPGQC9
     - コンビニプリント（セブン以外）
       - ユーザー番号：4NBPPWPQ65、ファイル名：大洲ボランティア活動証明申請
   - 西予市社協宛申請書
     - [ファイル](/assets/application/highway-free-application-to-seiyo.doc)
-    - コンビニプリント（セブンイレブン）：予約番号：DSMPT2DK
+    - コンビニプリント（セブンイレブン）：予約番号：7HL4CDM3
     - コンビニプリント（セブン以外）
       - ユーザー番号：4NBPPWPQ65、ファイル名：西予ボランティア活動証明申請
   - 宇和島市社協宛申請書
     - [ファイル](/assets/application/highway-free-application-to-uwajima.pdf)
-    - コンビニプリント（セブンイレブン）：予約番号：SY4S755L
+    - コンビニプリント（セブンイレブン）：予約番号：GFJAAQ6Y
     - コンビニプリント（セブン以外）
       - ユーザー番号：4NBPPWPQ65、ファイル名：宇和島ボランティア活動証明申請
 
@@ -84,7 +84,7 @@ sidebar:
 ※提出する書類は2種になります。<br><br>
   - [「災害派遣等従事車両証明申請書(word)](http://www.pref.ehime.jp/h15350/gouu/documents/sinseisyo.docx)
   - コンビニプリント（セブンイレブン）
-    - 予約番号：LMUT6X54
+    - 予約番号：57DECGYZ
   - コンビニプリント（セブン以外）
     - ユーザー番号：4NBPPWPQ65、ファイル名：災害派遣車両証明申請（地方自治体）
 
