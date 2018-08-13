@@ -10,6 +10,8 @@ tag:
 header:
   overlay_image: /assets/images/20180813_mikanyama.png
   overlay_filter: 0.5
+date: '2018-0８-13 10:00:00 +0900'
+last_modified_at: '2018-08-13 10:00:00 +0900'
 ---
 ## 復興作業だけじゃない！吉田地区のみかんボランティア大募集！！
 
