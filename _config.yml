@@ -185,11 +185,11 @@ prose:
   # rooturl: '_posts'
   siteurl: 'https://cheerup-ehime.github.io'
   ignore: 
-    - '/_config.yml'
-    - '/_layouts'
-    - '/_includes'
+    - _config.yml
+    - /_layouts
+    - /_includes
   media: "/assets/images"
-  medatada:
+  metadada:
     _posts:
       - name: "title"
         field:
