@@ -1,8 +1,8 @@
 ---
 title: 【8/12版 愛媛県ボランティア数動向を公開しました】
 description: 松山市社協、八幡浜市社協、愛媛災害支援センターが公開しているデータを元に、ボランティア数のグラフを毎日作成・公開しています。
-date: 2018-08-12 07:38:11 +0900
-last_modified_at: 2018-08-12 07:38:11 +0900
+date: '2018-08-12 07:38:11 +0900'
+last_modified_at: '2018-08-12 07:38:11 +0900'
 category: ボランティア
 tag:
   - ボランティア動向
@@ -10,7 +10,9 @@ header:
   overlay_image: /assets/images/volunteer_count.png
   overlay_filter: 0.5
 sidemenu:
-    nav: posts-menu
+  nav: posts-menu
+published: true
+excerpt: 松山市社協、八幡浜市社協、愛媛災害支援センターが公開しているデータを元に、ボランティア数のグラフを毎日作成・公開しています。
 ---
 
 【8/12】版の、愛媛県ボランティア数動向を公開しました。
