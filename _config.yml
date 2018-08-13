@@ -189,7 +189,7 @@ prose:
     - /_layouts
     - /_includes
   media: "/assets/images"
-  metadada:
+  metadata:
     _posts:
       - name: "title"
         field:
