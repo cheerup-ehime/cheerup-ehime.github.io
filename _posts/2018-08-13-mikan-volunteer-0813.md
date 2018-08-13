@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: 【8/13 みかん栽培のボランティアも大募集！！】
 excerpt: 愛媛県が、宇和島市吉田地区のみかんの摘果などの作業ボランティアを募集しています。こちらもぜひお願いします！！
 category: ボランティア
