@@ -8,14 +8,14 @@ tag:
   - 宇和島市
   - 吉田町
 header:
-  overlay_image: /assets/images/20180813_mikanyama.png
+  overlay_image: /assets/images/eyecatches/eyecatch-20180813-01.png
   overlay_filter: 0.5
 date: '2018-08-13 10:00:00 +0900'
-last_modified_at: '2018-08-13 10:00:00 +0900'
+last_modified_at: '2018-08-13 19:59:27 +0900'
 ---
 ## 復興作業だけじゃない！吉田地区のみかんボランティア大募集！！
 
-![20180813_mikanyama.png](/assets/images/20180813_mikanyama.png)
+![20180813_mikan_volunteer.png](/assets/images/eyecatches/eyecatch-20180813-01.png)
 
 宇和島市吉田地域のミカン農家を支援しようと、愛媛県が、みかんの摘果作業や園地片付けなどのボランティアを1日当たり100人募集しています。**みかん栽培のお手伝いも復興作業です。是非力を貸してください！！**
 
