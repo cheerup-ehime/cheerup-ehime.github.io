@@ -6,7 +6,7 @@ category:
 tag:
     - 西予市（野村町）
 date: 2018-07-29 12:15:14 +0900
-last_modified_at: 2018-08-11 14:23:36 +0900
+last_modified_at: 2018-08-13 09:11:31 +0900
 header:
     overlay_image: /assets/images/maps/nomura-map-only.png
     overlay_filter: 0.5    
