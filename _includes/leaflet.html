@@ -1,14 +1,11 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   <!-- Leaflet.draw0.4.9がv1.0.xまでしか対応していないので -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet-src.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet-src.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.9/leaflet.draw-src.js"></script>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.9/leaflet.draw-src.css' />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.5.0/Control.MiniMap.js"></script>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.5.0/Control.MiniMap.css' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw-src.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw-src.css' />
 
   <style type="text/css">
     #map {
@@ -50,19 +47,6 @@
         imperial: false,
         maxWidth: 200
       }).addTo(map);
-
-      // 描画レイヤの初期化
-//      var drawnItems = new L.FeatureGroup().addTo(map);
-//      var drawControl = new L.Control.Draw({
-//        draw: {
-//          circle: {
-//            feet: false
-//          },
-//        },
-//        edit: {
-//          featureGroup: drawnItems,
-//        },
-//      }).addTo(map);
   
       $.getJSON("/assets/geojson/{{page.map.json}}",function(data){
           L.geoJson(data, {
