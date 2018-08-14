@@ -20,10 +20,14 @@ about_menu:
 disaster-area:
   - title: "被災地情報"
     children:
-    - title: "吉田町の概要と現状"
+    - title: "(宇和島市)吉田町"
       url: /volunteer-new/yoshida/
-    - title: "自治体情報"
+    - title: "(宇和島市)三間町"
+      url: /disaster-area/mima/
+    - title: "被災地自治体"
       url: /disaster-area/
+  - title: "被災地向けお役立ち"
+    children:
     - title: "家電製品特別修理対応"
       url: /repair/
     - title: "温泉・銭湯マップ"
