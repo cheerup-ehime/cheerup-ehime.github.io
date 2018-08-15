@@ -8,9 +8,14 @@ tag:
     - 宇和島市
 date: 2018-08-14 09:06:29 +0900
 last_modified_at: 2018-08-14 09:06:29 +0900 
+header:
+  overlay_image: /assets/images/eyecatches/eyecatch-20180814-01.png
+  overlay_filter: 0.5
 sidemenu:
     nav: posts-menu
 ---
+
+![ボラバス再開！](/assets/images/eyecatches/eyecatch-20180814-01.png)
 
 8/12以降の運行が未定だった、松山発宇和島行のボランティアバスの**８月末までの運行が決定しました！**
 
