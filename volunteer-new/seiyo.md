@@ -6,7 +6,7 @@ category:
 tag:
     - 西予市（野村町）
 date: 2018-07-29 12:15:14 +0900
-last_modified_at: 2018-08-13 09:11:31 +0900
+last_modified_at: 2018-08-15 10:43:41 +0900
 header:
     overlay_image: /assets/images/maps/nomura-map-only.png
     overlay_filter: 0.5    
@@ -129,6 +129,6 @@ NPOの[オープンジャパン](http://openjapan.net/sanka/volunteer_2018nishin
 ### ボランティア派遣依頼の専用回線
 
 - 携帯電話
-    - [080－5064－9848](tel:080－5064－9848)
+    - [080－5064－9848](tel:080-5064-9848)
 - 電話
-    - [0894-72-2306](0894-72-2306)
+    - [0894-72-2306](tel:0894-72-2306)
