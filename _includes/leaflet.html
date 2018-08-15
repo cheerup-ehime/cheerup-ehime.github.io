@@ -1,0 +1,60 @@
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <!-- Leaflet.draw0.4.9がv1.0.xまでしか対応していないので -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet-src.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw-src.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw-src.css' />
+
+  <style type="text/css">
+    #map {
+      z-index: 0;
+      height: 455px;
+    }
+    .leaflet-map-pane {
+      z-index: 2 !important;
+    }
+  </style>
+  <div id="map"></div>
+  <script>
+    {% if page.map.zoom %}
+      {% assign zoom_level = page.map.zoom %}
+    {% else %}
+      {% assign zoom_level = 13 %}
+    {% endif %}
+
+      var map = L.map('map').setView(['{{page.map.lat}}', '{{page.map.lng}}'], '{{zoom_level}}');
+      var t_std = new L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+        attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
+        maxZoom: 19
+      }).addTo(map);
+      var t_osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+      }).addTo(map);
+
+      var baseLayer = {
+        "地理院地図 標準": t_std,
+        "OpenStreetMap": t_osm,
+      };
+
+      L.control.layers(baseLayer, null, {
+        collapsed: true
+      }).addTo(map);
+
+      L.control.scale({
+        imperial: false,
+        maxWidth: 200
+      }).addTo(map);
+  
+      $.getJSON("/assets/geojson/{{page.map.json}}",function(data){
+          L.geoJson(data, {
+            onEachFeature: function(feat, layer){
+              console.log(feat);
+              layer.bindPopup(feat.properties.name);
+            }
+          }).addTo(map);          
+      });
+
+  </script>  
