@@ -9,4 +9,6 @@ docs/
 .vscode/
 .test/
 *.log
+lib/*
+bin/*
 
