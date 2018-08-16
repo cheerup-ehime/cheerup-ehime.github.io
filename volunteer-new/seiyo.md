@@ -19,7 +19,7 @@ header:
 ![最新の募集状況](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_recent.png)
 
 <div class='notice'>
-8/13 西予市災害救急ボランティアセンターの受け入れ体制に変更がありました。
+8/13 西予市災害救急ボランティアセンターの受け入れ体制に変更がありました。（情報元: [お知らせ】西予市災害救援ボランティアセンターのボランティア受入体制等の変更について](http://nv.pref.ehime.jp/servlet/Kokai?filename=InfoShosai&titleid=2&infid=201800000066&topflg=1) ）
 
 1. ボランティア事前登録制（事前登録対象は四国４県のみ）
 2. 活動日変更
@@ -30,6 +30,7 @@ header:
 9月 | 1(土), 2(日)
 
 事前登録制については[下記](#個人で西予市災害vcに申し込み)に解説しています。
+
     
 </div>
 ## 場所と移動
