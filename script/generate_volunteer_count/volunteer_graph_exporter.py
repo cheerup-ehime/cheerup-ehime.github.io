@@ -20,6 +20,7 @@ IMAGE_BASE_PATH = './assets/images/volunteer_headcount/'
 IMAGE_NAME='{}_volunteer_headcount_diff_{}.png'
 RECENT_HEADCOUNT_NAME='{}_volunteer_headcount_diff_recent.png'
 VOLUNTEER_NEEDED='./_data/volunteer_needed.tsv'
+GRAPH_SIZE=(12,12)
 
 def save_as_jpeg(path):
     path_jpg = path.replace('png', 'jpg')
@@ -59,7 +60,7 @@ def gen_volunteer_needs_actual_graph(location, df1, df2):
     df = df.sort_index()
     df.fillna(0, inplace=True)
     ax = df['2018-07-17':].plot(kind='area', 
-                               figsize=(10,10),
+                               figsize=GRAPH_SIZE,
                                alpha=0.4, 
                                stacked=False, 
                                fontsize=18,
@@ -87,7 +88,6 @@ def gen_headcount_graph(df, df_needed):
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
     d_range = pd.date_range(end=get_today('%Y/%m/%d'), periods=8)
-    print(d_range)
     return df.loc[d_range]
 
 # 前日比、前週比を出す。
@@ -100,15 +100,13 @@ def diff_another_day(df, before_day):
     before_day = now() - dt.timedelta(before_day)
      
     df_today = df_top3.iloc[-1]
-    df_before = df_top3.loc[before_day.strftime('%Y-%m-%d')]
+    df_before = df_top3.iloc[-2]
+    # df_before = df_top3.loc[before_day.strftime('%Y-%m-%d')]
     return df_today - df_before
 
 # 日次グラフ生成
 def gen_day_graph(df):
-    df.replace('', 0, inplace=True)
-    df.fillna(0, inplace=True)
-
-    df2 = df
+    df2 = df.replace('', 0).fillna(0.0)
     df2.index.names = ['Date']
     df2 = filter_within_week(df2)
 
@@ -116,16 +114,16 @@ def gen_day_graph(df):
     df2 = df2.applymap(float)
     ax = df2.plot(
                     kind='bar',
-                    figsize=(8,8), 
+                    figsize=GRAPH_SIZE, 
                     alpha=0.5,
                     title="愛媛県ボランティア数動向（一週間）", 
                     subplots=False, 
                     stacked=True,
-                    fontsize=16)
+                    fontsize=20)
 
-    plt.xlabel("日付", fontsize="16")
-    plt.ylabel("人数", fontsize="16")
-    plt.legend(fontsize="16")
+    plt.xlabel("日付", fontsize="20")
+    plt.ylabel("人数", fontsize="20")
+    plt.legend(fontsize="20")
     fig = ax.get_figure()
     for tick in ax.get_xticklabels():
         tick.set_rotation(45)
@@ -136,10 +134,7 @@ def gen_day_graph(df):
 
 # 週次グラフ生成
 def gen_week_graph(df):
-    df.replace('', 0, inplace=True)
-    df.fillna(0, inplace=True)
-
-    df2 = df
+    df2 = df.replace('', 0).fillna(0.0)
     df2.index.names = ['Date']
 
     # df2.index = df2.index.strftime("%m/%d")
@@ -147,7 +142,7 @@ def gen_week_graph(df):
     df_w = df2.resample('W').sum()
     df_w.index = df_w.index.strftime("%m/%d週")
     ax = df_w.T.plot(kind='bar',
-                        figsize=(8,8), 
+                        figsize=GRAPH_SIZE, 
                         alpha=0.5,
                         title="愛媛県ボランティア数動向（7月週別）", 
                         subplots=False, 
@@ -168,6 +163,7 @@ def gen_week_graph(df):
 def gen_md_table(df):
     from tabulate import tabulate
     df.index.name = '日付'
+    df = df.dropna()
     table = tabulate(df, tablefmt="pipe", headers="keys", showindex=True)
     return table
 
