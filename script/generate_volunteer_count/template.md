@@ -24,19 +24,19 @@ sidebar:
 
 平日の募集は300人、個人は四国圏内からの募集となっています。募集については[こちら](/volunteer-new/uwajima/)まで。
 
- ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_{dateYMD}.png)
+ ![宇和島ボラ数（募集と実績）](/assets/images/volunteer_headcount/宇和島市_volunteer_headcount_diff_recent.png)
 
 ### 大洲市
 
 8/11より事前予約制となり当日受け付けがなくなりました。県内限定の募集となっています。募集については[こちら](/volunteer-new/ozu/)まで。
 
- ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_{dateYMD}.png)
+ ![大洲市ボラ数（募集と実績）](/assets/images/volunteer_headcount/大洲市_volunteer_headcount_diff_recent.png)
 
 ### 西予市
 
 8/13より事前予約制となり、事前予約は四国圏内の募集となりました。募集については[こちら](/volunteer-new/seiyo/)まで。
 
- ![西予市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_{dateYMD}.png)
+ ![西予市ボラ数（募集と実績）](/assets/images/volunteer_headcount/西予市_volunteer_headcount_diff_recent.png)
 
 ## 前日・前週からの変化
 
