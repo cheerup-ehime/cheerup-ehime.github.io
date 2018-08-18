@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 # coding: utf-8
 
 import pandas as pd
@@ -28,7 +28,7 @@ def save_as_jpeg(path):
 
 def load_data_from_site():
     url = 'https://ehimesvc.jp/?p=70'
-    dfs = pd.read_html(url, index_col=0, na_values=['活動中止', '終了', '休止'])
+    dfs = pd.read_html(url, index_col=0, na_values=['活動中止', '終了', '休止','－'])
     df = dfs[0]
     df.dropna(how='all', inplace=True)
     df.drop('合計', inplace=True)
@@ -36,7 +36,6 @@ def load_data_from_site():
 
 def load_volunteer_needed():
     df = pd.read_table(VOLUNTEER_NEEDED)
-    print(df)
     return df[['Date', '宇和島市','大洲市','西予市']]
 
 def now():
@@ -55,7 +54,6 @@ def df_with_date_index(df):
 def gen_volunteer_needs_actual_graph(location, df1, df2):
     df = pd.DataFrame([df1[location], df2[location]]).T
     df.columns=['実績数','募集数']
-    print(df.index)
     df.index.name='日付'
     df = df.sort_index()
     df.fillna(0, inplace=True)
@@ -87,8 +85,9 @@ def gen_headcount_graph(df, df_needed):
 
 # ## ８日以内のデータのみフィルタする
 def filter_within_week(df):
-    d_range = pd.date_range(end=get_today('%Y/%m/%d'), periods=8)
-    return df.loc[d_range]
+    return df.tail(8)
+    # d_range = pd.date_range(end=get_today('%Y/%m/%d'), periods=8)
+    # return df.loc[d_range]
 
 # 前日比、前週比を出す。
 def diff_another_day(df, before_day):
@@ -97,10 +96,9 @@ def diff_another_day(df, before_day):
     df_top3.replace('', 0, inplace=True)
     df_top3 = df_top3.applymap(float)
 
-    before_day = now() - dt.timedelta(before_day)
-     
+    # before_day = now() - dt.timedelta(before_day)
     df_today = df_top3.iloc[-1]
-    df_before = df_top3.iloc[-2]
+    df_before = df_top3.iloc[(before_day + 1) * -1]
     # df_before = df_top3.loc[before_day.strftime('%Y-%m-%d')]
     return df_today - df_before
 
@@ -109,6 +107,7 @@ def gen_day_graph(df):
     df2 = df.replace('', 0).fillna(0.0)
     df2.index.names = ['Date']
     df2 = filter_within_week(df2)
+    print(df2)
 
     df2.index = df2.index.strftime("%m/%d")
     df2 = df2.applymap(float)
