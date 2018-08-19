@@ -11,6 +11,7 @@ last_modified_at: 2018-08-19 22:52:44 +0900
 header:
     overlay_image: /assets/images/2018-08-19-22-57-20.png
     overlay_filter: 0.5
+published: false
 sidemenu:
     nav: posts-menu
 ---
