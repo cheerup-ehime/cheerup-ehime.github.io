@@ -129,6 +129,7 @@ author:
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          : "EhimeCheerup"
+  note.mu          : "https://note.mu/kkd/m/mbd23bf28a4aa"
   vine             :
   weibo            :
   xing             :
@@ -182,7 +183,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 prose:
-  # rooturl: '_posts'
+  rooturl: '_posts'
   siteurl: 'https://cheerup-ehime.github.io'
   ignore: 
     - _config.yml
@@ -217,16 +218,16 @@ prose:
       #         value: "被災地支援"
       #       - name: "現地レポート"
       #         value: "現地レポート"
-      - name: "tag"
-        field:
-          element: 'multiselect'
-          label: 'タグを設定してください'
-          alterable: true
-      - name: "header"
-        field:
-          element: "textarea"
-          value: "\n  overlay_image: image_path\n  overlya_filter: 0.5\n"
-          label: ヘッダ画像に指定したい画像ファイルを設定してください。
+      # - name: "tag"
+      #   field:
+      #     element: 'multiselect'
+      #     label: 'タグを設定してください'
+      #     alterable: true
+      # - name: "header"
+      #   field:
+      #     element: "textarea"
+      #     value: "\n  overlay_image: image_path\n  overlya_filter: 0.5\n"
+      #     label: ヘッダ画像に指定したい画像ファイルを設定してください。
       # - name: sidemenu
       #   field: 
       #     element: hidden
