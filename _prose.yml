@@ -18,11 +18,11 @@ prose:
           element: "textarea"
           label: "概要"
           value: ""
-      - name: date:
+      - name: date
         field:
           element: "text"
           value: CURRENT_DATETIME +0900
-      - name: last_modified_at:
+      - name: last_modified_at
         field:
           element: "hidden"
           value: CURRENT_DATETIME +0900
@@ -47,11 +47,11 @@ prose:
           element: "textarea"
           label: "記事概要"
           value: ""
-      - name: date:
+      - name: date
         field:
           element: "text"
           value: CURRENT_DATETIME +0900
-      - name: last_modified_at:
+      - name: last_modified_at
         field:
           element: "hidden"
           value: CURRENT_DATETIME +0900
