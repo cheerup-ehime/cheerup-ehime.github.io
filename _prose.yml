@@ -12,25 +12,32 @@ prose:
         field:
           element: "text"
           label: "タイトル"
+          placeholder: "category-subcategory.md"
           value: ""
       - name: excerpt
         field:
           element: "textarea"
-          label: "概要"
+          label: "ページ概要"
           value: ""
       - name: date
         field:
           element: "text"
-          value: CURRENT_DATETIME +0900
+          value: CURRENT_DATETIME
       - name: last_modified_at
         field:
           element: "hidden"
-          value: CURRENT_DATETIME +0900
+          value: CURRENT_DATETIME
       - name: "permalink"
         field:
           element: "text"
-          label: "アクセスURL"
+          label: "パーマリンク"
           value: ""
+      - name: "teaser"
+        field:
+          element: "text"
+          value: ''
+          placeholder: '/assets/images/xxxx.png'
+          label: ヘッダー画像
       - name: "published"
         field:
           element: "checkbox"
@@ -42,6 +49,7 @@ prose:
           element: "text"
           label: "タイトル"
           value: ""
+          placeholder: 'YYYY-MM-DD-article-name-somthing.md'
       - name: "excerpt"
         field:
           element: "textarea"
@@ -50,6 +58,7 @@ prose:
       - name: date
         field:
           element: "text"
+          label: "日付"
           value: CURRENT_DATETIME +0900
       - name: last_modified_at
         field:
@@ -67,6 +76,8 @@ prose:
           help: "記事のカテゴリーを選択してください"
           value: ""
           options:
+            - name: 'お知らせ'
+              value: 'お知らせ'
             - name: "ボランティア"
               value: "ボランティア"
             - name: "被災地情報"
@@ -75,16 +86,25 @@ prose:
               value: "被災地支援"
             - name: "現地レポート"
               value: "現地レポート"
-      # - name: "tag"
-      #   field:
-      #     element: 'multiselect'
-      #     label: 'タグを設定してください'
-      #     alterable: true
-      # - name: "header"
-      #   field:
-      #     element: "textarea"
-      #     value: "\n  overlay_image: image_path\n  overlya_filter: 0.5\n"
-      #     label: ヘッダ画像に指定したい画像ファイルを設定してください。
+            - name: 'ツール'
+              value: 'ツール'
+            - name: 'その他'
+              value: 'その他'
+      - name: "tag"
+        field:
+          element: 'multiselect'
+          label: 'タグを設定してください'
+          alterable: true
+      - name: "teaser"
+        field:
+          element: "text"
+          value: ''
+          placeholder: '/assets/images/xxxx.png'
+          label: ヘッダー画像
+        # field:
+        #   element: "textarea"
+        #   value: "\n  overlay_image: image_path\n  overlya_filter: 0.5\n"
+        #   label: ヘッダ画像に指定したい画像ファイルを設定してください。
       # - name: sidemenu
       #   field: 
       #     element: hidden
