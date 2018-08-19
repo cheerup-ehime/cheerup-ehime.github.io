@@ -97,9 +97,6 @@ analytics:
     tracking_id          : UA-122279846-1
     anonymize_ip         : # true, false (default)
 
-google:
-  search_engine_id: "010836227563913331873:nipitudhl24"
-
 
 # Site Author
 author:
