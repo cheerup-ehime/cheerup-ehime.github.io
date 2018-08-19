@@ -183,15 +183,43 @@ excerpt_separator: "\n\n"
 incremental: false
 
 prose:
-  rooturl: '_posts'
+  # rooturl: '_posts'
   siteurl: 'https://cheerup-ehime.github.io'
   ignore: 
     - _config.yml
     - /_layouts
     - /_includes
-    - 
-  media: "/assets/images"
+  media: '/assets/images'
   metadata:
+    _pages:
+      - name: "title"
+        field:
+          element: "text"
+          label: "タイトル"
+          value: ""
+      - name: excerpt
+        field:
+          element: "textarea"
+          label: "概要"
+          value: ""
+      - name: date:
+        field:
+          element: "text"
+          value: CURRENT_DATETIME +0900
+      - name: last_modified_at:
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME +0900
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "アクセスURL"
+          value: ""
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "公開"
+          value: false
     _posts:
       - name: "title"
         field:
@@ -203,21 +231,34 @@ prose:
           element: "textarea"
           label: "記事概要"
           value: ""
-      # - name: "category"
-      #   field:
-      #     element: 'select'
-      #     label: "カテゴリー"
-      #     help: "記事のカテゴリーを選択してください"
-      #     value: ""
-      #     options:
-      #       - name: "ボランティア"
-      #         value: "ボランティア"
-      #       - name: "被災地情報"
-      #         value: "被災地情報"
-      #       - name: "被災地支援"
-      #         value: "被災地支援"
-      #       - name: "現地レポート"
-      #         value: "現地レポート"
+      - name: date:
+        field:
+          element: "text"
+          value: CURRENT_DATETIME +0900
+      - name: last_modified_at:
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME +0900
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "公開"
+          value: false
+      - name: "category"
+        field:
+          element: 'select'
+          label: "カテゴリー"
+          help: "記事のカテゴリーを選択してください"
+          value: ""
+          options:
+            - name: "ボランティア"
+              value: "ボランティア"
+            - name: "被災地情報"
+              value: "被災地情報"
+            - name: "被災地支援"
+              value: "被災地支援"
+            - name: "現地レポート"
+              value: "現地レポート"
       # - name: "tag"
       #   field:
       #     element: 'multiselect'
