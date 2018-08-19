@@ -39,12 +39,12 @@ def load_volunteer_needed():
     return df[['Date', '宇和島市','大洲市','西予市']]
 
 def now():
-    # return dt.datetime.now()
-    return (dt.datetime.now() - dt.timedelta(1)) #一日前で設定したい場合
+    return dt.datetime.now()
+    # return (dt.datetime.now() - dt.timedelta(1)) #一日前で設定したい場合
     
 def get_today(format):
-    # return dt.datetime.now().strftime(format)
-    return (dt.datetime.now() - dt.timedelta(1)).strftime(format) #一日前で設定したい場合
+    return dt.datetime.now().strftime(format)
+    # return (dt.datetime.now() - dt.timedelta(1)).strftime(format) #一日前で設定したい場合
 
 def df_with_date_index(df):
     df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
