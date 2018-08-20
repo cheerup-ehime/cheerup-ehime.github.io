@@ -1,7 +1,8 @@
 ---
 title: サイトについて
 permalink: /about/
-date: 2018-07-17 11:44:02
+date: 2018-07-17 11:44:02 +0900
+last_modified_at: 2018-08-20 13:49:53 +0900
 sidebar:
     nav: about_menu
 ---
