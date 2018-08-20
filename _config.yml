@@ -26,6 +26,7 @@ repository               : #
 teaser                   : "/assets/images/cheerUP!_カバー写真.png"
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+email                    : cheerup.ehime@gmail.com
 comments:
   provider               : facebook # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
