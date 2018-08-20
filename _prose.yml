@@ -30,8 +30,8 @@ prose:
               value: "ボランティア"
             - name: "被災地情報"
               value: "被災地情報"
-            - name: "被災地応援"
-              value: "被災地応援"
+            - name: "被災地支援"
+              value: "被災地支援"
             - name: "現地レポート"
               value: "現地レポート"
             - name: 'ツール'
