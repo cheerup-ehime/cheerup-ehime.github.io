@@ -5,7 +5,7 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
-  media: '/assets/images'
+  media: '/assets/images/posts'
   metadata:
     _pages:
       - name: "title"
@@ -23,6 +23,27 @@ prose:
         field:
           element: "text"
           value: CURRENT_DATETIME
+      - name: "category"
+        field:
+          element: 'select'
+          label: "カテゴリー"
+          help: "記事のカテゴリーを選択してください"
+          value: ""
+          options:
+            - name: 'お知らせ'
+              value: 'お知らせ'
+            - name: "ボランティア"
+              value: "ボランティア"
+            - name: "被災地情報"
+              value: "被災地情報"
+            - name: "被災地応援"
+              value: "被災地応援"
+            - name: "現地レポート"
+              value: "現地レポート"
+            - name: 'ツール'
+              value: 'ツール'
+            - name: 'その他'
+              value: 'その他'
       - name: last_modified_at
         field:
           element: "hidden"
@@ -30,8 +51,9 @@ prose:
       - name: "permalink"
         field:
           element: "text"
-          label: "パーマリンク"
+          label: "パーマリンク(https://cheerup-ehime.github.com/以下のリンクを指定します）"
           value: ""
+          placeholder: /xxx/xxx
       - name: "teaser"
         field:
           element: "text"
@@ -59,11 +81,11 @@ prose:
         field:
           element: "text"
           label: "日付"
-          value: CURRENT_DATETIME +0900
-      - name: last_modified_at
+          value: CURRENT_DATETIME
+      - name: last_modified_at  
         field:
           element: "hidden"
-          value: CURRENT_DATETIME +0900
+          value: CURRENT_DATETIME
       - name: "published"
         field:
           element: "checkbox"
@@ -101,6 +123,13 @@ prose:
           value: ''
           placeholder: '/assets/images/xxxx.png'
           label: ヘッダー画像
+      - name: "link"
+        field:
+          element: 'text'
+          label: '情報元（あれば）'
+          value: ''
+          placeholder: 'https://xxx.xxx.jp/'
+
         # field:
         #   element: "textarea"
         #   value: "\n  overlay_image: image_path\n  overlya_filter: 0.5\n"
