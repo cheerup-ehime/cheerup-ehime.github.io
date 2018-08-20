@@ -6,3 +6,18 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 120%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

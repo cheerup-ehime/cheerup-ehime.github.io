@@ -10,6 +10,8 @@ main:
     url: /disaster-area/
   - title: "投稿一覧"
     url: /archive/
+  - title: "お問い合わせ"
+    url: /contact/
 
 about_menu:
   - title: 本サイトについて
