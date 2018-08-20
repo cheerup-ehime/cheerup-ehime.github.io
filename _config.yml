@@ -180,60 +180,6 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-prose:
-  rooturl: '_posts'
-  siteurl: 'https://cheerup-ehime.github.io'
-  ignore: 
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - 
-  media: "/assets/images"
-  metadata:
-    _posts:
-      - name: "title"
-        field:
-          element: "text"
-          label: "タイトル"
-          value: ""
-      - name: "excerpt"
-        field:
-          element: "textarea"
-          label: "記事概要"
-          value: ""
-      # - name: "category"
-      #   field:
-      #     element: 'select'
-      #     label: "カテゴリー"
-      #     help: "記事のカテゴリーを選択してください"
-      #     value: ""
-      #     options:
-      #       - name: "ボランティア"
-      #         value: "ボランティア"
-      #       - name: "被災地情報"
-      #         value: "被災地情報"
-      #       - name: "被災地支援"
-      #         value: "被災地支援"
-      #       - name: "現地レポート"
-      #         value: "現地レポート"
-      # - name: "tag"
-      #   field:
-      #     element: 'multiselect'
-      #     label: 'タグを設定してください'
-      #     alterable: true
-      # - name: "header"
-      #   field:
-      #     element: "textarea"
-      #     value: "\n  overlay_image: image_path\n  overlya_filter: 0.5\n"
-      #     label: ヘッダ画像に指定したい画像ファイルを設定してください。
-      # - name: sidemenu
-      #   field: 
-      #     element: hidden
-      #     value: "\n  nav: posts-menu"
-
-
-
-
 
 # Markdown Processing
 kramdown:
