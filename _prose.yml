@@ -122,4 +122,62 @@ prose:
           label: '情報元（あれば）'
           value: ''
           placeholder: 'https://xxx.xxx.jp/'
+    _drafts:
+      - name: "excerpt"
+        field:
+          element: "textarea"
+          label: "記事概要"
+          value: ""
+      - name: date
+        field:
+          element: "text"
+          label: "日付"
+          value: CURRENT_DATETIME
+      - name: last_modified_at  
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "公開設定"
+          value: false
+      - name: "category"
+        field:
+          element: 'select'
+          label: "カテゴリー"
+          help: "記事のカテゴリーを選択してください"
+          value: ""
+          options:
+            - name: 'お知らせ'
+              value: 'お知らせ'
+            - name: "ボランティア"
+              value: "ボランティア"
+            - name: "被災地情報"
+              value: "被災地情報"
+            - name: "被災地支援"
+              value: "被災地支援"
+            - name: "現地レポート"
+              value: "現地レポート"
+            - name: 'ツール'
+              value: 'ツール'
+            - name: 'その他'
+              value: 'その他'
+      - name: "tag"
+        field:
+          element: 'multiselect'
+          label: 'タグを設定してください'
+          alterable: true
+      - name: "teaser"
+        field:
+          element: "text"
+          value: ''
+          placeholder: '/assets/images/xxxx.png'
+          label: ヘッダー画像
+      - name: "link"
+        field:
+          element: 'text'
+          label: '情報元（あれば）'
+          value: ''
+          placeholder: 'https://xxx.xxx.jp/'
 
