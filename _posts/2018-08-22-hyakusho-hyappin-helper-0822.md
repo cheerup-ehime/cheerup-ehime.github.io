@@ -7,13 +7,15 @@ category: 復興支援
 tag:
   - 野村町
   - 西予市
-  - アルバイト
+  - アルバイト募集
 header:
   overlay_image: /assets/images/eyecatches/180821cheerup!ehimeeyechatch-01.png
   overlay_filter: 0.5
 sidemenu:
     nav: posts-menu
 ---
+![ネギ作業手伝い募集](/assets/images/eyecatches/180821cheerup!ehimeeyechatch-01.png)
+
 【8/25 ネギ作業のお手伝い募集！】
 
 野村町の百姓百品村さんで、青ネギ作業の農作業アルバイトを募集しています。
