@@ -91,14 +91,6 @@ header:
 
 事前に[登録用紙](http://www.uwajima-shakyo.or.jp/saigaiv-toroku.pdf)を印刷、記載して持参します。
 
-**コンビニプリントもできます。**
-
-- セブンイレブン
-    - 予約番号：YCQM4PF9
-- 上記以外
-    - ユーザー番号：4NBPPWPQ65、ファイル名：宇和島ボランティア登録（個人）
-
-
 #### 2. 申し込み（団体）
 
 - 受付票、名簿を記載しFAXで送付後、**電話でご相談**ください。
@@ -108,16 +100,6 @@ header:
 - [団体受付票](http://www.uwajima-shakyo.or.jp/saigaiv-dantai-uketuke.pdf)
 - [団体受付名簿](http://www.uwajima-shakyo.or.jp/saigaiv-dantai-meibo.pdf)
 
-**コンビニプリントもできます。**
-
-- セブンイレブン
-    - 団体受付票：予約番号：3T8EKJYZ
-    - 団体受付名簿：予約番号：ESLKL8Y9
-- 上記以外のコンビニ
-    - ユーザー番号：4NBPPWPQ65
-    - ファイル名：
-        - 宇和島ボランティア登録（団体）
-        - 宇和島ボランティア名簿（団体）
 
 ## ボランティアバスを使う
 
@@ -126,11 +108,6 @@ header:
 現在、松山発のボランティアバスが**8/17〜8/31**まで運行予定しています。**県外からボランティアにいらっしゃる方はボランティアバスをご利用ください。**
 
 申込書に必要事項を記入し、**参加希望日の前日17時まで**に、[松山市社会福祉協議会](http://www.matsuyama-wel.jp/)までFAX(089-921-8360)または持参して申し込みします。（[PDF](https://ehimesvc.jp/wp-content/uploads/2018/07/volbus_moshikomi.pdf)、[Wordファイル](https://ehimesvc.jp/wp-content/uploads/2018/07/volbus_moshikomi.docx)）
-
-**コンビニプリントもできます**
-- セブンイレブン：プリント予約番号：RGEGQ74B
-- セブン以外：
-  - ユーザー番号：4NBPPWPQ65、ファイル名：ボラバス申し込み
 
 ボランティアバスを利用した活動の行程目安は以下の通りです。
 
